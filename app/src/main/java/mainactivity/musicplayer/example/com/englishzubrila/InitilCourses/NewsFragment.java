@@ -41,7 +41,6 @@ public class NewsFragment extends Fragment implements Listener {
         context.add(new Content("Daniel Defoe - Robinson Crusoe (+Movie Clip)"));
         context.add(new Content("Winston Churchill - Richard Carvel"));
         context.add(new Content("George Orwell - Animal Farm (+Cartoon)"));
-        context.add(new Content("John Strachey - The Adventure of Living"));
         return context;
     }
 
