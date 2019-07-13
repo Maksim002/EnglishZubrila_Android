@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ici"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InitialСourse.Initialcourse"></activity>
         <activity android:name=".Glav.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Moterial.GaleriUrokav" />
+        <activity android:name=".InitilCourses.InitialFragment" />
 
         <meta-data
             android:name="preloaded_fonts"

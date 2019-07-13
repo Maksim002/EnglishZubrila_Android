@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#CA76E2</color>
-    <color name="colorPrimaryDark">#63BD4B</color>
+    <color name="colorPrimary">#2D72A5</color>
+    <color name="colorPrimaryDark">#102410</color>
     <color name="colorAccent">#D0DFB7</color>
     <color name="Test">#FC0000</color>
     <color name="stil_Htenia">#B1C0B4</color>
