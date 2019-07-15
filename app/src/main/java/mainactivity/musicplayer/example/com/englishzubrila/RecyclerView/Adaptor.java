@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
+import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.HomeFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.NewsFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
@@ -15,13 +16,11 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class Adaptor extends RecyclerView.Adapter<ResViewHolder> {
 
     private List<Content> contents;
+    private Listener listener;
 
-    public Adaptor(List<Content> contents, HomeFragment homeFragment) {
+    public Adaptor(List<Content> contents, Listener listener) {
         this.contents = contents;
-    }
-
-    public Adaptor(List<Content> contents, NewsFragment newsFragment) {
-        this.contents = contents;
+        this.listener = listener;
     }
 
 
@@ -30,7 +29,7 @@ public class Adaptor extends RecyclerView.Adapter<ResViewHolder> {
     public ResViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.item_initial,viewGroup,false);
-        return new ResViewHolder(view);
+        return new ResViewHolder(view,listener);
     }
 
     @Override

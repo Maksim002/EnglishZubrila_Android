@@ -7,7 +7,7 @@ public class Content {
         this.name = name;
     }
 
-    public String getName() {
+    public String getName(int adapterPosition) {
         return name;
     }
 

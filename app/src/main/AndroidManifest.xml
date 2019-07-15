@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ici"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ListOfbooks.PhilipChesterfield"
+            android:label="@string/title_activity_philip_chesterfield"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Glav.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

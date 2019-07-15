@@ -1,5 +1,6 @@
 package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.ListOfbooks.PhilipChesterfield;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Adaptor;
 import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Content;
@@ -27,8 +29,6 @@ public class NewsFragment extends Fragment implements Listener {
 
         recyclerView = view.findViewById(R.id.recyclerViewFragmentNew);
         recyclerView.setAdapter(new Adaptor(getList(),this));
-
-        Adaptor adaptor = new Adaptor(getList(),this);
 
         return view;
     }
@@ -46,6 +46,8 @@ public class NewsFragment extends Fragment implements Listener {
 
     @Override
     public void onClikGaleri(int adapterPosition) {
-
+        Intent intent = new Intent(this.getActivity(), PhilipChesterfield.class);
+        intent.putExtra(PhilipChesterfield.move,adapterPosition);
+        startActivity(intent);
     }
 }
