@@ -14,6 +14,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.FirstLevel;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.ListOfbooks.PhilipChesterfield;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
@@ -44,6 +45,8 @@ public class HomeFragment extends Fragment implements Listener {
 
     @Override
     public void onClikGaleri(int adapterPosition) {
-
+        Intent intent = new Intent(this.getActivity(), FirstLevel.class);
+        intent.putExtra(FirstLevel.Level,adapterPosition);
+        startActivity(intent);
     }
 }

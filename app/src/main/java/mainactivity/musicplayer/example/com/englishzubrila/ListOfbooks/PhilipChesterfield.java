@@ -20,9 +20,9 @@ import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Content;
 
 public class PhilipChesterfield extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
     public static final String move = "Philip Chesterfield - Letters to his Son";
-    TextView textView;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
