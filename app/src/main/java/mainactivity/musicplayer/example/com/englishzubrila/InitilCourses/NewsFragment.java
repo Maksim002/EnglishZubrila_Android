@@ -34,13 +34,7 @@ public class NewsFragment extends Fragment implements Listener {
     }
     List<Content> getList(){
         List<Content> context = new ArrayList<>();
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("George Grossmith - The Diary of a Nobody"));
-        context.add(new Content("Ernest Hemingway - The Old Man and the Sea (+ Movie Clip)"));
-        context.add(new Content("Lewis Carroll - Alice in Wonderland"));
-        context.add(new Content("Daniel Defoe - Robinson Crusoe (+Movie Clip)"));
-        context.add(new Content("Winston Churchill - Richard Carvel"));
-        context.add(new Content("George Orwell - Animal Farm (+Cartoon)"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son",R.drawable.hcalla1));
         return context;
     }
 
