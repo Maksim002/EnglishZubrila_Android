@@ -34,7 +34,14 @@ public class NewsFragment extends Fragment implements Listener {
     }
     List<Content> getList(){
         List<Content> context = new ArrayList<>();
-        context.add(new Content("Philip Chesterfield - Letters to his Son",R.drawable.hcalla1));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        context.add(new Content("Philip Chesterfield - Letters to his Son"));
         return context;
     }
 

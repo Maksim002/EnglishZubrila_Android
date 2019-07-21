@@ -33,13 +33,28 @@ public class FirsstFragment2 extends Fragment {
         temps.add(new Temp(R.drawable.b));
         temps.add(new Temp(R.drawable.c));
         temps.add(new Temp(R.drawable.d));
-        temps.add(new Temp(R.drawable.i));
+        temps.add(new Temp(R.drawable.e));
         temps.add(new Temp(R.drawable.f));
-        temps.add(new Temp(R.drawable.j));
-        temps.add(new Temp(R.drawable.l));
-        temps.add(new Temp(R.drawable.i));
-        temps.add(new Temp(R.drawable.h));
         temps.add(new Temp(R.drawable.g));
+        temps.add(new Temp(R.drawable.h));
+        temps.add(new Temp(R.drawable.i));
+        temps.add(new Temp(R.drawable.j));
+        temps.add(new Temp(R.drawable.k));
+        temps.add(new Temp(R.drawable.l));
+        temps.add(new Temp(R.drawable.m));
+        temps.add(new Temp(R.drawable.n));
+        temps.add(new Temp(R.drawable.o));
+        temps.add(new Temp(R.drawable.p));
+        temps.add(new Temp(R.drawable.q));
+        temps.add(new Temp(R.drawable.r));
+        temps.add(new Temp(R.drawable.s));
+        temps.add(new Temp(R.drawable.t));
+        temps.add(new Temp(R.drawable.u));
+        temps.add(new Temp(R.drawable.v));
+        temps.add(new Temp(R.drawable.w));
+        temps.add(new Temp(R.drawable.x));
+        temps.add(new Temp(R.drawable.y));
+        temps.add(new Temp(R.drawable.z));
         return temps;
     }
 }

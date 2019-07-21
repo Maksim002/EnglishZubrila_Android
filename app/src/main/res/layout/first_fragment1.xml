@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <TextView
         android:id="@+id/textView"
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/letters"
-        android:textColor="#800"
+        android:textColor="#351E0B"
         android:textSize="40sp"
         android:textStyle="bold"
         app:fontFamily="@font/alfa_slab_one"
@@ -39,6 +40,7 @@
         android:layout_marginRight="5dp"
         android:gravity="center_horizontal"
         android:text="@string/_26_5_a_e_i_o_u_20_b_c_d_f_g_h_j_k_l_m_n_p_q_r_s_t_v_w_x_z_y"
+        android:textColor="@color/HriftBukov"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

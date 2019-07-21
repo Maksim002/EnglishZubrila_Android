@@ -7,8 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -38,16 +40,17 @@ public class HomeFragment extends Fragment implements Listener {
 
     List<Content> getContact() {
         List<Content> contact = new ArrayList<>();
-        contact.add(new Content( "A0 Starter",R.drawable.hcalla1));
-        contact.add(new Content( "A1 Elementary",R.drawable.hcalla2));
-        contact.add(new Content( "A2 Pro Intermediate",R.drawable.hcalla3));
-        contact.add(new Content( "B1 Intermediate",R.drawable.hcalla4));
-        contact.add(new Content( "B2 Upper Intermediate",R.drawable.hcalla5));
-        contact.add(new Content( "C1 Advanced",R.drawable.hcalla6));
+        contact.add(new Content( "A0 Beginner"));
+        contact.add(new Content( "A1 Elementary"));
+        contact.add(new Content( "A2 Pro Intermediate"));
+        contact.add(new Content( "B1 Intermediate"));
+        contact.add(new Content( "B2 Upper Intermediate"));
+        contact.add(new Content( "C1 Advanced"));
         return contact;
     }
 
-    @Override
+
+     @Override
     public void onClikGaleri(int adapterPosition) {
         Intent intent = new Intent(this.getActivity(), FirstLevel.class);
         intent.putExtra(FirstLevel.Level,adapterPosition);
