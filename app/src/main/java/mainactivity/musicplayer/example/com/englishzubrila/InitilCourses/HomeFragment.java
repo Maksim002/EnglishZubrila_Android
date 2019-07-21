@@ -38,12 +38,12 @@ public class HomeFragment extends Fragment implements Listener {
 
     List<Content> getContact() {
         List<Content> contact = new ArrayList<>();
-        contact.add(new Content( "Initial course",R.drawable.hcalla1));
-        contact.add(new Content( "B разработке",R.drawable.hcalla2));
-        contact.add(new Content( "B разработке",R.drawable.hcalla3));
-        contact.add(new Content( "B разработке",R.drawable.hcalla4));
-        contact.add(new Content( "B разработке",R.drawable.hcalla5));
-        contact.add(new Content( "B разработке",R.drawable.hcalla6));
+        contact.add(new Content( "A0 Starter",R.drawable.hcalla1));
+        contact.add(new Content( "A1 Elementary",R.drawable.hcalla2));
+        contact.add(new Content( "A2 Pro Intermediate",R.drawable.hcalla3));
+        contact.add(new Content( "B1 Intermediate",R.drawable.hcalla4));
+        contact.add(new Content( "B2 Upper Intermediate",R.drawable.hcalla5));
+        contact.add(new Content( "C1 Advanced",R.drawable.hcalla6));
         return contact;
     }
 
