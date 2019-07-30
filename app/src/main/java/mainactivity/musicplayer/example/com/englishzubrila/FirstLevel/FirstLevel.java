@@ -13,8 +13,8 @@ import java.util.List;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.CatalogFragmentov.FirsstFragment2;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.CatalogFragmentov.FirstFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.CatalogFragmentov.FirstFragment1;
-import mainactivity.musicplayer.example.com.englishzubrila.ListOfbooks.Spisoc;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
+import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Content;
 
 public class FirstLevel extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class FirstLevel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_level);
 
-        Spisoc spisoc = getIntent().getParcelableExtra(FirstLevel.Level);
+        Content content = getIntent().getParcelableExtra(FirstLevel.Level);
 
         List<Fragment> list = new ArrayList<>();
         list.add(new FirstFragment());
