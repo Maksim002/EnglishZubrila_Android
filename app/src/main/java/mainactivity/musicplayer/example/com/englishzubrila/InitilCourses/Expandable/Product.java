@@ -3,11 +3,19 @@ package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expand
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
+
 public class Product implements Parcelable {
     public final String name;
+    private Beginner beginner;
 
-    public Product(String name) {
+    public Product(String name,Beginner beginner) {
         this.name = name;
+        this.beginner = beginner;
+    }
+
+    public Beginner getBeginner() {
+        return beginner;
     }
 
     protected Product(Parcel in) {

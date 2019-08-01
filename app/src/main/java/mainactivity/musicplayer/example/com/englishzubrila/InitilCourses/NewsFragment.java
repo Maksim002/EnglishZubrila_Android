@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.ListOfbooks.Knigu.Hobbit;
 import mainactivity.musicplayer.example.com.englishzubrila.ListOfbooks.Knigu.SherlockHolmes;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
@@ -38,13 +40,19 @@ public class NewsFragment extends Fragment implements Listener {
         List<Content> context = new ArrayList<>();
         context.add(new Content("Hobbit"));
         context.add(new Content("Sherlock Holmes"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
-        context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
+        //context.add(new Content("Philip Chesterfield - Letters to his Son"));
         return context;
+    }
+
+
+    @Override
+    public void onClikGaleri(int adapterPosition, Product product) {
+
     }
 
     @Override

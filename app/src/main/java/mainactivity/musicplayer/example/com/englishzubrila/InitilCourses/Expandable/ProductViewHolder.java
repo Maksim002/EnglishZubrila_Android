@@ -6,6 +6,7 @@ import android.widget.TextView;
 import com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder;
 
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class ProductViewHolder extends ChildViewHolder {
@@ -17,13 +18,14 @@ public class ProductViewHolder extends ChildViewHolder {
         textView = itemView.findViewById(R.id.textViewProduct);
         this.listener = listener;
     }
-    public void bind(Product product){
+    public void bind(final Product product){
         textView.setText(product.name);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onClikGaleri(getAdapterPosition());
+                listener.onClikGaleri(getAdapterPosition(),product);
             }
         });
     }
+
 }

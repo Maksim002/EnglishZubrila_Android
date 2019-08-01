@@ -12,16 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Elementary.A1Elementary;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Company;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.ProductAdapter;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
-import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Adaptor;
-import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Content;
 
 public class HomeFragment extends Fragment implements Listener {
 
@@ -58,45 +57,63 @@ public class HomeFragment extends Fragment implements Listener {
     }
     ArrayList<Product> getBeginner(){
         ArrayList<Product> beginer = new ArrayList<>();
-        beginer.add(new Product("Letters"));
-        beginer.add(new Product("Is empty"));
-        beginer.add(new Product("Is empty"));
+        beginer.add(new Product("Letters", Beginner.Letters0));
+        beginer.add(new Product("Transcription", Beginner.Letters1));
+        beginer.add(new Product("Is empty", Beginner.Letters0));
         return beginer;
     }
     ArrayList<Product> getElementary(){
         ArrayList<Product> elementary = new ArrayList<>();
-        elementary.add(new Product("Is empty"));
-        elementary.add(new Product("Is empty"));
-        elementary.add(new Product("Is empty"));
+        elementary.add(new Product("Is empty", Beginner.Letters0));
+        elementary.add(new Product("Is empty", Beginner.Letters0));
+        elementary.add(new Product("Is empty", Beginner.Letters0));
         return elementary;
     }
     ArrayList<Product> getIntermediate(){
         ArrayList<Product> intermediate = new ArrayList<>();
-        intermediate.add(new Product("Is empty"));
+        intermediate.add(new Product("Is empty", Beginner.Letters0));
         return intermediate;
     }
     ArrayList<Product> getB1Intermediate(){
         ArrayList<Product> b1intermediate = new ArrayList<>();
-        b1intermediate.add(new Product("Is empty"));
+        b1intermediate.add(new Product("Is empty", Beginner.Letters0));
         return b1intermediate;
     }
     ArrayList<Product> getUpperIntermediate(){
         ArrayList<Product> upperintermediate = new ArrayList<>();
-        upperintermediate.add(new Product("Is empty"));
+        upperintermediate.add(new Product("Is empty", Beginner.Letters0));
         return upperintermediate;
     }
     ArrayList<Product> getC1Advanced(){
         ArrayList<Product> c1advanced = new ArrayList<>();
-        c1advanced.add(new Product("Is empty"));
+        c1advanced.add(new Product("Is empty", Beginner.Letters0));
         return c1advanced;
     }
 
 
 
      @Override
+    public void onClikGaleri(int adapterPosition, Product product) {
+            Class biginer;
+            switch (product.getBeginner()){
+                case Letters0:
+                    biginer = FirstLevel.class;
+                    break;
+                case Letters1:
+                    biginer = A1Elementary.class;
+                    break;
+                default:
+                    biginer = null;
+                    break;
+            }
+            if (biginer != null){
+                Intent intent1 = new Intent(this.getActivity(), biginer);
+                startActivity(intent1);
+       }
+    }
+
+    @Override
     public void onClikGaleri(int adapterPosition) {
-                Intent intent = new Intent(this.getActivity(), FirstLevel.class);
-                intent.putExtra(FirstLevel.Level,adapterPosition);
-                startActivity(intent);
+
     }
 }

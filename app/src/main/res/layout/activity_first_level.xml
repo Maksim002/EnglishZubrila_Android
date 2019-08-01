@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.VerticalViewPager
+    <mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.VerticalViewPager
         android:id="@+id/verticalPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.VerticalViewPager>
+    </mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.VerticalViewPager>
 </android.support.constraint.ConstraintLayout>

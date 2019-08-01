@@ -1,5 +1,7 @@
 package mainactivity.musicplayer.example.com.englishzubrila.RecyclerView;
 
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
+
 public class Content {
     private String name;
 
