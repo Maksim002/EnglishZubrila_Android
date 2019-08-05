@@ -15,6 +15,7 @@
     <string name="espandel">TextView</string>
     <string name="product">TextView</string>
     <string name="glav_transcriphyi">Ура мы добрались до транскрипций, Я могу вас поздравить!</string>
+    <string name="elementary">Наконец то мы и добрались до транскрипций.</string>
 
 
 </resources>
