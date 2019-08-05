@@ -3,11 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8D1D1"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:alpha="0.5"
+        android:alpha="0.3"
         android:scaleType="centerCrop"
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -16,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/recyclerView"
-        app:srcCompat="@drawable/foni" />
+        app:srcCompat="@drawable/travel1" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

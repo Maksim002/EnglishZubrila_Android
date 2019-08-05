@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Glav.MainActivity">
+    tools:context=".Glav.MainActivity"
+    android:background="#FDFDFE">
 
     <ImageView
         android:id="@+id/imageView"
@@ -32,7 +33,7 @@
         android:lineSpacingExtra="36sp"
         android:text="@string/les_s_start"
         android:textAppearance="@style/Base.V7.Theme.AppCompat"
-        android:textColor="@color/Test"
+        android:textColor="#0965AA"
         android:textSize="50sp"
         android:textStyle="bold"
         app:fontFamily="@font/arizonia"
