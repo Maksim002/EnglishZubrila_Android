@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.CatalogFragmentov;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.CatalogFragmentov;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class FirstFragment1 extends Fragment {
+public class FirstFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.first_fragment2,container, false);
+        return inflater.inflate(R.layout.first_fragment1,container, false);
     }
 }

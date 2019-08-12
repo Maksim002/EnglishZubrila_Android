@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;

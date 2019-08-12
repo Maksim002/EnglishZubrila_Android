@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet;
 
 
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.CatalogFragmentov.FirsstFragment2;
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.CatalogFragmentov.FirstFragment;
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.CatalogFragmentov.FirstFragment1;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov.FirsstFragment2;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov.FirstFragment;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov.FirstFragment1;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 import mainactivity.musicplayer.example.com.englishzubrila.RecyclerView.Content;
 

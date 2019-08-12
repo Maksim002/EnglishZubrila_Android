@@ -8,13 +8,11 @@ public enum  Beginner {
 
     private final int id;
 
-    Beginner(int code)
-    {
+    Beginner(int code){
         id = code;
     }
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 

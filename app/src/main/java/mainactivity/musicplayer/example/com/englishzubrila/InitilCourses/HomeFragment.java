@@ -13,8 +13,9 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.FirstLevel;
-import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Elementary.A1Elementary;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.ToBe.ToBe;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Company;
@@ -57,9 +58,9 @@ public class HomeFragment extends Fragment implements Listener {
     }
     ArrayList<Product> getBeginner(){
         ArrayList<Product> beginer = new ArrayList<>();
-        beginer.add(new Product("Letters", Beginner.Letters0));
+        beginer.add(new Product("Alphabet", Beginner.Letters0));
         beginer.add(new Product("Transcription", Beginner.Letters1));
-        beginer.add(new Product("Is empty", Beginner.Letters0));
+        beginer.add(new Product("To Be", Beginner.Letters2));
         return beginer;
     }
     ArrayList<Product> getElementary(){
@@ -100,7 +101,10 @@ public class HomeFragment extends Fragment implements Listener {
                     biginer = FirstLevel.class;
                     break;
                 case Letters1:
-                    biginer = A1Elementary.class;
+                    biginer = Transcription.class;
+                    break;
+                case Letters2:
+                    biginer = ToBe.class;
                     break;
                 default:
                     biginer = null;

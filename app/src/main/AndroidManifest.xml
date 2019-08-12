@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mainactivity.musicplayer.example.com.englishzubrila">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,10 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".InitilCourses.InitialFragment" />
-        <activity android:name=".FirstLevel.Beginer.FirstLevel" />
+        <activity android:name=".FirstLevel.Beginer.Alphabet.FirstLevel" />
         <activity android:name=".ListOfbooks.Knigu.Hobbit" />
         <activity android:name=".ListOfbooks.Knigu.SherlockHolmes" />
-        <activity android:name=".FirstLevel.Elementary.A1Elementary" />
+        <activity android:name=".FirstLevel.Beginer.Transcription.Transcription" />
+        <activity android:name=".FirstLevel.Beginer.ToBe.ToBe" />
 
         <meta-data
             android:name="preloaded_fonts"
