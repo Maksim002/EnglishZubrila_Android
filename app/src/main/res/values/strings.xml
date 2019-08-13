@@ -32,71 +32,106 @@
     <string name="u_u_put_u_blue"><P>5. Звук</P> «u» также может произноситься двумя способами. Он может быть долгий или краткий: [ u ] – краткий звук, как в слове «put»; [ u: ] – долгий звук, как в слове «blue».</string>
     <string name="soglsn_z"><P> Транскрипция</P> согласных звуков</string>
     <string name="r1"><P> В транскрипции</P> согласных звуков все достаточно просто. В основном они звучат подобно русскому языку. Достаточно пару раз вдумчиво взглянуть на вышеупомянутые буквосочетания, и они останутся у вас в памяти.</string>
+
     <string name="to_be">Глагол To Be</string>
-    <string name="to_be_to_be_be_am_m_are_is_iz"> <P> При</P> помощи этого глагола To Be мы составляем простые предложения, которые в русском языке глагола не содержат. Мы говорим: я - учитель, ты - ученик… В английском языке предложения недопустимо составлять без глагола, выполняющего действие, и «to be» служит глаголом-связкой, обязательно ставится связка: я есть учитель, ты есть ученик, они есть англичане, дерево есть высокое, Лондон есть столица Англии… В качестве связки используются разные формы глагола be: am [æm], are [ɑ:], is [iz]. Когда-то и наши предки говорили: аз есмь, ты еси… В русском эти формы глагола быть исчезли, в английском они сохранились и процветают.</string>
-    <string name="be_to_let_s_write_a_few_english_verbs_to_to_tu"> <P> Перед</P>  be стоит специальная частица to, которая указывает: глагол в неопределенной форме, он отвечает на вопрос что делать? Напишем неопределенную форму нескольких глаголов. Let\'s write a few English verbs. Гласная о в частице to дает слабенький звук [ǝ], напоминающий безударное русское э в слове этап. Однако если глагол начинается с гласного звука, to будет звучать как [tu].</string>    <string name="to_cook_t_kuk">to cook [tǝ\'kuk] - готовить (еду)</string>
-    <string name="to_come_t_k_m">to come [tǝ\'kʌm] - приходить, приезжать</string>
-    <string name="to_have_t_h_v">to have [tǝ\'hæv] - иметь</string>
-    <string name="to_read_t_ri_d">to read [tǝ\'ri:d] - читать</string>
-    <string name="to_say_t_sei">to say [tǝ\'sei] - говорить, сказать</string>
-    <string name="to_take_t_teik">to take [tǝ\'teik] - брать</string>
-    <string name="to_want_t_wont">to want [tǝ\'wont] - хотеть</string>
-    <string name="to_eat_tu_i_t">to eat [tu\'i:t] - есть (еду)</string>
-    <string name="to_open_tu_oup_n">to open [tu\'oupǝn] – открывать</string>
-    <string name="not_not"> <P> Что</P> еще можно <u>извлечь</u> из гамлетовского вопроса? Он подсказывает нам: в английском языке отрицание образуется с помощью частицы not [not], которая переводится русским не. Взяв шекспировское высказывание за образец, зададимся и мы философскими раздумьями:</string>
-    <string name="go_or_not_to_go">То go or not to go? - Идти или не идти? (В школу.)</string>
-    <string name="eat_or_not_to_eat">То eat or not to eat? - Есть или не есть? (Пятую конфету.)</string>
-    <string name="say_or_not_to_say">То say or not to say? - Говорить или не говорить? (Родителям о двойке.)</string>
-    <string name="have_or_not_to_have">То have or not to have? - Иметь или не иметь? (Сто рублей, сто друзей.)</string>
-    <string name="not_old_ould_young_j_high_hai_english_russian">Теперь с помощью частицы <b>not</b> будем отнекиваться и всё отрицать. Определим, кто есть кто, вернее, кто не есть кто, используя old [ould] (старый, старая, старое); young [jʌŋ] (молодой, молодая, молодое); <b>high</b> [hai] (высокий, высокая, высокое) и уже знакомые нам <b>English и Russian</b>.</string>
-    <string name="negation_the_singular">Negation - Отрицание</string>
-    <string name="negation_the_singular1">The Singular - Единственное число</string>
-    <string name="i_am_not_english">I am not English.Я не англичанин.</string>
-    <string name="i_am_not_young">I am not young.Я не молодой.</string>
-    <string name="you_are_not_english">You are not English.Ты не англичанин.</string>
-    <string name="the_plural">The Plural - Множественное число</string>
-    <string name="we_are_not_young">We are not young.Мы не молодые.</string>
-    <string name="you_are_not_old">You are not old.Вы не старые.</string>
-    <string name="they_are_not_high">They are not high.Они не высокие.</string>
-    <string name="word">Word - Слово</string>
-    <string name="how_hau">Обсудим вопросительное слово <b>how</b> [hau] (как). Оно входит в состав следующих разговорных фраз.</string>
-    <string name="you_are_not_old1">You are not old.Ты не старый.</string>
-    <string name="how_are_you">How are you? - Как вы (поживаете)?</string>
-    <string name="how_are_things">How are things? - Как дела?</string>
-    <string name="how"><b>How</b> встречается не только в вопросах. Можно использовать его для соединения двух простых предложений в одно сложное.</string>
-    <string name="i_see_how_mum_cooks">I see how Mum cooks. - Я вижу, как мама готовит.</string>
-    <string name="i_see_how_dad_helps_her">I see how Dad helps her. - Я вижу, как папа помогает ей.</string>
-    <string name="she_sees_how_he_runs">She sees how he runs. - Она видит, как он бегает.</string>
-    <string name="we_see_how_flowers_grow">We see how flowers grow. - Мы видим, как растут цветы.</string>
-    <string name="phrases">Phrases - Фразы</string>
-    <string name="and_and_nd">Следующие фразы построены с помощью союза <b>and</b> (и). Ударение падает на существительные и глаголы.<b> And</b> [ǝnd] становится как бы безударным слогом первого слова.</string>
-    <string name="bread_and_butter_bred_nd_b_t">Bread and butter. [\'bredǝnd\'bʌtǝ] - Хлеб с маслом.</string>
-    <string name="tea_and_milk_ti_nd_milk">Tea and milk. [\'ti:ǝnd\'milk] - Чай с молоком</string>
-    <string name="sing_and_dance_si_nd_d_ns">Sing and dance. [\'siŋǝnd\'dɑ:ns] - Пой и танцуй.</string>
-    <string name="come_and_see_k_m_nd_si">Come and see. [\'kʌmǝnd\'si:] - Приходи и увидишь.</string>
-    <string name="wait_and_see_weit_nd_si">Wait and see. [\'weitǝnd\'si:] - Подожди и увидишь.</string>
-    <string name="two_and_two_tu_nd_tu">Two and two. [\'tu:ǝnd\'tu:] - Два плюс два.</string>
-    <string name="translation">Translation - Перевод</string>
-    <string name="and_and">При переводе <b>and</b> используйте союз и или предлог с. Иногда удобнее передать <b>and</b> союзом а.</string>
-    <string name="i_help_mum_and_dad">I help Mum and Dad. - Я помогаю маме и папе.</string>
-    <string name="we_see_tim_and_ann">We see Tim and Ann. - Мы видим Тима и Энн.</string>
-    <string name="is_big_and_she_is_little">Не is big and she is little. - Он большой, а она маленькая.</string>
-    <string name="i_like_bread_and_butter">I like bread and butter. - Я люблю хлеб с маслом.</string>
-    <string name="tim_likes_fish_and_chips">Tim likes fish and chips. - Тим любит рыбу с жареной картошкой.</string>
-    <string name="be_am_are_is"><P>Чтобы задать</P> <b>вопрос</b>, необходимо перенести <b>глагол be</b> (am, are, is) <b>на первое место</b>. Рассмотрим, как из утвердительного предложения сделать вопросительное.</string>
-    <string name="am_i_busy_yes_i_am">Am I busy? Yes, I am. Я являюсь занятым? Да, являюсь.</string>
-    <string name="am_i_busy_no_i_am_not">Am I busy? No, I am not. Я являюсь занятым? Нет, не являюсь.</string>
-    <string name="is_your_cat_at_home_yes_it_is">Is your cat at home? Yes, it is. Твой кот находится дома? Да, находится.</string>
-    <string name="not_to_be">В разговорной речи «not» обычно сливается с «to be», образуя <b>сокращения:</b></string>
-    <string name="is_not_isn_t">is not = isn\'t</string>
-    <string name="are_not_aren_t">are not = aren\'t</string>
-    <string name="to_be1">Глагол «to be» также сокращается с <b>личным местоимением:</b></string>
-    <string name="i_am_i_m">I am = I\'m</string>
-    <string name="we_are_we_re">We are = we\'re</string>
-    <string name="to_be12">Когда использовать глагол to be?</string>
-    <string name="to_be123"><P> Если</P> мы хотим описать местоположение чего-либо, состояние чего-либо или то, чем является этот предмет/человек, то используем глагол to be.</string>
+    <string name="to_be_to_be_be_am_m_are_is_iz"> <P> При</P> помощи этого глагола To Be мы составляем простые предложения, которые в русском языке глагола не содержат. Мы говорим: я - учитель, ты - ученик… В английском языке предложения недопустимо составлять без глагола, выполняющего действие, и <b>«to be»</b> служит глаголом-связкой, обязательно ставится связка: я есть учитель, ты есть ученик, они есть англичане, дерево есть высокое, Лондон есть столица Англии… В качестве связки используются разные формы глагола <b>be: am [æm], are [ɑ:], is [iz]</b>. Когда-то и наши предки говорили: аз есмь, ты еси… В русском эти формы глагола быть исчезли, в английском они сохранились и процветают.</string>
+    <string name="be_to_let_s_write_a_few_english_verbs_to_to_tu"> <P> Перед</P>  be стоит специальная частица <b>to</b>, которая указывает: глагол в неопределенной форме, он отвечает на вопрос что делать? Напишем неопределенную форму нескольких глаголов. <b>Let\'s write a few English verbs</b>. Гласная о в частице to дает слабенький звук <b>[ǝ]</b>, напоминающий безударное русское э в слове этап. Однако если глагол начинается с гласного звука, to будет звучать как <b>[tu]</b>.</string>    <string name="to_cook_t_kuk">to cook [tǝ\'kuk] - готовить (еду)</string>
+    <string name="to_come_t_k_m"><b>to come [tǝ\'kʌm]</b> - приходить, приезжать</string>
+    <string name="to_have_t_h_v"><b>to have [tǝ\'hæv]</b> - иметь</string>
+    <string name="to_read_t_ri_d"><b>to read [tǝ\'ri:d]</b> - читать</string>
+    <string name="to_say_t_sei"><b>to say [tǝ\'sei]</b> - говорить, сказать</string>
+    <string name="to_take_t_teik"><b>to take [tǝ\'teik]</b> - брать</string>
+    <string name="to_want_t_wont"><b>to want [tǝ\'wont]</b> - хотеть</string>
+    <string name="to_eat_tu_i_t"><b>to eat [tu\'i:t]</b> - есть (еду)</string>
+    <string name="to_open_tu_oup_n"><b>to open [tu\'oupǝn]</b> – открывать</string>
+    <string name="not_not"> <P> Что</P> еще можно <b>извлечь</b> из гамлетовского вопроса? Он подсказывает нам: в английском языке отрицание образуется с помощью частицы not <b>[not]</b>, которая переводится русским не. Взяв шекспировское высказывание за образец, зададимся и мы философскими раздумьями:</string>
+    <string name="go_or_not_to_go"><b>То go or not to go?</b> - Идти или не идти? (В школу.)</string>
+    <string name="eat_or_not_to_eat"><b>То eat or not to eat?</b> - Есть или не есть? (Пятую конфету.)</string>
+    <string name="say_or_not_to_say"><b>То say or not to say?</b> - Говорить или не говорить? (Родителям о двойке.)</string>
+    <string name="have_or_not_to_have"><b>То have or not to have?</b> - Иметь или не иметь? (Сто рублей, сто друзей.)</string>
+    <string name="not_old_ould_young_j_high_hai_english_russian"><P> Теперь</P> с помощью частицы <b>not</b> будем отнекиваться и всё отрицать. Определим, кто есть кто, вернее, кто не есть кто, используя <b>old [ould]</b> (старый, старая, старое); <b>young [jʌŋ]</b> (молодой, молодая, молодое); <b>high [hai]</b> (высокий, высокая, высокое) и уже знакомые нам <b>English и Russian</b>.</string>
+    <string name="negation_the_singular"><b>Negation</b> - Отрицание</string>
+    <string name="negation_the_singular1"><b>The Singular</b> - Единственное число</string>
+    <string name="i_am_not_english"><b>I am not English</b>.Я не англичанин.</string>
+    <string name="i_am_not_young"><b>I am not young</b>.Я не молодой.</string>
+    <string name="you_are_not_english"><b>You are not English</b>.Ты не англичанин.</string>
+    <string name="the_plural"><b>The Plural</b> - Множественное число</string>
+    <string name="we_are_not_young"><b>We are not young</b>.Мы не молодые.</string>
+    <string name="you_are_not_old"><b>You are not old</b>.Вы не старые.</string>
+    <string name="they_are_not_high"><b>They are not high</b>.Они не высокие.</string>
+    <string name="word"><b>Word</b> - Слово</string>
+    <string name="how_hau"><P> Обсудим</P> вопросительное слово <b>how [hau]</b> (как). Оно входит в состав следующих разговорных фраз.</string>
+    <string name="you_are_not_old1"><b>You are not old</b>.Ты не старый.</string>
+    <string name="how_are_you"><b>How are you?</b> - Как вы (поживаете)?</string>
+    <string name="how_are_things"><b>How are things?</b> - Как дела?</string>
+    <string name="how"><P> <b>How</b></P> встречается не только в вопросах. Можно использовать его для соединения двух простых предложений в одно сложное.</string>
+    <string name="i_see_how_mum_cooks"><b>I see how Mum cooks</b>. - Я вижу, как мама готовит.</string>
+    <string name="i_see_how_dad_helps_her"><b>I see how Dad helps her</b>. - Я вижу, как папа помогает ей.</string>
+    <string name="she_sees_how_he_runs"><b>She sees how he runs</b>>. - Она видит, как он бегает.</string>
+    <string name="we_see_how_flowers_grow"><b>We see how flowers grow.</b>> - Мы видим, как растут цветы.</string>
+    <string name="phrases"><b>Phrases</b> - Фразы</string>
+    <string name="and_and_nd"><P> Следующие</P> фразы построены с помощью союза <b>and</b> (и). Ударение падает на существительные и глаголы.<b> And [ǝnd]</b> становится как бы безударным слогом первого слова.</string>
+    <string name="bread_and_butter_bred_nd_b_t"><b>Bread and butter. [\'bredǝnd\'bʌtǝ]</b>> - Хлеб с маслом.</string>
+    <string name="tea_and_milk_ti_nd_milk"><b>Tea and milk. [\'ti:ǝnd\'milk]</b> - Чай с молоком</string>
+    <string name="sing_and_dance_si_nd_d_ns"><b>Sing and dance. [\'siŋǝnd\'dɑ:ns]</b> - Пой и танцуй.</string>
+    <string name="come_and_see_k_m_nd_si"><b>Come and see. [\'kʌmǝnd\'si:]</b> - Приходи и увидишь.</string>
+    <string name="wait_and_see_weit_nd_si"><b>Wait and see. [\'weitǝnd\'si:]</b> - Подожди и увидишь.</string>
+    <string name="two_and_two_tu_nd_tu"><b>Two and two. [\'tu:ǝnd\'tu:]</b> - Два плюс два.</string>
+    <string name="translation"><b>Translation</b> Перевод</string>
+    <string name="and_and"><P> При</P> переводе <b>and</b> используйте союз и или предлог с. Иногда удобнее передать <b>and</b> союзом а.</string>
+    <string name="i_help_mum_and_dad"><b>I help Mum and Dad.</b> - Я помогаю маме и папе.</string>
+    <string name="we_see_tim_and_ann"><b>We see Tim and Ann.</b> - Мы видим Тима и Энн.</string>
+    <string name="is_big_and_she_is_little"><b>Не is big and she is little.</b> - Он большой, а она маленькая.</string>
+    <string name="i_like_bread_and_butter"><b>I like bread and butter.</b> - Я люблю хлеб с маслом.</string>
+    <string name="tim_likes_fish_and_chips"><b>Tim likes fish and chips.</b> - Тим любит рыбу с жареной картошкой.</string>
+    <string name="be_am_are_is"><P> Чтобы задать</P> <b>вопрос</b>, необходимо перенести <b>глагол be</b> <b>(am, are, is)</b> <b>на первое место</b>. Рассмотрим, как из утвердительного предложения сделать вопросительное.</string>
+    <string name="am_i_busy_yes_i_am"><b>Am I busy? Yes, I am.</b> Я являюсь занятым? Да, являюсь.</string>
+    <string name="am_i_busy_no_i_am_not"><b>Am I busy? No, I am not.</b> Я являюсь занятым? Нет, не являюсь.</string>
+    <string name="is_your_cat_at_home_yes_it_is"><b>Is your cat at home? Yes, it is.</b> Твой кот находится дома? Да, находится.</string>
+    <string name="not_to_be"><P> В</P> разговорной речи <b>«not»</b> обычно сливается с <b>«to be»,</b> образуя <b>сокращения:</b></string>
+    <string name="is_not_isn_t"><b>is not = isn\'t</b></string>
+    <string name="are_not_aren_t"><b>are not = aren\'t</b></string>
+    <string name="to_be1"><P> Глагол</P> <b>«to be»</b> также сокращается с <b>личным местоимением:</b></string>
+    <string name="i_am_i_m"><b>I am = I\'m</b></string>
+    <string name="we_are_we_re"><b>We are = we\'re</b></string>
+    <string name="to_be12">Когда использовать глагол <b>to be?</b></string>
+    <string name="to_be123"><P> Если</P> мы хотим описать местоположение чего-либо, состояние чего-либо или то, чем является этот предмет/человек, то используем глагол <b>to be.</b></string>
     <string name="there_is_there_are"><P> Глагол</P> употребляется в качестве самостоятельного глагола, вспомогательного глагола, глагола-связки и в конструкции <b>«there is/there are.»</b></string>
-    <string name="iu">В качестве <b>самостоятельного глагола</b> (быть, находиться, существовать или не переводится)</string>
+    <string name="iu"><P> В</P> качестве <b>самостоятельного глагола</b> (быть, находиться, существовать или не переводится)</string>
+    <string name="he_is_he_s">He is = he\'s</string>
+
+    <string name="tr">Транскрипция</string>
+    <string name="tyi"><P> <i>Транскрипция</i></P> - это запись звучания буквы или слова в виде последовательности специальных фонетических символов.</string>
+    <string name="pe">Нужно ли учить транскрипцию английского языка?</string>
+    <string name="_1">1. Изучая транскрипцию, вы изучаете правила чтения английского языка</string>
+    <string name="_2">2. Онлайн-словари не всегда удобны</string>
+    <string name="_3">3. Правильная транскрипция учит нас хорошему произношению</string>
+    <string name="t01">Несколько секретов чтения транскрипции английского языка</string>
+    <string name="development_d_vel_pm_nt">*\tУдарение в транскрипции всегда ставится ПЕРЕД ударным слогом: <b>development — [dɪˈveləpmənt].</b></string>
+    <string name="tea_ti">*\tДолгий гласный звук в транскрипции обозначается двоеточием: <b>tea — [tiː].</b></string>
+    <string name="i_e_u_i_u_p_t_d_n_k_l_u_ai_ei_oi_au">*\tВ транскрипции английского языка есть гласные <b>(i, e, u, ʌ, i:, u:, ε:)</b> и согласные <b>(p, t, d, n, k, l и т. д.)</b> звуки, а также дифтонги — две гласные, соединяющиеся в один слог <b>(əu, ai, ei, oi, au).</b></string>
+    <string name="top"><P> Начнем</P> с <b>гласных</b>. Две точки возле символа обозначают, что звук произносится долго, если точек нет, то звук следует произносить кратко. Давайте посмотрим, как гласные звуки произносятся:</string>
+    <string name="i_tree_tri_free_fri">[i:] — долгий звук И: tree [triː], free [friː]</string>
+    <string name="big_b_g_lip_l_p">[ɪ] — краткий звук И: big [bɪg], lip [lɪp]</string>
+    <string name="book_buk_look_l_k">[ʊ] — краткий звук У: book [buk], look [lʊk]</string>
+    <string name="u_root_ru_t_boot_bu_t">[u:] — долгий звук У: root [ruːt], boot [buːt]</string>
+    <string name="e_hen_hen_pen_pen">[e] — звук Э. Произносится так же, как в русском языке: hen [hen], pen [pen]</string>
+    <string name="mother_m_computer_k_m_pju_t">[ə] — нейтральный звук Э. Звучит, когда гласная находится не под ударением или в конце слова: mother [\'mʌðə], computer [kəm\'pjuːtə]</string>
+    <string name="bird_b_d_turn_t_n">[ɜː] — звук, похожий на звук Ё в слове мЁд: bird [bɜːd], turn [tɜːn]</string>
+    <string name="door_d_more_m">[ɔː] — долгий звук О: door [dɔː], more [mɔː]</string>
+    <string name="cat_k_t_lamp_l_mp">[æ] — звук Э. Произносится широко: cat [kæt], lamp [læmp]</string>
+    <string name="cup_k_p_but_b_t">[ʌ] — краткий звук А: cup [kʌp], but [bʌt]</string>
+    <string name="a_car_k_mark_m_k">[a:] — долгий звук А: car [kɑː], mark [mɑːk]</string>
+    <string name="box_b_ks_dog_d_g">[ɒ] — краткий звук О: box [bɒks], dog [dɔg]</string>
+    <string name="peq2"><P> <b>Дифтонги</b></P> — это комбинации звуков, состоящие из двух гласных, произносятся всегда слитно. Расмотрим произношение дифтонгов:</string>
+    <string name="here_h_near_n">[ɪə] — ИЭ: here [hɪə], near [nɪə]</string>
+    <string name="e_fair_fe_bear_be">[eə] — Ээ: fair [feə], bear [beə]</string>
+    <string name="go_g_no_n">[əʊ] — ЭУ (ОУ): go[gəʊ], no[nəʊ]</string>
+    <string name="a_how_ha_now_na">[aʊ] — АУ: how[haʊ], now [naʊ]</string>
+    <string name="sure_u_tourist_tu_r_st">[ʊə] — УЭ: sure [ʃuə], tourist [\'tuərɪst]</string>
+    <string name="e_make_me_k_day_de">[eɪ] — ЭЙ: make [meɪk], day [deɪ]</string>
+    <string name="a_my_ma_bike_ba_k">[aɪ] — АЙ: my [maɪ], bike [baɪk]</string>
+    <string name="boy_b_toy_t">[ɔɪ] — ОЙ: : boy [bɔɪ], toy [tɔɪ]</string>
 
 
 </resources>

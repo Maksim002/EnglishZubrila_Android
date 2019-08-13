@@ -8,7 +8,6 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,311 +18,319 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+        <TextView
+            android:textColor="#560264"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tr"/>
+
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/elementary"
-                android:textColor="#800"
+                android:textColor="#000"
+                android:layout_marginHorizontal="20dp"
                 android:textSize="25sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                android:textStyle="italic"
+                android:text="@string/tyi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <TextView
-                android:textStyle="bold"
-                android:layout_margin="15dp"
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/elementary_upper_intermediate"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView120"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="@string/zagolovol"
-                android:textColor="@color/colorbucov"
+                android:textColor="#560264"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pe"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="#560264"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/t01"/>
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/development_d_vel_pm_nt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/tea_ti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="@string/i_e_u_i_u_p_t_d_n_k_l_u_ai_ei_oi_au"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textColor="#000"
+                android:layout_marginHorizontal="20dp"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="italic"
+                android:text="@string/top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/i_tree_tri_free_fri"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="match_parent" />
 
             <TextView
-                android:textStyle="bold"
-                android:id="@+id/textView18"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/big_b_g_lip_l_p"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/transkriphii"
-                android:textSize="20sp" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/book_buk_look_l_k"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:textStyle="bold"
-                android:id="@+id/textView23"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/u_root_ru_t_boot_bu_t"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/km"
-                android:textSize="20sp" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/e_hen_hen_pen_pen"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:textStyle="bold"
-                android:id="@+id/textView25"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/mother_m_computer_k_m_pju_t"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/km1"
-                android:textSize="20sp" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/bird_b_d_turn_t_n"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/trascripty" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:id="@+id/textView21"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/door_d_more_m"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:id="@+id/textView29"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/cat_k_t_lamp_l_mp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/zvuky"
-                android:textColor="@color/colorbucov"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/cup_k_p_but_b_t"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/a_car_k_mark_m_k"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/box_b_ks_dog_d_g"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textColor="#000"
+                android:layout_marginHorizontal="20dp"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="italic"
+                android:text="@string/peq2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/here_h_near_n"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="bold"
-                android:layout_margin="15dp"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/e_fair_fe_bear_be"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/glastnue"
-                android:textSize="21sp" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/go_g_no_n"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:foregroundGravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                app:srcCompat="@drawable/diftongy" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/a_how_ha_now_na"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/angldiftog"
-                android:textColor="@color/colorbucov"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/sure_u_tourist_tu_r_st"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:textStyle="bold"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/e_make_me_k_day_de"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/zvuk"
-                android:textSize="20sp" />
+                android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#15554F"
+                android:textSize="20sp"
+                android:text="@string/a_my_ma_bike_ba_k"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:foregroundGravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:srcCompat="@drawable/diftongy1" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
 
             <TextView
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#3C0E0B"
+                android:textSize="20sp"
+                android:text="@string/boy_b_toy_t"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/zagolovol"
-                android:textColor="@color/colorbucov"
-                android:textSize="25sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent" />
 
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/a_duck_cut_cat_a_car_hot_not"
-                android:textSize="20sp" />
 
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/e_e_let_bird_fur_let_letter"
-                android:textSize="20sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/i_i_film_i_sheep"
-                android:textSize="20sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/_2_bond_more"
-                android:textSize="20sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/u_u_put_u_blue"
-                android:textSize="20sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textColor="@color/colorbucov"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/soglsn_z"
-                android:textSize="30sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="@string/r1"
-                android:textSize="20sp" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:foregroundGravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                app:srcCompat="@drawable/diftongy2" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:foregroundGravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                app:srcCompat="@drawable/diftongy3" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
 
 
