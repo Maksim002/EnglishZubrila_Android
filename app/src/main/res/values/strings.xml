@@ -132,6 +132,26 @@
     <string name="e_make_me_k_day_de">[eɪ] — ЭЙ: make [meɪk], day [deɪ]</string>
     <string name="a_my_ma_bike_ba_k">[aɪ] — АЙ: my [maɪ], bike [baɪk]</string>
     <string name="boy_b_toy_t">[ɔɪ] — ОЙ: : boy [bɔɪ], toy [tɔɪ]</string>
+    <string name="qe"><P> Расмотрим</P> <b>согласные</b> звуки. Глухие и звонкие согласные легко запомнить, так как каждый из них имеет пару:</string>
+    <string name="h_x_hat_h_t_home_h_um">[h] — звук X: hat [hæt], home [həum]</string>
+    <string name="m_m_make_me_k_meet_mi_t">[m] — звук M: make [meɪk], meet [miːt]</string>
+    <string name="n_nose_n_uz_net_net">[n] — английский звук Н: nose [nəuz], net [net]</string>
+    <string name="song_s_long_l">[ŋ] — звук, напоминающий Н, но произносится через нос: song [sɔŋ], long [lɔŋ</string>
+    <string name="r_run_r_n_rest_rest">[r] — звук, напоминающий Р: run [rʌn], rest [rest]</string>
+    <string name="l_leg_leg_lip_l_p">[l] — английский звук Л: leg [leg], lip [lɪp]</string>
+    <string name="w_w_n_west_west">[w] — звук, напоминающий В, но произносится округлыми губами: [wɪn], west [west]</string>
+    <string name="j_you_ju_music_mju_z_k">[j] — звук Й: you [juː], music [\'mjuːzɪk]</string>
+    <string name="pronunciation">Pronunciation - Произношение</string>
+    <string name="one_w_n_run_r_n"><P><b> One [wʌn]</b></P> (один) рифмуется с <b>run [rʌn]</b> (беги), хотя по написанию они сильно отличаются. Несмотря на всякие неправильности, в целом, в английском языке есть простые правила чтения. Гласные буквы в открытом слоге, под ударением, звучат так, как они называются в алфавите.</string>
+    <string name="acorn_eiko_n_me_we_he_she_i_mi_wi_hi_i"><P> А</P> что такое открытый слог? Это такой слог, который состоит из одной гласной буквы, как например, а в слове <b>acorn [\'eiko:n]</b> (желудь). Или слог заканчивается на гласную, например, <b>me</b> (я, мне), <b>we</b> (мы), <b>he</b> (он), <b>she</b> (она). Гласная буква е называется <b>[i:]</b>, так что мы читаем эти слова <b>[mi:]</b>, <b>[wi:]</b>, <b>[hi:]</b>, <b>[ʃi:]</b>.</string>
+    <string name="go_no_ou_gou_nou"><P> Еще</P> односложные слова: <b>go</b> (идти), <b>no</b> (нет). Слог открытый, гласная о под ударением, называется она <b>[ou]</b>, мы произносим четко по правилу: <b>[gou]</b>, <b>[nou]</b>.</string>
+    <string name="take_like_home_teik_laik_houm"><P> В</P> словах типа <b>take, like, home</b> тоже один открытый слог, который заканчивается на гласную е. Произносим: <b>[teik], [laik], [houm].</b></string>
+    <string name="sfs">Закрытый слог заканчивается на согласную, в нем гласный звук как бы заперт, стеснен и произносится коротко. Следующие слова состоят из одного закрытого слога.</string>
+    <string name="cup_k_p_lock_lok">cup [kʌp] - чашка\tlock [lok] - замок</string>
+    <string name="cat_k_t_him_him">cat [kæt] - кошка\thim [him] - его, ему</string>
+    <string name="but_b_t_bed_bed">but [bʌt] - но bed [bed] - кровать</string>
+    <string name="ei_say_sei_take_teik_lake_leik_maze_meiz"><P> Итак,</P> в открытом ударном слоге буква А читается как <b>[ei]: say [sei], take [teik], lake [leik], maze [meiz].</b></string>
+    <string name="cat_k_t_hat_h_t_daddy_d_di_battery_b_t_ri"><P> В</P> закрытом ударном слоге она дает короткий звук <b>[æ]: cat [kæt], hat [hæt], daddy [\'dædi], battery [\'bætǝri].</b></string>
 
 
 </resources>
