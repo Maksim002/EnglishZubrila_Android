@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -13,7 +13,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class FirstAdaptor extends RecyclerView.Adapter<FirstViewHolder> {
     private List<Temp> temps;
 
-    public FirstAdaptor(FirsstFragment2 firsstFragment2, List<Temp> temps) {
+    public FirstAdaptor(FirstLevel firstLevel, List<Temp> temps) {
         this.temps = temps;
     }
 

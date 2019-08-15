@@ -152,6 +152,7 @@
     <string name="but_b_t_bed_bed">but [bʌt] - но bed [bed] - кровать</string>
     <string name="ei_say_sei_take_teik_lake_leik_maze_meiz"><P> Итак,</P> в открытом ударном слоге буква А читается как <b>[ei]: say [sei], take [teik], lake [leik], maze [meiz].</b></string>
     <string name="cat_k_t_hat_h_t_daddy_d_di_battery_b_t_ri"><P> В</P> закрытом ударном слоге она дает короткий звук <b>[æ]: cat [kæt], hat [hæt], daddy [\'dædi], battery [\'bætǝri].</b></string>
+    <string name="sfg">- Кстати, зачастую английский алфавит используется для различной нумерации. Например, секторы трибун на соревнованиях или разделы в учебниках зачастую нумеруются буквами английского алфавита.</string>
 
 
 </resources>

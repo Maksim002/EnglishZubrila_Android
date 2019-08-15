@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.CatalogFragmentov;
+package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet;
 
 class Temp {
     private int temp;
