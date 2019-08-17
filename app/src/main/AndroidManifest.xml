@@ -25,6 +25,7 @@
         <activity android:name=".ListOfbooks.Knigu.SherlockHolmes" />
         <activity android:name=".FirstLevel.Beginer.Transcription.Transcription" />
         <activity android:name=".FirstLevel.Beginer.ToBe.ToBe" />
+        <activity android:name=".FirstLevel.Beginer.Quastions.Questions" />
 
         <meta-data
             android:name="preloaded_fonts"

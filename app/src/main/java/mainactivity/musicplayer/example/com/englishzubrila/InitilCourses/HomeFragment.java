@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Quastions.Questions;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.ToBe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
@@ -61,6 +62,7 @@ public class HomeFragment extends Fragment implements Listener {
         beginer.add(new Product("Alphabet", Beginner.Letters0));
         beginer.add(new Product("Transcription", Beginner.Letters1));
         beginer.add(new Product("To Be", Beginner.Letters2));
+        beginer.add(new Product("Questions", Beginner.Letters3));
         return beginer;
     }
     ArrayList<Product> getElementary(){
@@ -105,6 +107,9 @@ public class HomeFragment extends Fragment implements Listener {
                     break;
                 case Letters2:
                     biginer = ToBe.class;
+                    break;
+                case Letters3:
+                    biginer = Questions.class;
                     break;
                 default:
                     biginer = null;
