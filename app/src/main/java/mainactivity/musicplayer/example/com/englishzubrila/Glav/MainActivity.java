@@ -2,6 +2,7 @@ package mainactivity.musicplayer.example.com.englishzubrila.Glav;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.Animation;
@@ -17,13 +18,22 @@ public class MainActivity extends AppCompatActivity {
 
     TextView startText;
 
+    private static int SPLAH_TAME_OUT = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, InitialFragment.class);
+                startActivity(intent);
+                finish();
+            }
+        },SPLAH_TAME_OUT);
 
         startText = findViewById(R.id.startText);
-        startText.setOnClickListener(listener);
 
         fade();
     }
@@ -32,18 +42,4 @@ public class MainActivity extends AppCompatActivity {
         animation = AnimationUtils.loadAnimation(this,R.anim.fadeout);
         startText.startAnimation(animation);
     }
-
-
-
-    View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.startText:
-                    Intent intent = new Intent(MainActivity.this, InitialFragment.class);
-                    startActivity(intent);
-                    break;
-            }
-        }
-    };
 }
