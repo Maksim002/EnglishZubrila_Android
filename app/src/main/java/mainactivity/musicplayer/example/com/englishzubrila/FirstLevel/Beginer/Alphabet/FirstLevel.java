@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -35,6 +36,7 @@ public class FirstLevel extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerViewFragment);
         recyclerView.setAdapter(new FirstAdaptor(this, getTemp()));
+        ViewCompat.setNestedScrollingEnabled(recyclerView, false);
 
     }
     List<Temp> getTemp() {

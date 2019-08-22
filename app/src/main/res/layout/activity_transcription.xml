@@ -22,7 +22,7 @@
         <TextView
             android:textColor="#560264"
             android:textStyle="bold"
-            android:textSize="45sp"
+            android:textSize="35sp"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -31,7 +31,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/tyi"
                 android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:padding="0dp"
                 android:text="@string/_1"
                 android:textColor="#000"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 android:padding="2dp"
                 android:layout_marginHorizontal="15dp"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -80,7 +80,7 @@
                 android:padding="2dp"
                 android:layout_marginHorizontal="15dp"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -103,7 +103,7 @@
                 android:padding="2dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/development_d_vel_pm_nt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -113,7 +113,7 @@
                 android:padding="2dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/tea_ti"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -123,7 +123,7 @@
                 android:padding="2dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#000"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/i_e_u_i_u_p_t_d_n_k_l_u_ai_ei_oi_au"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -135,7 +135,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/top"
                 android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/i_tree_tri_free_fri"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -156,7 +156,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/big_b_g_lip_l_p"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -166,7 +166,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/book_buk_look_l_k"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -176,7 +176,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/u_root_ru_t_boot_bu_t"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -186,7 +186,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/e_hen_hen_pen_pen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -196,7 +196,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/mother_m_computer_k_m_pju_t"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -206,7 +206,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/bird_b_d_turn_t_n"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -216,7 +216,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/door_d_more_m"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -226,7 +226,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/cat_k_t_lamp_l_mp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -236,7 +236,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/cup_k_p_but_b_t"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -246,7 +246,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/a_car_k_mark_m_k"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -256,7 +256,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/box_b_ks_dog_d_g"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -268,7 +268,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/peq2"
                 android:layout_width="match_parent"
@@ -279,7 +279,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/here_h_near_n"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -289,7 +289,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/e_fair_fe_bear_be"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -299,7 +299,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/go_g_no_n"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -309,7 +309,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/a_how_ha_now_na"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -319,7 +319,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/sure_u_tourist_tu_r_st"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -329,7 +329,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/e_make_me_k_day_de"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -339,7 +339,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/a_my_ma_bike_ba_k"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -349,7 +349,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/boy_b_toy_t"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -361,7 +361,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/qe"
                 android:layout_width="match_parent"
@@ -398,7 +398,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/h_x_hat_h_t_home_h_um"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -408,7 +408,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/m_m_make_me_k_meet_mi_t"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -418,7 +418,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/n_nose_n_uz_net_net"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -428,7 +428,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/song_s_long_l"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -438,7 +438,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/r_run_r_n_rest_rest"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -448,7 +448,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/l_leg_leg_lip_l_p"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -458,7 +458,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/w_w_n_west_west"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -468,7 +468,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/j_you_ju_music_mju_z_k"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -496,7 +496,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/one_w_n_run_r_n"
                 android:layout_width="match_parent"
@@ -505,7 +505,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/acorn_eiko_n_me_we_he_she_i_mi_wi_hi_i"
                 android:layout_width="match_parent"
@@ -514,7 +514,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/go_no_ou_gou_nou"
                 android:layout_width="match_parent"
@@ -523,7 +523,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/take_like_home_teik_laik_houm"
                 android:layout_width="match_parent"
@@ -532,7 +532,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/sfs"
                 android:layout_width="match_parent"
@@ -544,7 +544,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/cat_k_t_him_him"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -555,7 +555,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/cup_k_p_lock_lok"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -566,7 +566,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/but_b_t_bed_bed"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -574,7 +574,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/ei_say_sei_take_teik_lake_leik_maze_meiz"
                 android:layout_width="match_parent"
@@ -583,7 +583,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/cat_k_t_hat_h_t_daddy_d_di_battery_b_t_ri"
                 android:layout_width="match_parent"
@@ -613,7 +613,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/e_i_me_mi_these_i_z_meter_mi_t_see_si_delete_di_li_t"
                 android:layout_width="match_parent"
@@ -622,7 +622,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/pen_pen_letter_let_nest_nest_yellow_jelou"
                 android:layout_width="match_parent"
@@ -652,7 +652,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/i_ai_ice_ais_nice_nais_ride_raid_drive_draiv"
                 android:layout_width="match_parent"
@@ -661,7 +661,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/i_big_big_lid_lid_his_hiz_sitting_siti"
                 android:layout_width="match_parent"
@@ -691,7 +691,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/ou_go_gou_home_houm_tone_toun_alone_loun"
                 android:layout_width="match_parent"
@@ -700,7 +700,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/dog_dog_lottery_lot_ri_pot_pot_on_on"
                 android:layout_width="match_parent"
@@ -730,7 +730,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/u_ju_use_ju_z_mule_mju_l_refuse_ri_fju_z"
                 android:layout_width="match_parent"
@@ -739,7 +739,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/bus_b_s_russian_r_n_cut_k_t_nut_n_t"
                 android:layout_width="match_parent"
@@ -769,7 +769,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/y_wai_ai_by_bai_my_mai_rhyme_raim_dynamo_dain_mou"
                 android:layout_width="match_parent"
@@ -778,7 +778,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/i_hym_him_gym_im_rhythm_ri_m"
                 android:layout_width="match_parent"
@@ -808,7 +808,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/father_f_collar_kol_mother_m_famous_feim_s_minus_main_s_teac2her_ti_neighbour_neib"
                 android:layout_width="match_parent"
@@ -838,7 +838,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/wdw"
                 android:layout_width="match_parent"
@@ -850,7 +850,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/button_b_tn_season_si_zn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -861,7 +861,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/reason_ri_zn_sudden_s_dn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -878,7 +878,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/we_want_to_speak_read_and_write_in_english_do_go_get_like_laik_see_si_take_teik"
                 android:layout_width="match_parent"
@@ -887,7 +887,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/segfsg"
                 android:layout_width="match_parent"
@@ -903,7 +903,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/i_see_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -914,7 +914,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/you_see_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -925,7 +925,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/sees_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -936,7 +936,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/she_sees_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -946,7 +946,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/we_see_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -957,7 +957,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/asf"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -968,7 +968,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/they_see_a_ball"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -985,7 +985,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/_1wda"
                 android:layout_width="match_parent"
@@ -994,7 +994,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/you_ju_the_english_are_very_polite"
                 android:layout_width="match_parent"
@@ -1007,7 +1007,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/_2_he_she"
                 android:layout_width="match_parent"
@@ -1016,7 +1016,7 @@
             <TextView
                 android:textColor="#000"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic"
                 android:text="@string/it_it"
                 android:layout_width="match_parent"
@@ -1028,7 +1028,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/i_have_a_car"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1039,7 +1039,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/it_goes_fast"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1050,7 +1050,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/we_see_a_train"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1061,7 +1061,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/w"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1072,7 +1072,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/take_this_apple"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1083,7 +1083,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/it_is_nice"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1094,7 +1094,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/tim_has_a_dog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -1105,7 +1105,7 @@
                 android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
                 android:textColor="#15554F"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:text="@string/it_is_big"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

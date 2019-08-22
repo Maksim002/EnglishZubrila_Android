@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="178dp"
@@ -59,7 +59,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/_26_5_a_e_i_o_u_20_b_c_d_f_g_h_j_k_l_m_n_p_q_r_s_t_v_w_x_z_y"
                 android:textColor="@color/HriftBukov"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -69,7 +69,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/spelling"
                 android:textColor="#23F50B"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -89,7 +89,7 @@
                 android:padding="15dp"
                 android:text="@string/at_dot"
                 android:textColor="@color/HriftBukov"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -99,7 +99,7 @@
                 android:padding="15dp"
                 android:text="@string/hip"
                 android:textColor="@color/HriftBukov"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -109,7 +109,7 @@
                 android:padding="15dp"
                 android:text="@string/map"
                 android:textColor="@color/HriftBukov"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -119,7 +119,7 @@
                 android:padding="15dp"
                 android:text="@string/sfg"
                 android:textColor="@color/HriftBukov"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <android.support.v7.widget.RecyclerView
@@ -129,5 +129,5 @@
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
 
         </LinearLayout>
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </android.support.constraint.ConstraintLayout>

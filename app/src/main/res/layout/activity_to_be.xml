@@ -20,7 +20,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/to_be"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="40sp" />
+                android:textSize="35dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -28,18 +28,18 @@
                 android:padding="15dp"
                 android:text="@string/to_be_to_be_be_am_m_are_is_iz"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp"
+                android:padding="20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/to_be_rule" />
 
             <ImageView
-                android:padding="10dp"
+                android:padding="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -51,7 +51,7 @@
                 android:padding="15dp"
                 android:text="@string/be_to_let_s_write_a_few_english_verbs_to_to_tu"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:padding="8dp"
                 android:text="@string/to_cook_t_kuk"
                 android:textColor="#155CEB"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -71,7 +71,7 @@
                 android:padding="8dp"
                 android:text="@string/to_come_t_k_m"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -81,7 +81,7 @@
                 android:padding="8dp"
                 android:text="@string/to_have_t_h_v"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -91,7 +91,7 @@
                 android:padding="8dp"
                 android:text="@string/to_read_t_ri_d"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -101,7 +101,7 @@
                 android:padding="8dp"
                 android:text="@string/to_say_t_sei"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -111,7 +111,7 @@
                 android:padding="8dp"
                 android:text="@string/to_take_t_teik"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/to_want_t_wont"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/to_eat_tu_i_t"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/to_open_tu_oup_n"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -150,7 +150,7 @@
                 android:padding="15dp"
                 android:text="@string/not_not"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -159,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/go_or_not_to_go"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/eat_or_not_to_eat"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/say_or_not_to_say"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/have_or_not_to_have"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -199,7 +199,7 @@
                 android:padding="15dp"
                 android:text="@string/not_old_ould_young_j_high_hai_english_russian"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_am_not_english"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -236,7 +236,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_am_not_young"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -246,7 +246,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/you_are_not_english"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -256,7 +256,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/you_are_not_old1"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -275,7 +275,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/we_are_not_young"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -285,7 +285,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/you_are_not_old"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -295,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/they_are_not_high"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -315,7 +315,7 @@
                 android:padding="15dp"
                 android:text="@string/how_hau"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -324,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/how_are_you"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -334,7 +334,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/how_are_things"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -344,7 +344,7 @@
                 android:padding="15dp"
                 android:text="@string/how"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -353,7 +353,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_see_how_mum_cooks"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -363,7 +363,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_see_how_dad_helps_her"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -373,7 +373,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/she_sees_how_he_runs"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -383,7 +383,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/we_see_how_flowers_grow"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -395,7 +395,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/phrases"
                 android:textColor="#F0072A"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -403,7 +403,7 @@
                 android:padding="15dp"
                 android:text="@string/and_and_nd"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -412,7 +412,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/bread_and_butter_bred_nd_b_t"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -422,7 +422,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tea_and_milk_ti_nd_milk"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -432,7 +432,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sing_and_dance_si_nd_d_ns"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -442,7 +442,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/come_and_see_k_m_nd_si"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -452,7 +452,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/wait_and_see_weit_nd_si"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -462,7 +462,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/two_and_two_tu_nd_tu"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -474,7 +474,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/translation"
                 android:textColor="#F50420"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -482,7 +482,7 @@
                 android:padding="15dp"
                 android:text="@string/and_and"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -491,7 +491,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_help_mum_and_dad"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -501,7 +501,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/we_see_tim_and_ann"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -511,7 +511,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/is_big_and_she_is_little"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -521,7 +521,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_like_bread_and_butter"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -531,7 +531,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tim_likes_fish_and_chips"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -541,7 +541,7 @@
                 android:padding="15dp"
                 android:text="@string/be_am_are_is"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -550,7 +550,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/am_i_busy_yes_i_am"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -560,7 +560,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/am_i_busy_no_i_am_not"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -570,7 +570,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/is_your_cat_at_home_yes_it_is"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="8dp"
                 android:textStyle="italic" />
 
@@ -580,7 +580,7 @@
                 android:padding="15dp"
                 android:text="@string/not_to_be"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -589,7 +589,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/is_not_isn_t"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -599,7 +599,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/are_not_aren_t"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -609,7 +609,7 @@
                 android:padding="15dp"
                 android:text="@string/to_be1"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -618,7 +618,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/i_am_i_m"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -628,7 +628,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/we_are_we_re"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -638,7 +638,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/he_is_he_s"
                 android:textColor="#155CEA"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:padding="7dp"
                 android:textStyle="italic" />
 
@@ -650,7 +650,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/to_be12"
                 android:textColor="#FA0328"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -658,7 +658,7 @@
                 android:padding="15dp"
                 android:text="@string/to_be123"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -667,7 +667,7 @@
                 android:padding="15dp"
                 android:text="@string/there_is_there_are"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -676,7 +676,7 @@
                 android:padding="15dp"
                 android:text="@string/iu"
                 android:textColor="#030000"
-                android:textSize="25sp"
+                android:textSize="16sp"
                 android:textStyle="italic" />
 
             <ImageView
