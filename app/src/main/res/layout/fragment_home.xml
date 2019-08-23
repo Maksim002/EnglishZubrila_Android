@@ -3,22 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#A4BADB">
 
-    <ImageView
-        android:alpha="0.3"
-        android:scaleType="centerCrop"
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView"
-        app:srcCompat="@drawable/travel1" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
+        tools:listitem="@layout/expandable_initi_company"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints" />
