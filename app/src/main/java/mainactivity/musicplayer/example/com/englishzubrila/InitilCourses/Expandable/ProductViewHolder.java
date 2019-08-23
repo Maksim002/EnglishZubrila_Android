@@ -1,6 +1,7 @@
 package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder;
@@ -27,5 +28,4 @@ public class ProductViewHolder extends ChildViewHolder {
             }
         });
     }
-
 }

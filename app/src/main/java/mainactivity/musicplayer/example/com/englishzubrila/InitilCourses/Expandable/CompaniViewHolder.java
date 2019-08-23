@@ -14,14 +14,17 @@ import static android.view.animation.Animation.RELATIVE_TO_SELF;
 public class CompaniViewHolder extends GroupViewHolder {
     private TextView textView;
     private ImageView imageView;
+    private ImageView imageView1;
 
     public CompaniViewHolder(View itemView) {
         super(itemView);
         textView = itemView.findViewById(R.id.textViewCompany);
         imageView = itemView.findViewById(R.id.imageView4);
+        imageView1 = itemView.findViewById(R.id.imageOp);
     }
     public void bind(Company company) {
         textView.setText(company.getTitle());
+        imageView1.setImageResource(company.getImage());
     }
 
         @Override

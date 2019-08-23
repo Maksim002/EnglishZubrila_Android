@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Glav.MainActivity"
-    android:background="#8298B4">
+    android:background="#58AADF">
 
     <TextView
         android:id="@+id/textZ"
@@ -18,7 +18,7 @@
         android:layout_marginBottom="188dp"
         android:fontFamily="@font/akronim"
         android:gravity="center_horizontal"
-        android:text="English  Zubrilo"
+        android:text="English  Zubrila"
         android:textColor="#810417"
         android:textSize="60dp"
         android:textStyle="bold|italic"

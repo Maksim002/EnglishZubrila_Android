@@ -33,22 +33,24 @@ public class HomeFragment extends Fragment implements Listener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.recyclerView.getContext()));
 
+
         ArrayList<Company> companies = new ArrayList<>();
 
-        Company beginner = new Company("A0 Beginner",getBeginner());
+        Company beginner = new Company("A0 Beginner",getBeginner(),R.drawable.beginer);
         companies.add(beginner);
-        Company elementary = new Company("A1 Elementary", getElementary());
+        Company elementary = new Company("A1 Elementary", getElementary(),R.drawable.elementary);
         companies.add(elementary);
-        Company prointermediate = new Company("A2 Pro Intermediate",getIntermediate());
+        Company prointermediate = new Company("A2 Pro Intermediate",getIntermediate(),R.drawable.a);
         companies.add(prointermediate);
-        Company intermediate = new Company("B1 Intermediate", getB1Intermediate());
+        Company intermediate = new Company("B1 Intermediate", getB1Intermediate(),R.drawable.a);
         companies.add(intermediate);
-        Company upperintermediate = new Company("B2 Upper Intermediate", getUpperIntermediate());
+        Company upperintermediate = new Company("B2 Upper Intermediate", getUpperIntermediate(),R.drawable.a);
         companies.add(upperintermediate);
-        Company advanced = new Company("C1 Advanced", getC1Advanced());
+        Company advanced = new Company("C1 Advanced", getC1Advanced(),R.drawable.a);
         companies.add(advanced);
 
 
