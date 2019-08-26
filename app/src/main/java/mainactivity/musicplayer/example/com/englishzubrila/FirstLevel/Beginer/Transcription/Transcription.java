@@ -5,8 +5,12 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
@@ -20,6 +24,9 @@ public class Transcription extends AppCompatActivity {
     private ExpandableTextView expandableTextView1, expandableTextView2, expandableTextView3;
     private TextView link;
 
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+
     private ImageView bPley1,bPley2,bPley3,bPley4,bPley5,bPley6,bPley7;
     private SeekBar seekBar1, seekBar2,seekBar3,seekBar4,seekBar5,seekBar6,seekBar7;
     private MediaPlayer player1, player2,player3,player4,player5,player6,player7;
@@ -30,6 +37,14 @@ public class Transcription extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transcription);
+
+        toolbar = findViewById(R.id.toolbarTranscription);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Transcription");
 
         getExpandableTextView1();
         getExpandableTextView2();
@@ -45,6 +60,15 @@ public class Transcription extends AppCompatActivity {
         getLessonY();
         getLessonHWA();
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
     private void getExpandableTextView1() {
         expandableTextView1 = findViewById(R.id.exText1);

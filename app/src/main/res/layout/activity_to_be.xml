@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarToBe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarToBe">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -14,13 +23,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:text="@string/to_be"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="35dp" />
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -39,9 +48,9 @@
                 android:src="@drawable/to_be_rule" />
 
             <ImageView
-                android:padding="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/to_be1" />
 
@@ -55,9 +64,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_cook_t_kuk"
                 android:textColor="#155CEB"
@@ -65,9 +74,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_come_t_k_m"
                 android:textColor="#155CEA"
@@ -75,9 +84,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_have_t_h_v"
                 android:textColor="#155CEA"
@@ -85,9 +94,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_read_t_ri_d"
                 android:textColor="#155CEA"
@@ -95,9 +104,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_say_t_sei"
                 android:textColor="#155CEA"
@@ -105,9 +114,9 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
                 android:padding="8dp"
                 android:text="@string/to_take_t_teik"
                 android:textColor="#155CEA"
@@ -115,33 +124,33 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/to_want_t_wont"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/to_eat_tu_i_t"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/to_open_tu_oup_n"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -154,43 +163,43 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/go_or_not_to_go"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/eat_or_not_to_eat"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/say_or_not_to_say"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/have_or_not_to_have"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -203,111 +212,111 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:text="@string/negation_the_singular"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="35sp" />
+                android:textSize="35sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:text="@string/negation_the_singular1"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_am_not_english"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_am_not_young"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/you_are_not_english"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/you_are_not_old1"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:text="@string/the_plural"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/we_are_not_young"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/you_are_not_old"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/they_are_not_high"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:padding="20dp"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
                 android:text="@string/word"
                 android:textColor="#F80535"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -319,23 +328,23 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/how_are_you"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/how_are_things"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -348,54 +357,54 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_see_how_mum_cooks"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_see_how_dad_helps_her"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/she_sees_how_he_runs"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/we_see_how_flowers_grow"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:padding="20dp"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
                 android:text="@string/phrases"
                 android:textColor="#F0072A"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -407,74 +416,74 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/bread_and_butter_bred_nd_b_t"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/tea_and_milk_ti_nd_milk"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/sing_and_dance_si_nd_d_ns"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/come_and_see_k_m_nd_si"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/wait_and_see_weit_nd_si"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:padding="7dp"
                 android:text="@string/two_and_two_tu_nd_tu"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:padding="20dp"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
                 android:text="@string/translation"
                 android:textColor="#F50420"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -486,53 +495,53 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_help_mum_and_dad"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/we_see_tim_and_ann"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/is_big_and_she_is_little"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/i_like_bread_and_butter"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="7dp"
                 android:text="@string/tim_likes_fish_and_chips"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -545,33 +554,33 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/am_i_busy_yes_i_am"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/am_i_busy_no_i_am_not"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:layout_marginHorizontal="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:padding="8dp"
                 android:text="@string/is_your_cat_at_home_yes_it_is"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="8dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -584,23 +593,23 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
                 android:text="@string/is_not_isn_t"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
                 android:text="@string/are_not_aren_t"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -613,44 +622,44 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
                 android:text="@string/i_am_i_m"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
                 android:text="@string/we_are_we_re"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
                 android:text="@string/he_is_he_s"
                 android:textColor="#155CEA"
                 android:textSize="16sp"
-                android:padding="7dp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:padding="20dp"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
                 android:text="@string/to_be12"
                 android:textColor="#FA0328"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"

@@ -4,10 +4,14 @@ package mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.A
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -19,6 +23,9 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class FirstLevel extends AppCompatActivity {
     private RecyclerView recyclerView;
+
+    private Toolbar toolbar;
+    private ActionBar actionBar;
 
     private ImageView bPley;
     private SeekBar seekBar;
@@ -33,12 +40,30 @@ public class FirstLevel extends AppCompatActivity {
         gropeBottom();
         setPlayer();
 
+        toolbar = findViewById(R.id.toolbarAlphabet);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Alphabet");
 
         recyclerView = findViewById(R.id.recyclerViewFragment);
         recyclerView.setAdapter(new FirstAdaptor(this, getTemp()));
         ViewCompat.setNestedScrollingEnabled(recyclerView, false);
 
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     List<Temp> getTemp() {
         List<Temp> temps = new ArrayList<>();
         temps.add(new Temp(R.drawable.a));

@@ -30,7 +30,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
         <aapt:attr name="android:animation">
             <objectAnimator
                 android:name="color"
-                android:duration="3000"
+                android:duration="2000"
                 android:interpolator="@android:anim/accelerate_decelerate_interpolator"
                 android:propertyName="fillColor"
                 android:repeatCount="infinite"
@@ -59,7 +59,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
                     android:valueTo="12"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="1000"
+                    android:duration="700"
                     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
                     android:propertyName="rotation"
                     android:repeatCount="infinite"
@@ -68,7 +68,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
                     android:valueTo="160"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="1000"
+                    android:duration="700"
                     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
                     android:propertyName="translateX"
                     android:repeatCount="infinite"

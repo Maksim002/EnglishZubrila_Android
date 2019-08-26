@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:keepScreenOn="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarQuestions">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,196 +24,196 @@
             android:orientation="vertical">
 
             <TextView
-                android:textColor="#16771B"
-                android:textStyle="bold"
-                android:textSize="45sp"
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/grammar1"/>
+                android:gravity="center_horizontal"
+                android:text="@string/grammar1"
+                android:textColor="#16771B"
+                android:textSize="45sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/what_wot"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#520BC4"
+                android:textColor="#000"
                 android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
                 android:text="@string/what_is_this"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:text="@string/this_is_a_floor"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
                 android:textColor="#520BC4"
                 android:textSize="16sp"
-                android:text="@string/this_is_a_wall"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/this_is_a_floor"
                 android:textColor="#63700D"
                 android:textSize="16sp"
-                android:text="@string/this_is_a_clock"
+                android:textStyle="italic" />
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/this_is_a_wall"
+                android:textColor="#520BC4"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/this_is_a_clock"
+                android:textColor="#63700D"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:padding="9dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/room"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:src="@drawable/room" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/who"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:text="@string/who_is_this"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:text="@string/who_is_he"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:text="@string/who_is_she"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:text="@string/who_are_they"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
                 android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
                 android:textSize="16sp"
-                android:textStyle="italic"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/who_is_this"
+                android:textColor="#520BC4"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/who_is_he"
+                android:textColor="#63700D"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/who_is_she"
+                android:textColor="#520BC4"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/who_are_they"
+                android:textColor="#63700D"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
                 android:text="@string/qwe"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#520BC4"
+                android:textColor="#000"
                 android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
                 android:text="@string/who_are_you"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:text="@string/i_am_nick_i_am_nick_bulkin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
                 android:textColor="#520BC4"
                 android:textSize="16sp"
-                android:text="@string/who_is_this_boy"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/i_am_nick_i_am_nick_bulkin"
                 android:textColor="#63700D"
                 android:textSize="16sp"
-                android:text="@string/this_is_tim_baker_my_english_friend"
+                android:textStyle="italic" />
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/who_is_this_boy"
+                android:textColor="#520BC4"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/this_is_tim_baker_my_english_friend"
+                android:textColor="#63700D"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
 
         </LinearLayout>

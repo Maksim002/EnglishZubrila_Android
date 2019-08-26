@@ -1,5 +1,6 @@
 package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable;
 
+import android.graphics.Color;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ public class ProductViewHolder extends ChildViewHolder {
     }
     public void bind(final Product product){
         textView.setText(product.name);
+        textView.setShadowLayer(30, 0, 0, Color.RED);
+
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

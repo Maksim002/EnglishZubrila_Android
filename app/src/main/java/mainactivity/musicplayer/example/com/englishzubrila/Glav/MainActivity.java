@@ -15,10 +15,9 @@ import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Initial
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imageScroll;
-    private TextView textZp;
+    private ImageView imageScroll,imageZp;
 
-    private static int SPLAH_TAME_OUT = 7500;
+    private static int SPLAH_TAME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imageScroll = findViewById(R.id.scroll);
-        textZp = findViewById(R.id.textZ);
+        imageZp = findViewById(R.id.imageG);
 
         setImageScroll();
         setTextZp();
@@ -53,6 +52,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private void setTextZp(){
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale);
-        textZp.startAnimation(animation);
+        imageZp.startAnimation(animation);
     }
 }

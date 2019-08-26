@@ -5,46 +5,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarTranscription"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="MissingConstraints" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarTranscription">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <TextView
-            android:textColor="#560264"
-            android:textStyle="bold"
-            android:textSize="35sp"
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/tr"/>
-
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/tyi"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textColor="#560264"
-                android:textStyle="bold"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/pe"/>
+                android:gravity="center_horizontal"
+                android:text="@string/tr"
+                android:textColor="#560264"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tyi"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/pe"
+                android:textColor="#560264"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
 
             <at.blogc.android.views.ExpandableTextView
@@ -63,13 +70,13 @@
 
             <at.blogc.android.views.ExpandableTextView
                 android:id="@+id/exText2"
-                android:padding="2dp"
-                android:layout_marginHorizontal="15dp"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:text="@string/_2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:padding="2dp"
+                android:text="@string/_2"
+                android:textColor="#000"
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -77,517 +84,517 @@
 
             <at.blogc.android.views.ExpandableTextView
                 android:id="@+id/exText3"
-                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="15dp"
-                android:textColor="#000"
-                android:textSize="16sp"
+                android:padding="2dp"
                 android:text="@string/_3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#000"
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:textColor="#560264"
-                android:textStyle="bold"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/t01"/>
+                android:gravity="center_horizontal"
+                android:text="@string/t01"
+                android:textColor="#560264"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textStyle="italic"
-                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#000"
-                android:textSize="16sp"
+                android:padding="2dp"
                 android:text="@string/development_d_vel_pm_nt"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="2dp"
-                android:layout_marginHorizontal="20dp"
                 android:textColor="#000"
                 android:textSize="16sp"
-                android:text="@string/tea_ti"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:textStyle="italic"
-                android:padding="2dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:text="@string/i_e_u_i_u_p_t_d_n_k_l_u_ai_ei_oi_au"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/top"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/i_tree_tri_free_fri"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/big_b_g_lip_l_p"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/book_buk_look_l_k"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/u_root_ru_t_boot_bu_t"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/e_hen_hen_pen_pen"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/mother_m_computer_k_m_pju_t"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/bird_b_d_turn_t_n"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/door_d_more_m"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/cat_k_t_lamp_l_mp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/cup_k_p_but_b_t"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/a_car_k_mark_m_k"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/box_b_ks_dog_d_g"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/peq2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/here_h_near_n"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/e_fair_fe_bear_be"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/go_g_no_n"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/a_how_ha_now_na"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/sure_u_tourist_tu_r_st"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/e_make_me_k_day_de"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/a_my_ma_bike_ba_k"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/boy_b_toy_t"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/qe"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:padding="8dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/zvon"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:padding="8dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/gluh"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/h_x_hat_h_t_home_h_um"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/m_m_make_me_k_meet_mi_t"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/n_nose_n_uz_net_net"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/song_s_long_l"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/r_run_r_n_rest_rest"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/l_leg_leg_lip_l_p"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/w_w_n_west_west"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/j_you_ju_music_mju_z_k"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:padding="8dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/trans_123"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textColor="#560264"
-                android:textStyle="bold"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/pronunciation"/>
+                android:layout_marginHorizontal="20dp"
+                android:padding="2dp"
+                android:text="@string/tea_ti"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:padding="2dp"
+                android:text="@string/i_e_u_i_u_p_t_d_n_k_l_u_ai_ei_oi_au"
+                android:textColor="#000"
                 android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/one_w_n_run_r_n"
+                android:textStyle="italic" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/acorn_eiko_n_me_we_he_she_i_mi_wi_hi_i"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/top"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/go_no_ou_gou_nou"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textColor="#000"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/take_like_home_teik_laik_houm"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/sfs"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
                 android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_tree_tri_free_fri"
                 android:textColor="#15554F"
                 android:textSize="16sp"
-                android:text="@string/cat_k_t_him_him"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/big_b_g_lip_l_p"
                 android:textColor="#3C0E0B"
                 android:textSize="16sp"
-                android:text="@string/cup_k_p_lock_lok"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/book_buk_look_l_k"
                 android:textColor="#15554F"
                 android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/u_root_ru_t_boot_bu_t"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/e_hen_hen_pen_pen"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/mother_m_computer_k_m_pju_t"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/bird_b_d_turn_t_n"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/door_d_more_m"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/cat_k_t_lamp_l_mp"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/cup_k_p_but_b_t"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_car_k_mark_m_k"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/box_b_ks_dog_d_g"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/peq2"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/here_h_near_n"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/e_fair_fe_bear_be"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/go_g_no_n"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_how_ha_now_na"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/sure_u_tourist_tu_r_st"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/e_make_me_k_day_de"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_my_ma_bike_ba_k"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/boy_b_toy_t"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/qe"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zvon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gluh" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/h_x_hat_h_t_home_h_um"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/m_m_make_me_k_meet_mi_t"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/n_nose_n_uz_net_net"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/song_s_long_l"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/r_run_r_n_rest_rest"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/l_leg_leg_lip_l_p"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/w_w_n_west_west"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/j_you_ju_music_mju_z_k"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/trans_123" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/pronunciation"
+                android:textColor="#560264"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/one_w_n_run_r_n"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/acorn_eiko_n_me_we_he_she_i_mi_wi_hi_i"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/go_no_ou_gou_nou"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/take_like_home_teik_laik_houm"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/sfs"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/cat_k_t_him_him"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/cup_k_p_lock_lok"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
                 android:text="@string/but_b_t_bed_bed"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/ei_say_sei_take_teik_lake_leik_maze_meiz"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/cat_k_t_hat_h_t_daddy_d_di_battery_b_t_ri"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/cat_k_t_hat_h_t_daddy_d_di_battery_b_t_ri"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -611,22 +618,22 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/e_i_me_mi_these_i_z_meter_mi_t_see_si_delete_di_li_t"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/e_i_me_mi_these_i_z_meter_mi_t_see_si_delete_di_li_t"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/pen_pen_letter_let_nest_nest_yellow_jelou"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/pen_pen_letter_let_nest_nest_yellow_jelou"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -650,22 +657,22 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/i_ai_ice_ais_nice_nais_ride_raid_drive_draiv"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_ai_ice_ais_nice_nais_ride_raid_drive_draiv"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/i_big_big_lid_lid_his_hiz_sitting_siti"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_big_big_lid_lid_his_hiz_sitting_siti"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -689,22 +696,22 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/ou_go_gou_home_houm_tone_toun_alone_loun"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/ou_go_gou_home_houm_tone_toun_alone_loun"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/dog_dog_lottery_lot_ri_pot_pot_on_on"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/dog_dog_lottery_lot_ri_pot_pot_on_on"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -728,22 +735,22 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/u_ju_use_ju_z_mule_mju_l_refuse_ri_fju_z"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/u_ju_use_ju_z_mule_mju_l_refuse_ri_fju_z"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/bus_b_s_russian_r_n_cut_k_t_nut_n_t"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/bus_b_s_russian_r_n_cut_k_t_nut_n_t"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -767,22 +774,22 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/y_wai_ai_by_bai_my_mai_rhyme_raim_dynamo_dain_mou"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/y_wai_ai_by_bai_my_mai_rhyme_raim_dynamo_dain_mou"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/i_hym_him_gym_im_rhythm_ri_m"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_hym_him_gym_im_rhythm_ri_m"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -806,13 +813,13 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/father_f_collar_kol_mother_m_famous_feim_s_minus_main_s_teac2her_ti_neighbour_neib"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/father_f_collar_kol_mother_m_famous_feim_s_minus_main_s_teac2her_ti_neighbour_neib"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -836,289 +843,290 @@
             </LinearLayout>
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/wdw"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/button_b_tn_season_si_zn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/reason_ri_zn_sudden_s_dn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
-                android:textColor="#560264"
-                android:textStyle="bold"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/grammar"/>
+                android:gravity="center_horizontal"
+                android:text="@string/grammar"
+                android:textColor="#560264"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/we_want_to_speak_read_and_write_in_english_do_go_get_like_laik_see_si_take_teik"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
                 android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
                 android:textSize="16sp"
-                android:textStyle="italic"
-                android:text="@string/segfsg"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/i_see_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/you_see_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/sees_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/she_sees_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/we_see_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
-                android:text="@string/asf"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/they_see_a_ball"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:gravity="center_horizontal"
-                android:textColor="#560264"
-                android:textStyle="bold"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/question"/>
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/segfsg"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_see_a_ball"
+                android:textColor="#15554F"
                 android:textSize="16sp"
-                android:textStyle="italic"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/you_see_a_ball"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/sees_a_ball"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/she_sees_a_ball"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/we_see_a_ball"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/asf"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/they_see_a_ball"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/question"
+                android:textColor="#560264"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
                 android:text="@string/_1wda"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
-                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:textSize="16sp"
-                android:textStyle="italic"
                 android:text="@string/you_ju_the_english_are_very_polite"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
                 android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
                 android:textSize="16sp"
-                android:textStyle="italic"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
                 android:text="@string/_2_he_she"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
                 android:textColor="#000"
-                android:layout_marginHorizontal="20dp"
                 android:textSize="16sp"
-                android:textStyle="italic"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
                 android:text="@string/it_it"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/i_have_a_car"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/it_goes_fast"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/we_see_a_train"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/w"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
-                android:textColor="#3C0E0B"
-                android:textSize="16sp"
+                android:padding="5dp"
                 android:text="@string/take_this_apple"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
-                android:textColor="#15554F"
-                android:textSize="16sp"
-                android:text="@string/it_is_nice"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
-                android:layout_marginHorizontal="20dp"
                 android:textColor="#3C0E0B"
                 android:textSize="16sp"
-                android:text="@string/tim_has_a_dog"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:textStyle="italic"
-                android:padding="5dp"
                 android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/it_is_nice"
                 android:textColor="#15554F"
                 android:textSize="16sp"
-                android:text="@string/it_is_big"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:textStyle="italic" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_has_a_dog"
+                android:textColor="#3C0E0B"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/it_is_big"
+                android:textColor="#15554F"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:padding="15dp"
-                android:textSize="20dp"
-                android:id="@+id/link"
+                android:text="@string/http_realstudy_ru_moodle_mod_book_view_php_id_2027chapterid_2"
                 android:textColor="#3F57E9"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/http_realstudy_ru_moodle_mod_book_view_php_id_2027chapterid_2"/>
+                android:textSize="20dp" />
 
 
         </LinearLayout>

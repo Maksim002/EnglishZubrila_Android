@@ -1,5 +1,6 @@
 package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,9 +8,12 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import java.util.ArrayList;
 
@@ -27,6 +31,8 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class HomeFragment extends Fragment implements Listener {
 
     private RecyclerView recyclerView;
+    private Toolbar toolbar;
+
 
     @Nullable
     @Override
@@ -34,23 +40,30 @@ public class HomeFragment extends Fragment implements Listener {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
+        toolbar = view.findViewById(R.id.toolbar);
+        toolbar.setTitle("Gallery");
+
+
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.recyclerView.getContext()));
+
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.down_to_up);
+        recyclerView.startAnimation(animation);
 
 
         ArrayList<Company> companies = new ArrayList<>();
 
-        Company beginner = new Company("A0 Beginner",getBeginner(),R.drawable.beginer);
+        Company beginner = new Company("Beginner",getBeginner(),R.drawable.beginer);
         companies.add(beginner);
-        Company elementary = new Company("A1 Elementary", getElementary(),R.drawable.elementary);
+        Company elementary = new Company("Elementary", getElementary(),R.drawable.alementari);
         companies.add(elementary);
-        Company prointermediate = new Company("A2 Pro Intermediate",getIntermediate(),R.drawable.a);
+        Company prointermediate = new Company("Pro Intermediate",getIntermediate(),R.drawable.intermedia);
         companies.add(prointermediate);
-        Company intermediate = new Company("B1 Intermediate", getB1Intermediate(),R.drawable.a);
+        Company intermediate = new Company("Intermediate", getB1Intermediate(),R.drawable.intermediapro);
         companies.add(intermediate);
-        Company upperintermediate = new Company("B2 Upper Intermediate", getUpperIntermediate(),R.drawable.a);
+        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(),R.drawable.a);
         companies.add(upperintermediate);
-        Company advanced = new Company("C1 Advanced", getC1Advanced(),R.drawable.a);
+        Company advanced = new Company("Advanced", getC1Advanced(),R.drawable.a);
         companies.add(advanced);
 
 
@@ -59,6 +72,7 @@ public class HomeFragment extends Fragment implements Listener {
 
         return view;
     }
+
     ArrayList<Product> getBeginner(){
         ArrayList<Product> beginer = new ArrayList<>();
         beginer.add(new Product("Alphabet", Beginner.Letters0));
@@ -95,8 +109,6 @@ public class HomeFragment extends Fragment implements Listener {
         return c1advanced;
     }
 
-
-
      @Override
     public void onClikGaleri(int adapterPosition, Product product) {
             Class biginer;
@@ -127,4 +139,5 @@ public class HomeFragment extends Fragment implements Listener {
     public void onClikGaleri(int adapterPosition) {
 
     }
+
 }
