@@ -22,7 +22,7 @@
             android:text="@string/product"
             android:textColor="@color/ShriftBottom"
             android:background="@layout/linear_gradient_light_to_dark_effect"
-            android:textSize="30sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:fontFamily="@font/almendra_display"
             app:layout_constraintEnd_toEndOf="parent"

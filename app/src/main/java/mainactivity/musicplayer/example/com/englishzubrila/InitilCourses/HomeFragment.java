@@ -55,15 +55,15 @@ public class HomeFragment extends Fragment implements Listener {
 
         Company beginner = new Company("Beginner",getBeginner(),R.drawable.beginer);
         companies.add(beginner);
-        Company elementary = new Company("Elementary", getElementary(),R.drawable.alementari);
+        Company elementary = new Company("Elementary", getElementary(),R.drawable.alementary);
         companies.add(elementary);
-        Company prointermediate = new Company("Pro Intermediate",getIntermediate(),R.drawable.intermedia);
+        Company prointermediate = new Company("Pro Intermediate",getIntermediate(),R.drawable.pro_elementary);
         companies.add(prointermediate);
-        Company intermediate = new Company("Intermediate", getB1Intermediate(),R.drawable.intermediapro);
+        Company intermediate = new Company("Intermediate", getB1Intermediate(),R.drawable.intermediate);
         companies.add(intermediate);
-        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(),R.drawable.a);
+        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(),R.drawable.upper_intermediate);
         companies.add(upperintermediate);
-        Company advanced = new Company("Advanced", getC1Advanced(),R.drawable.a);
+        Company advanced = new Company("Advanced", getC1Advanced(),R.drawable.anvendit);
         companies.add(advanced);
 
 

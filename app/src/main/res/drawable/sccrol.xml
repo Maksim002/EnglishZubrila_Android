@@ -36,7 +36,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
                 android:repeatCount="infinite"
                 android:repeatMode="reverse"
                 android:valueFrom="#EB0627"
-                android:valueTo="#F5F0F0"
+                android:valueTo="#0E0101"
                 android:valueType="colorType" />
         </aapt:attr>
     </target>
@@ -59,7 +59,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
                     android:valueTo="12"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="700"
+                    android:duration="500"
                     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
                     android:propertyName="rotation"
                     android:repeatCount="infinite"
@@ -68,7 +68,7 @@ l-2 3.46c-.13 .22 -.07 .49 .12 .64 l2.11 1.65c-.04 .32 -.07 .65 -.07 .98 s.03
                     android:valueTo="160"
                     android:valueType="floatType" />
                 <objectAnimator
-                    android:duration="700"
+                    android:duration="500"
                     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
                     android:propertyName="translateX"
                     android:repeatCount="infinite"
