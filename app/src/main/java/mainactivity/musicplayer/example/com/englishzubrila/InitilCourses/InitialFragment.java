@@ -11,24 +11,21 @@ import android.view.MenuItem;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class InitialFragment  extends AppCompatActivity {
-    BottomNavigationView bottomNavigationView;
-    ViewPager viewPager;
+    private BottomNavigationView bottomNavigationView;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_fragmint);
 
-
-
         bottomNavigationView = findViewById(R.id.bottomNavigation);
+
         viewPager = findViewById(R.id.viewPager);
+
         setupViewPager();
         setupNavigationView();
-
-
     }
-
         private void setupNavigationView() {
             bottomNavigationView.setOnNavigationItemSelectedListener(
                     new BottomNavigationView.OnNavigationItemSelectedListener() {
