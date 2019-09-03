@@ -9,8 +9,6 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
-import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.HomeFragment;
-import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.NewsFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class Adaptor extends RecyclerView.Adapter<ResViewHolder> {

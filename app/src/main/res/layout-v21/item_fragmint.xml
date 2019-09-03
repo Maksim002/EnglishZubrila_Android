@@ -15,8 +15,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
+        android:background="#332B44"
         android:id="@+id/bottomNavigation"
-        app:itemTextColor="#000000"
+        app:itemTextColor="#ffff"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"

@@ -72,7 +72,7 @@ public class HomeFragment<context> extends Fragment implements Listener {
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.recyclerView.getContext()));
 
-        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.down_to_up);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.down_animations);
         recyclerView.startAnimation(animation);
     }
 
