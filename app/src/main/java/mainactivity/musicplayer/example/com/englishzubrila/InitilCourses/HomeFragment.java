@@ -42,6 +42,7 @@ public class HomeFragment<context> extends Fragment implements Listener {
         toolbar = view.findViewById(R.id.toolbar);
         toolbar.setTitle("Gallery");
 
+
         getRecyclerView(view);
         getCompanies();
 

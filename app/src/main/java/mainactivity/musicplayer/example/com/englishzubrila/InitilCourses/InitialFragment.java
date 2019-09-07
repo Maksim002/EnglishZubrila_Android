@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -14,8 +17,6 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class InitialFragment  extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
-    private ViewPager viewPager;
-    private Intent intent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,64 +24,37 @@ public class InitialFragment  extends AppCompatActivity {
         setContentView(R.layout.item_fragmint);
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        viewPager = findViewById(R.id.viewPager);
-
-        setupViewPager();
-        setupNavigationView();
+        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) bottomNavigationView.getLayoutParams();
+        layoutParams.setBehavior(new BottomNavigationBehavior());
+        loadFragment(new HomeFragment());
 
     }
-
-    private void setupNavigationView() {
-        bottomNavigationView.setOnNavigationItemSelectedListener(
-                new BottomNavigationView.OnNavigationItemSelectedListener() {
-                    @Override
-                    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                        switch (menuItem.getItemId()) {
-                            case R.id.backward:
-                                viewPager.setCurrentItem(0);
-                                return true;
-                            case R.id.further:
-                                viewPager.setCurrentItem(1);
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/u/1/folders/1AyFJdtTna0ujmlCweK1zIsCuSiezquXT"));
-                                startActivity(intent);
-                                return true;
-                        }
-                        return false;
-                    }
-                });
-    }
-
-    private void setupViewPager() {
-        ViewPegerAdaptor adaptor = new ViewPegerAdaptor(getSupportFragmentManager());
-        adaptor.addFragment(new HomeFragment());
-//        adaptor.addFragment(new NewsFragment());
-        viewPager.setAdapter(adaptor);
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int i, float v, int i1) {
-
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment;
+            Intent intent;
+            switch (item.getItemId()) {
+                case R.id.backward:
+                    fragment = new HomeFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.further:
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/u/1/folders/1AyFJdtTna0ujmlCweK1zIsCuSiezquXT"));
+                    startActivity(intent);
+                    return true;
             }
+            return false;
+        }
+    };
 
-            @Override
-            public void onPageSelected(int i) {
-                switch (i) {
-                    case 0:
-                        bottomNavigationView.setSelectedItemId(R.id.backward);
-                        break;
-                    case 1:
-                        bottomNavigationView.setSelectedItemId(R.id.further);
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/u/1/folders/1AyFJdtTna0ujmlCweK1zIsCuSiezquXT"));
-                        startActivity(intent);
-                        break;
-                }
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-            }
-        });
+    private void loadFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
     }
 }
