@@ -73,7 +73,7 @@ public class Transcription extends AppCompatActivity {
     private void getExpandableTextView1() {
         expandableTextView1 = findViewById(R.id.exText1);
 
-        expandableTextView1.setAnimationDuration(750L);
+        expandableTextView1.setAnimationDuration(5L);
         expandableTextView1.setInterpolator(new OvershootInterpolator());
 
         expandableTextView1.setExpandInterpolator(new OvershootInterpolator());
@@ -103,7 +103,7 @@ public class Transcription extends AppCompatActivity {
     private void getExpandableTextView2() {
         expandableTextView2 = findViewById(R.id.exText2);
 
-        expandableTextView2.setAnimationDuration(750L);
+        expandableTextView2.setAnimationDuration(5L);
         expandableTextView2.setInterpolator(new OvershootInterpolator());
 
         expandableTextView2.setExpandInterpolator(new OvershootInterpolator());
@@ -133,7 +133,7 @@ public class Transcription extends AppCompatActivity {
     private void getExpandableTextView3() {
         expandableTextView3 = findViewById(R.id.exText3);
 
-        expandableTextView3.setAnimationDuration(750L);
+        expandableTextView3.setAnimationDuration(5L);
         expandableTextView3.setInterpolator(new OvershootInterpolator());
 
         expandableTextView3.setExpandInterpolator(new OvershootInterpolator());
@@ -621,6 +621,17 @@ public class Transcription extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        player1.stop();
+        player2.stop();
+        player3.stop();
+        player4.stop();
+        player5.stop();
+        player7.stop();
     }
 }
 

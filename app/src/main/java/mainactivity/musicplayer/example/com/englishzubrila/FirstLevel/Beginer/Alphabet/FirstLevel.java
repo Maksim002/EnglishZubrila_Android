@@ -166,4 +166,10 @@ public class FirstLevel extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        player.stop();
+    }
 }
