@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:keepScreenOn="true">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbarQuestions"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarQuestions">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarTranscription">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,483 +23,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:text="@string/grammar1"
-                android:textColor="#16771B"
-                android:textSize="45sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/what_wot"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/what_is_this"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/this_is_a_floor"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/this_is_a_wall"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/this_is_a_clock"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="9dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/room" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/who"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_is_this"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_is_he"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_is_she"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_are_they"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/qwe"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_are_you"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/i_am_nick_i_am_nick_bulkin"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/who_is_this_boy"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/this_is_tim_baker_my_english_friend"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/this_is_tim_baker_my_english_friend"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/what_who"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/we_eat_what_we_have"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/knows_what_is_what"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/i_know_what_to_do"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/let_s_wait_and_see_who_comes_first"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/who_makes_no_mistakes_makes_nothing"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:text="@string/grammar1"
-                android:textColor="#16771B"
+                android:text="@string/articles"
+                android:textColor="#5C2034"
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/i_see_you_you_see_him_sees_her_and_go_on_me_you"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/i_see_you_ju"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/you_see_him_him"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/sees_her_h"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/she_sees_us_s"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/we_see_you_ju"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/you_see_them_em"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/they_see_me_mi"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/take_a_coin_or_a_book_give_it_to_him_to"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/i_take_a_coin_i_take_it"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/i_give_it_to_you"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/you_give_it_to_him"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/gives_it_to_her"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/she_gives_it_to_us"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/we_give_it_to_you"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/you_give_it_to_them"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/they_give_it_back_to_me"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/give_show_ou_i_show_it_to_you_you_show_it_to_him_and_so_on"
-                android:textColor="#000"
-                android:textSize="16sp"
-                android:textStyle="italic" />
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/images_articles" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:text="@string/pronunciation1"
-                android:textColor="#16771B"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:text="@string/tpo"
-                android:textColor="#16771B"
+                android:text="@string/grammar12"
+                android:textColor="#5C2034"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -518,7 +49,247 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:text="@string/p_p_b_k_b_b_n_p"
+                android:text="@string/well_now_door_coin_boy_animal_the_indefinite_article"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/sefse1"
+                android:textColor="#5C2034"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/an_one_w_n"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_name"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_street"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_town"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_country"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_job"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_bank"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_hobby"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_clerk"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/n"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/an_army_n_mi"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/an_egg_n_eg"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/an_onion_n_nj_n"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/an_aunt_n_nt"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/an_uncle_n_kl"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/article_a_an" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/unit_year_j"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_unit_ju_nit"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_union_ju_nj_n"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_youth_ju"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_year_j"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/old_red_old_red_an"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
@@ -527,10 +298,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/know_nou"
-                android:textColor="#63700D"
+                android:text="@string/it_is_an_old_town"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -538,10 +308,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/knee_ni"
-                android:textColor="#520BC4"
+                android:text="@string/i_want_a_red_apple"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -549,29 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/knock_nok"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/knife_naif"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/ph_f"
+                android:text="@string/qwdw1"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
@@ -580,10 +327,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/photograph_fout_gr_f"
-                android:textColor="#63700D"
+                android:text="@string/mum_give_me_an_apple"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -591,10 +337,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/physics_fiziks"
-                android:textColor="#520BC4"
+                android:text="@string/dad_buy_me_a_computer"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -602,48 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/telephone_telifoun"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/prophet_profit"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:orientation="horizontal">
-
-                <SeekBar
-                    android:id="@+id/seekBar1"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp" />
-
-                <ImageView
-                    android:id="@+id/bPlay1"
-                    android:layout_width="45dp"
-                    android:layout_height="50dp"
-                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
-                    tools:ignore="VectorDrawableCompat" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/w_ho_r"
+                android:text="@string/afwwfe1"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
@@ -652,10 +356,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/who_hu"
-                android:textColor="#63700D"
+                android:text="@string/seven_days_in_a_week"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -663,10 +366,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/whom_hu_m"
-                android:textColor="#520BC4"
+                android:text="@string/sixty_minutes_in_an_hour"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -674,10 +376,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/whose_hu_z"
-                android:textColor="#63700D"
+                android:text="@string/twelve_months_in_a_year"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -685,10 +386,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/whole_houl"
-                android:textColor="#520BC4"
+                android:text="@string/one_hundred_pence_in_a_pound"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -696,10 +396,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/wreck_rek"
-                android:textColor="#63700D"
+                android:text="@string/one_hundred_cents_in_a_dollar"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -707,10 +406,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/write_rait"
-                android:textColor="#520BC4"
+                android:text="@string/three_feet_in_a_yard"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -718,48 +416,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/wrist_rist"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/wrong_ro"
-                android:textColor="#520BC4"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:orientation="horizontal">
-
-                <SeekBar
-                    android:id="@+id/seekBar2"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp" />
-
-                <ImageView
-                    android:id="@+id/bPlay2"
-                    android:layout_width="45dp"
-                    android:layout_height="50dp"
-                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
-                    tools:ignore="VectorDrawableCompat" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/ow_au"
+                android:text="@string/efewfe"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
@@ -768,10 +425,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/how_hau1"
-                android:textColor="#63700D"
+                android:text="@string/give_me_a_red_apple"
+                android:textColor="#124155"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -779,10 +435,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="@string/town_taun_now_nau"
-                android:textColor="#520BC4"
+                android:text="@string/give_me_a_very_red_juicy_apple"
+                android:textColor="#571510"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
@@ -790,43 +445,332 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center_horizontal"
-                android:padding="5dp"
-                android:text="@string/cow_kau"
-                android:textColor="#63700D"
-                android:textSize="16sp"
-                android:textStyle="italic" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:orientation="horizontal">
-
-                <SeekBar
-                    android:id="@+id/seekBar3"
-                    android:layout_width="310dp"
-                    android:layout_height="50dp" />
-
-                <ImageView
-                    android:id="@+id/bPlay3"
-                    android:layout_width="45dp"
-                    android:layout_height="50dp"
-                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
-                    tools:ignore="VectorDrawableCompat" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/bowl_snow_ou_row_rau_row_rou_bow_bow_bau_bow_bou"
+                android:text="@string/rgr2"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_week_weeks"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_minute_minutes"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_year_years"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/a_child_children"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/coal_is_a_mineral_coal_coal"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/salt_so_lt"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/water_wot"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/glass_gl_s"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/fire_fai"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/dfe"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/efe"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/air"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/sand_s_nd"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="20dp"/>
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/fire_is_hot"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/sugar_is_sweet"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/gold_is_yellow"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/children_drink_milk"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/we_have_coffee_for_breakfast"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/efes"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/kindness_heals"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/people_need_freedom"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/ann_believes_in_friendship"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/we_hate_greed"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/knowledge_is_power"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/she_studies_history"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_likes_swimming"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tea"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_drink_tea"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_drink_strong_tea"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_drink_hot_strong_tea"
+                android:textColor="#571510"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_drink_very_hot_strong_tea_with_milk"
+                android:textColor="#124155"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/the"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
 
 
 

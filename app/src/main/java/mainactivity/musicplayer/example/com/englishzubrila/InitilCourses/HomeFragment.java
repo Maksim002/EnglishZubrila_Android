@@ -18,6 +18,7 @@ import android.view.animation.AnimationUtils;
 import java.util.ArrayList;
 
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Articles.Articles;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Quastions.Questions;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.ToBe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Transcription.Transcription;
@@ -29,7 +30,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expanda
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 
-public class HomeFragment<context> extends Fragment implements Listener {
+public class HomeFragment extends Fragment implements Listener {
 
     private RecyclerView recyclerView;
     private Toolbar toolbar;
@@ -83,6 +84,7 @@ public class HomeFragment<context> extends Fragment implements Listener {
         beginer.add(new Product("Transcription", Beginner.Letters1));
         beginer.add(new Product("To Be", Beginner.Letters2));
         beginer.add(new Product("Questions", Beginner.Letters3));
+        beginer.add(new Product("Articles", Beginner.Letters4));
         return beginer;
     }
 
@@ -133,6 +135,9 @@ public class HomeFragment<context> extends Fragment implements Listener {
                 break;
             case Letters3:
                 biginer = Questions.class;
+                break;
+            case Letters4:
+                biginer = Articles.class;
                 break;
             default:
                 biginer = null;

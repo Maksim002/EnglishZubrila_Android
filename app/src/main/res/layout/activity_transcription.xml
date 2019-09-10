@@ -8,7 +8,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbarTranscription"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 
     <ScrollView
@@ -379,8 +379,8 @@
                 android:layout_height="match_parent" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/zvon" />
@@ -390,8 +390,8 @@
                 android:layout_height="match_parent" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/gluh" />
@@ -485,8 +485,8 @@
                 android:layout_height="match_parent" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/trans_123" />

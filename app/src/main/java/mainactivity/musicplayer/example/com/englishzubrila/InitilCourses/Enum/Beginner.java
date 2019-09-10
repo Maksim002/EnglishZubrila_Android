@@ -4,7 +4,8 @@ public enum  Beginner {
     Letters0(0),
     Letters1(1),
     Letters2(2),
-    Letters3(3);
+    Letters3(3),
+    Letters4(3);
 
     private final int id;
 
