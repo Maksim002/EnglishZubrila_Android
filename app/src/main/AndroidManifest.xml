@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ici"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstLevel.Beginer.Articles.Articles"></activity>
+        <activity android:name=".FirstLevel.Beginer.PrularForm.PluralForm"></activity>
+        <activity android:name=".FirstLevel.Beginer.TehereIs.ThereIS" />
+        <activity android:name=".FirstLevel.Beginer.Articles.Articles" />
         <activity
             android:name=".Glav.MainActivity"
             android:launchMode="singleInstance"

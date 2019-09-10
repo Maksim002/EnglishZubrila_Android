@@ -19,7 +19,9 @@ import java.util.ArrayList;
 
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Alphabet.FirstLevel;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Articles.Articles;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.PrularForm.PluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Quastions.Questions;
+import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.TehereIs.ThereIS;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.ToBe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
@@ -85,6 +87,8 @@ public class HomeFragment extends Fragment implements Listener {
         beginer.add(new Product("To Be", Beginner.Letters2));
         beginer.add(new Product("Questions", Beginner.Letters3));
         beginer.add(new Product("Articles", Beginner.Letters4));
+        beginer.add(new Product("There Is", Beginner.Letters5));
+        beginer.add(new Product("Plural Form", Beginner.Letters6));
         return beginer;
     }
 
@@ -138,6 +142,12 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters4:
                 biginer = Articles.class;
+                break;
+            case Letters5:
+                biginer = ThereIS.class;
+                break;
+            case Letters6:
+                biginer = PluralForm.class;
                 break;
             default:
                 biginer = null;
