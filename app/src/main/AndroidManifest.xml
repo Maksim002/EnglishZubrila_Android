@@ -12,12 +12,8 @@
         android:roundIcon="@mipmap/ici"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstLevel.Beginer.PrularForm.PluralForm"></activity>
-        <activity android:name=".FirstLevel.Beginer.TehereIs.ThereIS" />
-        <activity android:name=".FirstLevel.Beginer.Articles.Articles" />
         <activity
             android:name=".Glav.MainActivity"
-            android:launchMode="singleInstance"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,27 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".InitilCourses.InitialFragment"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".FirstLevel.Beginer.Alphabet.FirstLevel"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".ListOfbooks.Knigu.Hobbit"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".ListOfbooks.Knigu.SherlockHolmes"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".FirstLevel.Beginer.Transcription.Transcription"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".FirstLevel.Beginer.ToBe.ToBe"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".FirstLevel.Beginer.Quastions.Questions"
-            android:launchMode="singleInstance" />
+        <activity android:name=".InitilCourses.InitialFragment" android:launchMode="singleInstance"/>
+
+        <activity android:name=".FirstLevel.Beginer.Alphabet.FirstLevel" />
+        <activity android:name=".FirstLevel.Beginer.Transcription.Transcription" />
+        <activity android:name=".FirstLevel.Beginer.ToBe.ToBe" />
+        <activity android:name=".FirstLevel.Beginer.Quastions.Questions" />
+        <activity android:name=".FirstLevel.Beginer.PrularForm.PluralForm"/>
+        <activity android:name=".FirstLevel.Beginer.TehereIs.ThereIS" />
+        <activity android:name=".FirstLevel.Beginer.Articles.Articles" />
 
         <meta-data
             android:name="preloaded_fonts"
