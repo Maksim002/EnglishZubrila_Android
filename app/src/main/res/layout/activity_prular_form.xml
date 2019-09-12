@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/grammar1"
+            android:textColor="#AC0B84"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/s_es_and_so_on"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_king_kings"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_queen_queens"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/an_animal_animals"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/an_apple_apples"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/sddbvg1"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/two_three_four_kings"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/five_six_seven_apples"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/s_s"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/cats_k_ts"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/socks_soks"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/myths_mi_s"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/cups_k_ps"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/cliffs_klifs"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/s_z"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/cars_k_z"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/bees_bi_z"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/doors_do_z"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/shoes_u_z"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/cows_kauz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/ribs_ribz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/gods_godz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/walls_wo_lz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/rooms_rumz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/sons_s_nz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/s_a_es_s_z_es_iz"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_glass_gl_s_glasses_gl_siz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_bush_bu_bushes_bu_iz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_match_m_matches_m_iz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_badge_b_badges_bae_iz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/y_ies"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_fly_flai_flies_flaiz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_body_bodi_bodies_bodiz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_city_siti_cities_sitiz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/an_army_mi_armies_miz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/f_fe_f_v"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_wolf_wulf_wolves_wulvz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_life_laif_lives_laivz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_knife_naif_knives_naivz"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/a_wife_waif_wives_waivz"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/man_mouse_tooth"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/xdvdee"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/man_m_n"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay1"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/men_men"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay2"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/woman_wum_n"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay3"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/women_wimin"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay4"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/child_aild"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/children_ildr_n"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/foot_fut"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/feet_fi_t"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/tooth_tu"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/teeth_ti"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/goose_gu_s"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/geese_gi_s"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/mouse_maus"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/mice_mais"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/grammar2"
+            android:textColor="#AC0B84"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/this_these_i_z"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/this_king"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/this_man"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/these_kings"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/these_men"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/this_these_here_hi"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/look_at_this_table"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/it_is_here_in_the_room"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/these_chairs_are_here_too"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/afawdf"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/that_those_ouz"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/that_post"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/that_sheep"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/those_posts"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/those_sheep"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/that_those_there"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/look_at_that_post"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/it_is_there_in_the_field"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/look_at_those_sheep"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/they_are_in_that_field_too"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/numbers" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_1_one_w_n_1stfirst_f_st"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_2_two_tu_2ndsecond_sek_nd"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_3_three_ri_3rdthird_d"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_4_four_fo_4thfourth_fo"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_5_five_faiv_5thfifth_fif"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_6_six_siks_6thsixth_siks"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_7_seven_sev_n_7thseventh_sev_n"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_8_eight_eit_8theighth_eit"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_9_nine_nain_9thninth_nain"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/_10_ten_ten_10thtenth_ten"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar5"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay5"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/the_first_man_had_a_dog_first_second_third_one_two_three_third_th_five_fifth"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_1stfirst_f_st"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_2ndsecond_sek_nd"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_3rdthird_d"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_4thfourth_fo"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_5thfifth_fif"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_6thsixth_siks"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_7th_seventh_sev_n"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_8theighth_eit"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_9thninth_nain"
+            android:textColor="#045241"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:text="@string/_10thtenth_ten"
+            android:textColor="#581903"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:ignore="UnusedAttribute" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar6"
+                android:layout_width="310dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/bPlay6"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
