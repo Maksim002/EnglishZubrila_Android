@@ -417,5 +417,6 @@ public class PluralForm extends AppCompatActivity {
         player4.stop();
         player5.stop();
         player6.stop();
+        player6.stop();
     }
 }
