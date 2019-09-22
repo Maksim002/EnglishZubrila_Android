@@ -28,7 +28,7 @@ public class WebViewB extends AppCompatActivity {
         webview.getSettings().setJavaScriptEnabled(true);
 
         Intent intent = getIntent();
-        Model property = intent.getParcelableExtra("tt");
+        Model property = intent.getParcelableExtra("Web");
         String streetName = property.getUrl();
 
         String address = streetName;

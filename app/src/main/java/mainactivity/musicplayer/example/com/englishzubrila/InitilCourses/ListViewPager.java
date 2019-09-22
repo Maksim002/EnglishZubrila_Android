@@ -3,11 +3,11 @@ package mainactivity.musicplayer.example.com.englishzubrila.InitilCourses;
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,11 +29,15 @@ public class ListViewPager extends Fragment implements Listener {
     private Integer[] colors = null;
     private ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     private List<Model> list;
+    private Toolbar toolbar;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_list_view_pager, container, false);
+
+        toolbar = view.findViewById(R.id.toolbar);
+        toolbar.setTitle("Books");
 
 
         viewPager = view.findViewById(R.id.viewPager);
@@ -44,7 +48,7 @@ public class ListViewPager extends Fragment implements Listener {
 
         private void getCompanies(){
             list = new ArrayList<>();
-            list.add(new Model(R.drawable.r,"Brochore",R.string.to_be_to_be_be_am_m_are_is_iz,"https://drive.google.com/open?id=1SWcocqAqJ_qa9xqLBBe5RloLW7YyoR0G"));
+            list.add(new Model(R.drawable.kilers,"Эрнест Хэмингуэй. Киллеры",R.string.kilers,"https://drive.google.com/open?id=1SWcocqAqJ_qa9xqLBBe5RloLW7YyoR0G"));
             list.add(new Model(R.drawable.b,"Stec",R.string.to_be_to_be_be_am_m_are_is_iz,"https://drive.google.com/open?id=1jFbidxKvyUHpfrApgqT1XqXlEmVq7eYj"));
             list.add(new Model(R.drawable.v,"hmara",R.string.to_be_to_be_be_am_m_are_is_iz," https://drive.google.com/drive/u/0/folders/1qqMtGlwX2s515N4WjqwTIL_9aYhSWCf9"));
             list.add(new Model(R.drawable.c,"clara",R.string.to_be_to_be_be_am_m_are_is_iz,"https://drive.google.com/open?id=1SWcocqAqJ_qa9xqLBBe5RloLW7YyoR0G"));
@@ -97,7 +101,7 @@ public class ListViewPager extends Fragment implements Listener {
     @Override
     public void onClikGaleri(Model model) {
         Intent intent = new Intent(getContext(), WebViewB.class);
-        intent.putExtra("tt", model);
+        intent.putExtra("Web", model);
         startActivity(intent);
     }
 }
