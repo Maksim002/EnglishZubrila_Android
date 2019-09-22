@@ -25,6 +25,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Te
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.ToBe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.FirstLevel.Beginer.Transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.Glav.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.ContenetListViewPager.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Enum.Beginner;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Company;
 import mainactivity.musicplayer.example.com.englishzubrila.InitilCourses.Expandable.Product;
@@ -160,7 +161,7 @@ public class HomeFragment extends Fragment implements Listener {
     }
 
     @Override
-    public void onClikGaleri(int adapterPosition) {
+    public void onClikGaleri(Model model) {
 
     }
 }

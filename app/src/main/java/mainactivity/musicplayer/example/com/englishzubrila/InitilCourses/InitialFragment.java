@@ -44,8 +44,6 @@ public class InitialFragment  extends AppCompatActivity {
                                 return true;
                             case R.id.further:
                                 viewPager.setCurrentItem(1);
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/u/1/folders/1AyFJdtTna0ujmlCweK1zIsCuSiezquXT"));
-                                startActivity(intent);
                                 return true;
                         }
                         return false;
@@ -56,6 +54,7 @@ public class InitialFragment  extends AppCompatActivity {
     private void setupViewPager(){
         ViewPegerAdaptor adaptor = new ViewPegerAdaptor(getSupportFragmentManager());
         adaptor.addFragment(new HomeFragment());
+        adaptor.addFragment(new ListViewPager());
         viewPager.setAdapter(adaptor);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -68,8 +67,7 @@ public class InitialFragment  extends AppCompatActivity {
                         bottomNavigationView.setSelectedItemId(R.id.backward);
                         break;
                     case 1:
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/u/1/folders/1AyFJdtTna0ujmlCweK1zIsCuSiezquXT"));
-                        startActivity(intent);
+                        bottomNavigationView.setSelectedItemId(R.id.further);
                         break;
                 }
 

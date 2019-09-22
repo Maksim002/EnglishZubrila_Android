@@ -41,10 +41,13 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         },SPLAH_TAME_OUT);
+
+
     }
     private void setTextZp(){
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.down_to_up);
         imageZp.startAnimation(animation);
+
 
         Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale);
         animation1.setStartOffset(1000);

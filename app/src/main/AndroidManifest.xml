@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:noHistory="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,8 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Glav.MainActivity"
-            android:noHistory="true">
+            android:name=".Glav.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InitilCourses.InitialFragment" android:launchMode="singleInstance"/>
+        <activity android:name=".InitilCourses.InitialFragment"
+            android:launchMode="singleTask" />
 
         <activity android:name=".FirstLevel.Beginer.Alphabet.FirstLevel" />
         <activity android:name=".FirstLevel.Beginer.Transcription.Transcription" />
@@ -31,6 +32,7 @@
         <activity android:name=".FirstLevel.Beginer.PrularForm.PluralForm"/>
         <activity android:name=".FirstLevel.Beginer.TehereIs.ThereIS" />
         <activity android:name=".FirstLevel.Beginer.Articles.Articles" />
+        <activity android:name=".InitilCourses.WebViewB" />
 
         <meta-data
             android:name="preloaded_fonts"
