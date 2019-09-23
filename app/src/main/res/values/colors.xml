@@ -13,9 +13,15 @@
     <color name="Dizanelist">#D6D3D3</color>
 
 
-    <color name="color1">#1D1DA0</color>
-    <color name="color2">#5C480E</color>
-    <color name="color3">#401D7E</color>
-    <color name="color4">#9C27B0</color>
+    <color name="color14">#2B1658</color>
+    <color name="color23">#5C480E</color>
+    <color name="color32">#401D7E</color>
+    <color name="color41">#9C27B0</color>
+    <color name="color42">#8D832B</color>
+    <color name="color43">#4CAF50</color>
+    <color name="color44">#692E2A</color>
+    <color name="color45">#2F968C</color>
+    <color name="color46">#525726</color>
+    <color name="color47">#CF43E7</color>
 
 </resources>

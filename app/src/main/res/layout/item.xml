@@ -15,15 +15,17 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#B4B4C7">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="240dp"
                 android:src="@drawable/a" />
 
             <TextView
+                android:textStyle="bold"
                 android:textColor="#262626"
                 android:layout_below="@id/imageView"
                 android:layout_marginTop="10dp"
@@ -35,6 +37,8 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:textColor="#000"
+                android:textStyle="italic"
                 android:id="@+id/desc"
                 android:layout_below="@id/title"
                 android:layout_marginTop="3dp"
