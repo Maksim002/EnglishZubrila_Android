@@ -27,7 +27,7 @@ public class ProductViewHolder extends ChildViewHolder {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onClikGaleri(getAdapterPosition(),product);
+                listener.onClikGaleri(getAdapterPosition(), product);
             }
         });
     }
