@@ -2,17 +2,23 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAlphabet2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarTranscription">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAlphabet2">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,9 +35,9 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_gravity="center_horizontal"
                 android:layout_width="300dp"
                 android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/images_articles" />
@@ -73,10 +79,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_name"
                 android:textColor="#571510"
@@ -84,10 +90,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_street"
                 android:textColor="#124155"
@@ -95,10 +101,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_town"
                 android:textColor="#571510"
@@ -106,10 +112,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_country"
                 android:textColor="#124155"
@@ -117,10 +123,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_job"
                 android:textColor="#571510"
@@ -128,10 +134,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_bank"
                 android:textColor="#124155"
@@ -139,10 +145,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_hobby"
                 android:textColor="#571510"
@@ -150,10 +156,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_clerk"
                 android:textColor="#124155"
@@ -170,10 +176,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/an_army_n_mi"
                 android:textColor="#571510"
@@ -181,10 +187,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/an_egg_n_eg"
                 android:textColor="#124155"
@@ -192,10 +198,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/an_onion_n_nj_n"
                 android:textColor="#571510"
@@ -203,10 +209,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/an_aunt_n_nt"
                 android:textColor="#124155"
@@ -214,10 +220,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/an_uncle_n_kl"
                 android:textColor="#571510"
@@ -225,9 +231,9 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:layout_gravity="center_horizontal"
                 android:layout_width="350dp"
                 android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/article_a_an" />
@@ -242,10 +248,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_unit_ju_nit"
                 android:textColor="#124155"
@@ -253,10 +259,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_union_ju_nj_n"
                 android:textColor="#571510"
@@ -264,10 +270,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_youth_ju"
                 android:textColor="#124155"
@@ -275,10 +281,10 @@
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:padding="5dp"
                 android:text="@string/a_year_j"
                 android:textColor="#571510"
@@ -581,7 +587,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="50dp"/>
+                android:layout_height="50dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -772,9 +778,9 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:layout_gravity="center_horizontal"
                 android:layout_width="350dp"
                 android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
                 android:padding="8dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/mnojh" />
@@ -1056,99 +1062,99 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/visit_vizit"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/need_ni_d"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/bee_bi"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/part_p_t"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/green_gri_n"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/blue_blu"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/black_bl_k"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/cloud_klaud"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <TextView
-                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/sky_skai"
                 android:textColor="#000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
 
             <ImageView
-                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="420dp"
+                android:layout_gravity="center_horizontal"
                 android:scaleType="fitXY"
                 android:src="@drawable/wzn_001" />
 

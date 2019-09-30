@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Glav.MainActivity"
+            android:name=".glavList.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,25 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InitilCourses.InitialFragment"
+        <activity android:name=".initiFragment.InitialFragment"
             android:launchMode="singleTop" />
 
-        <activity android:name=".FirstLevel.Beginer.Alphabet.FirstLevel"
+        <activity android:name=".corses.alphabet.FirstLevel"
             android:launchMode="singleTop"/>
 
-        <activity android:name=".FirstLevel.Beginer.Transcription.Transcription"
+        <activity android:name=".corses.transcription.Transcription"
             android:launchMode="singleTop"/>
-        <activity android:name=".FirstLevel.Beginer.ToBe.ToBe"
+        <activity android:name=".corses.toBe.ToBe"
             android:launchMode="singleTop"/>
-        <activity android:name=".FirstLevel.Beginer.Quastions.Questions"
+        <activity android:name=".corses.quastions.Questions"
             android:launchMode="singleTop"/>
-        <activity android:name=".FirstLevel.Beginer.PrularForm.PluralForm"
+        <activity android:name=".corses.prularFrom.PluralForm"
             android:launchMode="singleTop"/>
-        <activity android:name=".FirstLevel.Beginer.TehereIs.ThereIS"
+        <activity android:name=".corses.teherels.ThereIS"
             android:launchMode="singleTop"/>
-        <activity android:name=".FirstLevel.Beginer.Articles.Articles"
+        <activity android:name=".corses.articles.Articles"
             android:launchMode="singleTop"/>
-        <activity android:name=".InitilCourses.WebViewB"
+        <activity android:name=".initiFragment.WebViewB"
             android:launchMode="singleTop"/>
 
         <meta-data
