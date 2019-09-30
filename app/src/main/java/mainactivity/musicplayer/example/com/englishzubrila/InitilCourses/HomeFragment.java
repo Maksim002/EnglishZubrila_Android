@@ -36,15 +36,11 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class HomeFragment extends Fragment implements Listener {
 
     private RecyclerView recyclerView;
-    private Toolbar toolbar;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-
-        toolbar = view.findViewById(R.id.toolbar);
-        toolbar.setTitle("Gallery");
 
 
         getRecyclerView(view);

@@ -9,6 +9,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 
@@ -17,11 +18,15 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class InitialFragment  extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private ViewPager viewPager;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_fragmint);
+
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Gallery");
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         viewPager = findViewById(R.id.frame_container);
