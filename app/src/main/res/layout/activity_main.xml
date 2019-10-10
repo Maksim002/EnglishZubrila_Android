@@ -1,113 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".glavList.MainActivity"
+    android:orientation="vertical"
     android:background="#332B44">
 
-    <TextView
-        android:id="@+id/tView"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/akronim"
-        android:gravity="center_horizontal"
-        android:text="@string/english_zubrila"
-        android:textColor="#B2D2FF"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
-        tools:ignore="MissingConstraints" />
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center">
 
-    <ImageView
-        android:id="@+id/imageG"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225"
-        app:srcCompat="@drawable/kniga" />
+        <TextView
+            android:id="@+id/textE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coiny"
+            android:text="E"
+            android:textColor="#FCF9F9"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageS"
-        android:layout_width="187dp"
-        android:layout_height="216dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835"
-        app:srcCompat="@drawable/piro" />
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="N"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
 
-    <TextView
-        android:id="@+id/start"
-        android:layout_width="182dp"
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="G"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
+
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="L"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
+
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="I"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
+
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="S"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
+
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:id="@+id/textH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:text="H"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#FCF9F9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/akronim"
-        android:text="@string/we_are_with_you"
-        android:textColor="#B2D2FF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859"
-        tools:ignore="MissingConstraints" />
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
 
-    <TextView
-        android:id="@+id/start1"
-        android:layout_width="182dp"
+        <ImageView
+            android:fontFamily="@font/coiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textColor="#FCF9F9"
+            android:src="@drawable/pero"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/akronim"
-        android:text="@string/welcome"
-        android:textColor="#B2D2FF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886"
-        tools:ignore="MissingConstraints" />
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
 
+        <TextView
+            android:fontFamily="@font/coiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="English Zubrila"
+            android:textColor="#0A0000"
+            android:src="@drawable/pero"
+            android:layout_marginRight="20dp"
+            />
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
