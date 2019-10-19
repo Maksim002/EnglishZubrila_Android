@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.expandable;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,9 @@ import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.glavList.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Company;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Product;
+import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompaniViewHolder, ProductViewHolder> {

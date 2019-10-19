@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CECED8">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         android:clipToPadding="false"
         android:foregroundGravity="center"
         android:overScrollMode="never"
@@ -18,4 +19,40 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#CECED8">
+
+        <ImageView
+            android:id="@+id/imageListLeft"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/double_left" />
+        <ImageView
+            android:id="@+id/imageLeft"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/double_left"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:id="@+id/imageRate"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/double_right"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/imageListRate"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/double_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

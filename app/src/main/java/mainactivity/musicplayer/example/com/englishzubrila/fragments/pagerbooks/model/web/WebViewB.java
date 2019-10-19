@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.web;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class WebViewB extends AppCompatActivity {

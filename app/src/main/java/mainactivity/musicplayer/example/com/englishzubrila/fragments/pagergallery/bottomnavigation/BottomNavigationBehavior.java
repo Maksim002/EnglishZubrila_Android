@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.bottomnavigation;
 
 import android.content.Context;
 import android.support.design.widget.BottomNavigationView;

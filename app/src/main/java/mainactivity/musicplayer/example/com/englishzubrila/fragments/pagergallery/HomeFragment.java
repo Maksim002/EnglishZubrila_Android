@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery;
 
 
 import android.content.Intent;
@@ -23,12 +23,12 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.quastions.Ques
 import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.ThereIS;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.toBe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.transcription.Transcription;
-import mainactivity.musicplayer.example.com.englishzubrila.glavList.Listener;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager.Model;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contenerEnum.Beginner;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable.Company;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable.Product;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable.ProductAdapter;
+import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.enumlist.Beginner;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Company;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Product;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.expandable.ProductAdapter;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 

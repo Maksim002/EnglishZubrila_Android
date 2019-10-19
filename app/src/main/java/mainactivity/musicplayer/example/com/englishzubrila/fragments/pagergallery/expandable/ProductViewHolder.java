@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.expandable;
 
 import android.graphics.Color;
 import android.view.View;
@@ -6,7 +6,8 @@ import android.widget.TextView;
 
 import com.thoughtbot.expandablerecyclerview.viewholders.ChildViewHolder;
 
-import mainactivity.musicplayer.example.com.englishzubrila.glavList.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Product;
+import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class ProductViewHolder extends ChildViewHolder {

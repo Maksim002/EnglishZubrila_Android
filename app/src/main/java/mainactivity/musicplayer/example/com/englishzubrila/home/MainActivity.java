@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.glavList;
+package mainactivity.musicplayer.example.com.englishzubrila.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,16 +6,15 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.InitialFragment;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.InitialFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textE,textN, textG, textL, textI,textS, textH;
 
-    private static int SPLAH_TAME_OUT = 3000;
+    private static int SPLAH_TAME_OUT = 860;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

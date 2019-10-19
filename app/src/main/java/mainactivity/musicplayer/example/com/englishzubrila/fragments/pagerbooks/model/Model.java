@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

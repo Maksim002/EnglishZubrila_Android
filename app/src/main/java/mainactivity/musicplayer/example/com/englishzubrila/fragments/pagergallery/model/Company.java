@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model;
 
 import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 

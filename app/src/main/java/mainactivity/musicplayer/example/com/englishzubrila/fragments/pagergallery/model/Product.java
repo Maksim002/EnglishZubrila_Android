@@ -1,9 +1,9 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contenerEnum.Beginner;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.enumlist.Beginner;
 
 public class Product implements Parcelable {
     public final String name;

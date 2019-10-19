@@ -1,41 +1,39 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks;
 
 import android.animation.ArgbEvaluator;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.glavList.Listener;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager.Adaptor;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager.Model;
-import mainactivity.musicplayer.example.com.englishzubrila.initiFragment.expandable.Product;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.adapter.Adapter;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.adapter.animpager.ZoomOutTransformation;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.web.WebViewB;
+import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.model.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 
 public class ListViewPager extends Fragment implements Listener {
 
     private ViewPager viewPager;
-    private Adaptor adaptor;
+    private Adapter adapter;
     private Integer[] colors = null;
     private ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     private List<Model> list;
 
-    private ImageView imageView2,imageView3,imageView4,imageView5;
+    private ImageView imageRate,imageRate1,imageLeft1,imageLeft;
 
     @Nullable
     @Override
@@ -44,17 +42,48 @@ public class ListViewPager extends Fragment implements Listener {
 
         viewPager = view.findViewById(R.id.viewPager);
 
-        imageView2 = view.findViewById(R.id.imageView2);
-        imageView3 = view.findViewById(R.id.imageView3);
-        imageView4 = view.findViewById(R.id.imageView4);
-        imageView5 = view.findViewById(R.id.imageView5);
+        imageLeft = view.findViewById(R.id.imageLeft);
+        imageRate = view.findViewById(R.id.imageRate);
+        imageLeft1 = view.findViewById(R.id.imageListLeft);
+        imageRate1 = view.findViewById(R.id.imageListRate);
+
+        imageRate1.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_rate));
+        imageRate.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_rate));
+        imageLeft1.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_left));
+        imageLeft.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_left));
+
+        imageRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (viewPager.getCurrentItem() == adapter.getCount() - 1){
+                } else viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+            }
+        });
+        imageRate1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (viewPager.getCurrentItem() == adapter.getCount() - 1){
+                } else viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+            }
+        });
+        imageLeft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (viewPager.getCurrentItem() == adapter.getCount() + 1){
+                } else viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+            }
+        });
+        imageLeft1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (viewPager.getCurrentItem() == adapter.getCount() + 1){
+                } else viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+            }
+        });
 
         getCompanies();
         return view;
     }
-
-
-
     private void getCompanies(){
             list = new ArrayList<>();
             list.add(new Model(R.drawable.kilers,"Эрнест Хэмингуэй. Киллеры",R.string.kilers,"https://drive.google.com/open?id=1SWcocqAqJ_qa9xqLBBe5RloLW7YyoR0G"));
@@ -69,57 +98,40 @@ public class ListViewPager extends Fragment implements Listener {
             list.add(new Model(R.drawable.walliam,"Уильям Сомерсет Моэм Театр William Somerset Maugham Theatre",R.string.somerset,"https://drive.google.com/open?id=1w_MjrS6OtRw0Hg18XSLIuyRz8AvS3gmP"));
             list.add(new Model(R.drawable.zpage,"Robinson Crusoe Written Anew for Children by James Baldwin",R.string.James,"https://drive.google.com/open?id=1Tvw134ijGeDJuJTP0FkUlcIZWD9tFK1f"));
 
-            adaptor = new Adaptor(list,getContext(),this);
+            adapter = new Adapter(list,getContext(),this);
+
+            viewPager.setAdapter(adapter);
+            viewPager.setPadding(30, 0, 30, 0);
+
+            ZoomOutTransformation zoomOutTransformation = new ZoomOutTransformation();
+            viewPager.setPageTransformer(true, zoomOutTransformation);
 
 
-            viewPager.setAdapter(adaptor);
-            viewPager.setPadding(50, 0, 50, 0);
-
-            Integer[] colors_temp = {
+        Integer[] colors_temp = {
                     getResources().getColor(R.color.color14),
-                    getResources().getColor(R.color.color23),
-                    getResources().getColor(R.color.color32),
-                    getResources().getColor(R.color.color41),
-                    getResources().getColor(R.color.color42),
-                    getResources().getColor(R.color.color43),
-                    getResources().getColor(R.color.color44),
-                    getResources().getColor(R.color.color45),
-                    getResources().getColor(R.color.color46),
-                    getResources().getColor(R.color.color47),
             };
-
             colors = colors_temp;
 
             viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override
                 public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                    if (position < (adaptor.getCount() - 1) && position < (colors.length - 1)){
+                    if (position < (adapter.getCount() - 1) && position < (colors.length - 1)){
                         viewPager.setBackgroundColor((Integer) argbEvaluator.evaluate(positionOffset, colors[position],colors[position + 1]));
                     }else {
                         viewPager.setBackgroundColor(colors[colors.length - 1]);
                     }
-
                 }
-
                 @Override
                 public void onPageSelected(int position) {
-
                 }
-
                 @Override
                 public void onPageScrollStateChanged(int state) {
-
                 }
             });
         }
-
-
-
     @Override
     public void onClikGaleri(int adapterPosition, Product product) {
-
     }
-
     @Override
     public void onClikGaleri(Model model) {
         Intent intent = new Intent(getContext(), WebViewB.class);

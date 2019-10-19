@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".glavList.MainActivity"
+            android:name=".home.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".initiFragment.InitialFragment"
+        <activity android:name=".fragments.pagergallery.InitialFragment"
             android:launchMode="singleTop" />
 
         <activity android:name=".corses.alphabet.FirstLevel"
@@ -40,7 +40,7 @@
             android:launchMode="singleTop"/>
         <activity android:name=".corses.articles.Articles"
             android:launchMode="singleTop"/>
-        <activity android:name=".initiFragment.WebViewB"
+        <activity android:name=".fragments.pagerbooks.model.web.WebViewB"
             android:launchMode="singleTop"/>
 
         <meta-data

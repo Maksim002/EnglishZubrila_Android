@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.initiFragment.contanerListViewPager;
+package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,17 +12,18 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.glavList.Listener;
+import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class Adaptor extends PagerAdapter {
+public class Adapter extends PagerAdapter {
 
     private List<Model> list;
     private LayoutInflater layoutInflater;
     private Context context;
     private Listener listener;
 
-    public Adaptor(List<Model> list, Context context, Listener listener) {
+    public Adapter(List<Model> list, Context context, Listener listener) {
         this.list = list;
         this.context = context;
         this.listener = listener;
