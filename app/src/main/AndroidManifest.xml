@@ -30,11 +30,11 @@
 
         <activity android:name=".corses.transcription.Transcription"
             android:launchMode="singleTop"/>
-        <activity android:name=".corses.toBe.ToBe"
+        <activity android:name=".corses.tobe.ToBe"
             android:launchMode="singleTop"/>
         <activity android:name=".corses.quastions.Questions"
             android:launchMode="singleTop"/>
-        <activity android:name=".corses.prularFrom.PluralForm"
+        <activity android:name=".corses.prularfrom.PluralForm"
             android:launchMode="singleTop"/>
         <activity android:name=".corses.teherels.ThereIS"
             android:launchMode="singleTop"/>
@@ -42,6 +42,7 @@
             android:launchMode="singleTop"/>
         <activity android:name=".fragments.pagerbooks.model.web.WebViewB"
             android:launchMode="singleTop"/>
+        <activity android:name=".corses.simple.PresentSimple" />
 
         <meta-data
             android:name="preloaded_fonts"

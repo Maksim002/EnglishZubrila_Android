@@ -1,11 +1,13 @@
 package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -18,10 +20,11 @@ import java.util.ArrayList;
 
 import mainactivity.musicplayer.example.com.englishzubrila.corses.alphabet.FirstLevel;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Articles;
-import mainactivity.musicplayer.example.com.englishzubrila.corses.prularFrom.PluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.PluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.quastions.Questions;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.simple.PresentSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.ThereIS;
-import mainactivity.musicplayer.example.com.englishzubrila.corses.toBe.ToBe;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.tobe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
@@ -35,16 +38,21 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 public class HomeFragment extends Fragment implements Listener {
 
     private RecyclerView recyclerView;
+    private AlertDialog.Builder ad;
+    private Context context;
+
+    private String title = "Выбор есть всегда";
+    private String message = "Выбери пищу";
+    private String button1String = "Вкусная пища";
+    private String button2String = "Здоровая пища";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         getRecyclerView(view);
         getCompanies();
-
         return view;
     }
 
@@ -63,11 +71,9 @@ public class HomeFragment extends Fragment implements Listener {
         Company advanced = new Company("Advanced", getC1Advanced(), R.drawable.advan);
         companies.add(advanced);
 
-
         ProductAdapter adapter = new ProductAdapter(companies, this);
         recyclerView.setAdapter(adapter);
     }
-
     private void getRecyclerView(View view){
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.recyclerView.getContext()));
@@ -75,7 +81,6 @@ public class HomeFragment extends Fragment implements Listener {
         Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.down_animations);
         recyclerView.startAnimation(animation);
     }
-
     ArrayList<Product> getBeginner() {
         ArrayList<Product> beginer = new ArrayList<>();
         beginer.add(new Product("Alphabet", Beginner.Letters0));
@@ -87,27 +92,23 @@ public class HomeFragment extends Fragment implements Listener {
         beginer.add(new Product("Plural Form", Beginner.Letters6));
         return beginer;
     }
-
     ArrayList<Product> getElementary() {
         ArrayList<Product> elementary = new ArrayList<>();
-        elementary.add(new Product("Is empty", Beginner.Letters0));
+        elementary.add(new Product("Is empty", Beginner.Letters7));
         elementary.add(new Product("Is empty", Beginner.Letters0));
         elementary.add(new Product("Is empty", Beginner.Letters0));
         return elementary;
     }
-
     ArrayList<Product> getIntermediate() {
         ArrayList<Product> intermediate = new ArrayList<>();
         intermediate.add(new Product("Is empty", Beginner.Letters0));
         return intermediate;
     }
-
     ArrayList<Product> getB1Intermediate() {
         ArrayList<Product> b1intermediate = new ArrayList<>();
         b1intermediate.add(new Product("Is empty", Beginner.Letters0));
         return b1intermediate;
     }
-
     ArrayList<Product> getUpperIntermediate() {
         ArrayList<Product> upperintermediate = new ArrayList<>();
         upperintermediate.add(new Product("Is empty", Beginner.Letters0));
@@ -119,7 +120,6 @@ public class HomeFragment extends Fragment implements Listener {
         c1advanced.add(new Product("Is empty", Beginner.Letters0));
         return c1advanced;
     }
-
     @Override
     public void onClikGaleri(int adapterPosition, Product product) {
         Class biginer;
@@ -145,14 +145,15 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters6:
                 biginer = PluralForm.class;
                 break;
+            case Letters7:
+                biginer = PresentSimple.class;
+                break;
             default:
                 biginer = null;
                 break;
         }
-        if (biginer != null) {
-            Intent intent1 = new Intent(this.getActivity(), biginer);
-            startActivity(intent1);
-        }
+        Intent intent1 = new Intent(this.getActivity(), biginer);
+        startActivity(intent1);
     }
 
     @Override

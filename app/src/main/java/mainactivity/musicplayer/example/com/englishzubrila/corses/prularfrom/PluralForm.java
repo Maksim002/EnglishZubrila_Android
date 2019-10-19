@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.corses.prularFrom;
+package mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom;
 
 import android.media.MediaPlayer;
 import android.os.Handler;

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.corses.toBe;
+package mainactivity.musicplayer.example.com.englishzubrila.corses.tobe;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
