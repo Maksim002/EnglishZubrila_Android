@@ -20,13 +20,21 @@ import android.view.animation.AnimationUtils;
 import java.util.ArrayList;
 
 import mainactivity.musicplayer.example.com.englishzubrila.corses.alphabet.FirstLevel;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.alphabet.test.TestAlphabet;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Articles;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.PluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.test.TestPluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.quastions.Questions;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.quastions.test.TestQuestions;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.simple.PresentSimple;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.simple.test.TestPresentSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.ThereIS;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.test.TestTherelS;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.tobe.ToBe;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.tobe.test.TestToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.transcription.Transcription;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.transcription.test.TestTranscription;
 import mainactivity.musicplayer.example.com.englishzubrila.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagerbooks.model.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergallery.enumlist.Beginner;
@@ -43,11 +51,10 @@ public class HomeFragment extends Fragment implements Listener {
     private Context context;
     private View v;
     private Product product;
-
-    private String title = "Выбор есть всегда";
-    private String message = "Выбери пищу";
-    private String button1String = "Вкусная пища";
-    private String button2String = "Здоровая пища";
+    private String title = "Пройди обучение или проверь себя тестированием";
+    private String message = "И так, Ваш выбор?";
+    private String button1String = "Тесты";
+    private String button2String = "Курс";
 
     @Nullable
     @Override
@@ -60,7 +67,6 @@ public class HomeFragment extends Fragment implements Listener {
 
         return view;
     }
-
     private void getCompanies(){
         ArrayList<Company> companies = new ArrayList<>();
         Company beginner = new Company("Beginner", getBeginner(), R.drawable.begin);
@@ -132,20 +138,56 @@ public class HomeFragment extends Fragment implements Listener {
     }
     public void onClick(final Product product) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setTitle("Важное сообщение!")
-                    .setMessage("Покормите кота!")
+            builder.setTitle(title)
+                    .setMessage(message)
                     .setCancelable(false)
-                    .setNegativeButton("ОК, иду на кухню",
-                            new DialogInterface.OnClickListener() {
+                    .setNegativeButton(button2String, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
 
                                     openActivity(product);
                                     dialog.cancel();
                                 }
                             });
+            builder.setPositiveButton(button1String, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int arg1) {
+                      openTest(product);
+            }
+        });
             AlertDialog alert = builder.create();
             alert.show();
         }
+
+    private void openTest(Product product){
+        Class b ;
+        switch (product.getBeginner()){
+            case Letters0:
+                b = TestAlphabet.class;
+                break;
+            case Letters1:
+                b = TestTranscription.class;
+                break;
+            case Letters2:
+                b = TestToBe.class;
+                break;
+            case Letters3:
+                b = TestQuestions.class;
+                break;
+            case Letters4:
+                b = TestArticles.class;
+                break;
+            case Letters5:
+                b = TestTherelS.class;
+                break;
+            case Letters6:
+                b = TestPluralForm.class;
+                break;
+            default:
+                b = null;
+                break;
+        }
+            Intent intent = new Intent(this.getActivity(), b);
+            startActivity(intent);
+    }
 
     private void openActivity(Product product) {
         Class biginer;

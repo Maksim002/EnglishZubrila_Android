@@ -43,6 +43,22 @@
         <activity android:name=".fragments.pagerbooks.model.web.WebViewB"
             android:launchMode="singleTop"/>
         <activity android:name=".corses.simple.PresentSimple" />
+        <activity android:name=".corses.alphabet.test.resultActivity" />
+        <activity android:name=".corses.alphabet.test.TestAlphabet" />
+        <activity android:name=".corses.articles.test.resultActivity" />
+        <activity android:name=".corses.articles.test.TestArticles" />
+        <activity android:name=".corses.prularfrom.test.TestPluralForm" />
+        <activity android:name=".corses.prularfrom.test.resultActivity" />
+        <activity android:name=".corses.quastions.test.TestQuestions" />
+        <activity android:name=".corses.quastions.test.resultActivity" />
+        <activity android:name=".corses.simple.test.TestPresentSimple" />
+        <activity android:name=".corses.simple.test.resultActivity" />
+        <activity android:name=".corses.teherels.test.TestTherelS" />
+        <activity android:name=".corses.teherels.test.resultActivity" />
+        <activity android:name=".corses.tobe.test.TestToBe" />
+        <activity android:name=".corses.tobe.test.resultActivity" />
+        <activity android:name=".corses.transcription.test.TestTranscription" />
+        <activity android:name=".corses.transcription.test.resultActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

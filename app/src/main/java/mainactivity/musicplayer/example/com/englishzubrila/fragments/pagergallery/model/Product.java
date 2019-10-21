@@ -9,13 +9,9 @@ public class Product implements Parcelable {
     public final String name;
     private Beginner beginner;
 
-    public Product(String name,Beginner beginner) {
+    public Product(String name, Beginner beginner) {
         this.name = name;
         this.beginner = beginner;
-    }
-
-    public Beginner getBeginner() {
-        return beginner;
     }
 
     protected Product(Parcel in) {
@@ -33,6 +29,18 @@ public class Product implements Parcelable {
             return new Product[size];
         }
     };
+
+    public String getName() {
+        return name;
+    }
+
+    public Beginner getBeginner() {
+        return beginner;
+    }
+
+    public void setBeginner(Beginner beginner) {
+        this.beginner = beginner;
+    }
 
     @Override
     public int describeContents() {
