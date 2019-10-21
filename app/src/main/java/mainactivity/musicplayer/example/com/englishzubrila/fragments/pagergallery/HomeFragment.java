@@ -2,6 +2,7 @@ package mainactivity.musicplayer.example.com.englishzubrila.fragments.pagergalle
 
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -40,6 +41,8 @@ public class HomeFragment extends Fragment implements Listener {
     private RecyclerView recyclerView;
     private AlertDialog.Builder ad;
     private Context context;
+    private View v;
+    private Product product;
 
     private String title = "Выбор есть всегда";
     private String message = "Выбери пищу";
@@ -53,6 +56,8 @@ public class HomeFragment extends Fragment implements Listener {
 
         getRecyclerView(view);
         getCompanies();
+        context = HomeFragment.this.getContext();
+
         return view;
     }
 
@@ -122,6 +127,27 @@ public class HomeFragment extends Fragment implements Listener {
     }
     @Override
     public void onClikGaleri(int adapterPosition, Product product) {
+        onClick(product);
+       //
+    }
+    public void onClick(final Product product) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            builder.setTitle("Важное сообщение!")
+                    .setMessage("Покормите кота!")
+                    .setCancelable(false)
+                    .setNegativeButton("ОК, иду на кухню",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                    openActivity(product);
+                                    dialog.cancel();
+                                }
+                            });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
+
+    private void openActivity(Product product) {
         Class biginer;
         switch (product.getBeginner()) {
             case Letters0:
@@ -152,8 +178,8 @@ public class HomeFragment extends Fragment implements Listener {
                 biginer = null;
                 break;
         }
-        Intent intent1 = new Intent(this.getActivity(), biginer);
-        startActivity(intent1);
+            Intent intent1 = new Intent(this.getActivity(), biginer);
+            startActivity(intent1);
     }
 
     @Override
