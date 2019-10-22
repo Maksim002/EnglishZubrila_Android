@@ -59,6 +59,7 @@
         <activity android:name=".corses.tobe.test.resultActivity" />
         <activity android:name=".corses.transcription.test.TestTranscription" />
         <activity android:name=".corses.transcription.test.resultActivity" />
+        <activity android:name=".corses.dodoes.DoDoes" />
 
         <meta-data
             android:name="preloaded_fonts"

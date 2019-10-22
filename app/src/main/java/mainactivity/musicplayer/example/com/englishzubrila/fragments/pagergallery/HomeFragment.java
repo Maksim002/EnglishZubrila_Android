@@ -106,7 +106,7 @@ public class HomeFragment extends Fragment implements Listener {
     ArrayList<Product> getElementary() {
         ArrayList<Product> elementary = new ArrayList<>();
         elementary.add(new Product("Present Simple", Beginner.Letters7));
-        elementary.add(new Product("Is empty", Beginner.Letters0));
+        elementary.add(new Product("Do Does", Beginner.Letters0));
         elementary.add(new Product("Is empty", Beginner.Letters0));
         return elementary;
     }

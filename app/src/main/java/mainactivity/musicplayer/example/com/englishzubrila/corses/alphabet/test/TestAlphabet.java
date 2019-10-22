@@ -71,16 +71,16 @@ public class TestAlphabet extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {" Расставьте слова в алфавитном порядке. Если первые буквы у слов одинаковые, то смотрим на вторые, если вторые одинаковые, то на третьи и т.д. ", " arrow, dog, make, mirror, quick, ship", " air, fat, sick, use, edge, yellow", " get, cat, create, write, he, trap", " all, arm, big, go, whale, spell "},
+            {" Определите правильный вариант звучания [æ].", " cat, dad, man, trap, back", " card, dad, main, track, duck", " cut, bad, map, trap, buck", " cup, dead, mean, truck, boat"},
+            {" Укажите значения слова name:", " n имя; v называть", " n краска; v рисовать ", " v летать; n муха", " n парк; v парковаться"},
+            {" Определите в словах правильный вариант звучания [ʌ].", " Love", " Man", " Pen", " Father"},
+            {" Определите правильный вариант звучания [eɪ]", " baby, face, say, day, break", " body, case, sea, date, bear", " bloody, France, saw, done, brake", " baby, feast, sea, death, breath"},
+            {" Сколько букв в английском алфавите?", "26", "22", "28", "36"},
+            {" Сколько гласных букв в английском алфавите?", "5", "7", "1", "9"},
+            {" Укажите значения слова spelling:", " Произношение слова по буквам", " Написание транскрипции слова", " Изучение перевода слова", " Изучение транскрипции английского языка"},
+            {" Определите в словах правильный вариант звучания [ɔ].", " rock", " book", "  morning", " two"},
+            {" Определите в словах правильный вариант звучания [ð].", " this", " thin", " sure", " city"}
     };
 
 
