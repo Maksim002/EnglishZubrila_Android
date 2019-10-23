@@ -8,7 +8,8 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,12 +86,970 @@
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/what_is_the_matter_dad"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_met_a_mad_gnat"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/pat_it_on_the_head"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/this_lad_is_so_sad"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/has_a_bat_as_a_pet"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/pet_do_you_have_a_pet"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/grammar"
+                android:textColor="#0B7986"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_du_do"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_you_like_ice_cream"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_you_help_your_mum"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_they_play_football1"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/not_do"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/yes_they_do"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/no_they_do_not"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_play"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_you_speak_french"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/yes_i_do"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/no_i_do_not"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_does_d_z"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/does_tim_learn_french"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/yes_he_does"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/does_he_know_spanish"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/no_he_does_not"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/fe"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/they_do_not_play_football"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tim_does_not_know_spanish"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/does_s"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/she_likes_jam_does_she_like_fruit"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/she_eats_oranges_does_she_eat_bananas"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/he_keeps_dogs_he_does_not_keep_cats"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/notes"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/_1_want_want"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/she_eats_oranges_does_she_eat_bananas"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/wants_car"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/wants_red_wheels"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/_2_let_s_repeat_a_few_sentences_from_the_text_and_translate_them"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/he_gets_on_his_bicycle"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/it_is_a_beautiful_bicycle_by_the_way"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/it_is_all_silver"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/when_you_bring_the_money_you_can_have_your_bicycle_back"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/very_well"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/why_does_his_bicycle_have_no_pedals"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/because_mr_bliss_rides_only_downhill"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/word1"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/leave_li_v_live_liv_leave_left_for"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/puts_on_his_hat_and_leaves_the_house"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/when_does_the_train_leave"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/she_left_early_in_the_morning"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/left_for_london"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/they_left_for_the_seaside"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/leave"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_am_sorry_i_left_my_exercise_book_at_home"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/mr_bliss_left_his_purse_at_home"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/left_his_bicycle_in_the_shop"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/reading"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/do_mice_like_cats"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay2"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
                     tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/poor_alice_sits_down_and_b"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
 
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/words"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/dgrg"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/phrasesw"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/stop_this_moment"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/stop_crying"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/splash"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/perhaps_she_is_french"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/what_does_pool_mean_pool"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/this_word_means"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/conversation"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/do_you_know_the_way_to_stranger_strein"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay3"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/you_excuse_me_show_me_the_way_to_green_street_please"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/boy_well_i_think_you_should_turn_right_no_left_oh_i_am_sorry_i_do_not_know_really"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/ewf"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar4"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay4"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/you_excuse_me_he_yes_you_show_me_the_way_to_green_street_please_he_go_along_this_street_and_then_turn_right_you_thank_you_he_you_are_welcome"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/wfsg"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay5"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/you_excuse_me_how_do_i_get_to_victoria_station_he_yes_take_bus_number_ten_it_goes_as_far_as_victoria_you_thank_you_he_the_bus_stop_is_across_the_street"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/as_far_as_is_this_the_right_way"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar6"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay6"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/you_excuse_me_is_this_the_right_way_to_trafalgar_square_he_yes_go_on_along_this_street_and_then_turn_left"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/question"
+                android:textColor="#0B7986"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/excuse_me_i_am_sorry_excuse_me_i_am_sorry"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/i_am_terribly_sorry"
+                android:textColor="#60066F"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/sorry"
+                android:textColor="#045307"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
 
         </LinearLayout>
     </ScrollView>
