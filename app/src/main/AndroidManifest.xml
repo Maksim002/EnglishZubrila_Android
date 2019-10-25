@@ -60,6 +60,7 @@
         <activity android:name=".corses.transcription.test.TestTranscription" />
         <activity android:name=".corses.transcription.test.resultActivity" />
         <activity android:name=".corses.dodoes.DoDoes" />
+        <activity android:name=".corses.can.Can" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -45,7 +45,7 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar"
+                    android:id="@+id/s"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 

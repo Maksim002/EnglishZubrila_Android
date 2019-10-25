@@ -627,7 +627,7 @@
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay1"
+                    android:id="@+id/b"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -738,12 +738,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar2"
+                    android:id="@+id/seekBar1"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay2"
+                    android:id="@+id/b"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -799,12 +799,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar3"
+                    android:id="@+id/seekBar2"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay3"
+                    android:id="@+id/bPlay2"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

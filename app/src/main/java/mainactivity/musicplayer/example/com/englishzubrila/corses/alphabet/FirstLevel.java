@@ -99,7 +99,7 @@ public class FirstLevel extends AppCompatActivity {
 
         handler = new Handler();
 
-        seekBar = findViewById(R.id.seekBar);
+        seekBar = findViewById(R.id.s);
     }
 
     private void setPlayer() {

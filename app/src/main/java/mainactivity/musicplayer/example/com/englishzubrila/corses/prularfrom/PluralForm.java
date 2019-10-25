@@ -57,7 +57,7 @@ public class PluralForm extends AppCompatActivity {
     }
 
     private void getLessonA() {
-        bPley1 = findViewById(R.id.bPlay1);
+        bPley1 = findViewById(R.id.b);
 
         handler1 = new Handler();
 
@@ -105,7 +105,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay1:
+                    case R.id.b:
                         if (player1.isPlaying()) {
                             player1.pause();
                             bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -119,11 +119,11 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonE() {
-        bPley2 = findViewById(R.id.bPlay2);
+        bPley2 = findViewById(R.id.b);
 
         handler2 = new Handler();
 
-        seekBar2 = findViewById(R.id.seekBar2);
+        seekBar2 = findViewById(R.id.seekBar1);
 
         player2 = MediaPlayer.create(this, R.raw.men);
 
@@ -167,7 +167,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay2:
+                    case R.id.b:
                         if (player2.isPlaying()){
                             player2.pause();
                             bPley2.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -182,11 +182,11 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonI() {
-        bPley3 = findViewById(R.id.bPlay3);
+        bPley3 = findViewById(R.id.bPlay2);
 
         handler3 = new Handler();
 
-        seekBar3 = findViewById(R.id.seekBar3);
+        seekBar3 = findViewById(R.id.seekBar2);
 
         player3 = MediaPlayer.create(this, R.raw.woman);
 
@@ -230,7 +230,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay3:
+                    case R.id.bPlay2:
                         if (player3.isPlaying()) {
                             player3.pause();
                             bPley3.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -245,7 +245,7 @@ public class PluralForm extends AppCompatActivity {
     }
 
     private void getLessonO() {
-        bPley4 = findViewById(R.id.bPlay4);
+        bPley4 = findViewById(R.id.bPlay3);
 
         handler4 = new Handler();
 
@@ -293,7 +293,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay4:
+                    case R.id.bPlay3:
                         if (player4.isPlaying()) {
                             player4.pause();
                             bPley4.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -308,7 +308,7 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonU() {
-        bPley5 = findViewById(R.id.bPlay5);
+        bPley5 = findViewById(R.id.bPlay4);
 
         handler5 = new Handler();
 
@@ -356,7 +356,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay5:
+                    case R.id.bPlay4:
                         if (player5.isPlaying()) {
                             player5.pause();
                             bPley5.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -370,11 +370,11 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonY() {
-        bPley6 = findViewById(R.id.bPlay6);
+        bPley6 = findViewById(R.id.bPlay5);
 
         handler6 = new Handler();
 
-        seekBar6 = findViewById(R.id.seekBar6);
+        seekBar6 = findViewById(R.id.seekBar5);
 
         player6 = MediaPlayer.create(this, R.raw.lesson8_num2);
 
@@ -418,7 +418,7 @@ public class PluralForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay6:
+                    case R.id.bPlay5:
                         if (player6.isPlaying()) {
                             player6.pause();
                             bPley6.setImageResource(R.drawable.ic_play_arrow_black_24dp);

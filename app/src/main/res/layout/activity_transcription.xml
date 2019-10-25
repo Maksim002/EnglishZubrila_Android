@@ -609,7 +609,7 @@
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay1"
+                    android:id="@+id/b"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -641,14 +641,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar2"
+                    android:id="@+id/seekBar1"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay2"
+                    android:id="@+id/b"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -680,14 +680,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar3"
+                    android:id="@+id/seekBar2"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay3"
+                    android:id="@+id/bPlay2"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -726,7 +726,7 @@
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay4"
+                    android:id="@+id/bPlay3"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -765,7 +765,7 @@
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay5"
+                    android:id="@+id/bPlay4"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -797,14 +797,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar6"
+                    android:id="@+id/seekBar5"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay6"
+                    android:id="@+id/bPlay5"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -827,14 +827,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar7"
+                    android:id="@+id/seekBar6"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlay7"
+                    android:id="@+id/bPlay6"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

@@ -55,17 +55,17 @@ public class Questions extends AppCompatActivity {
     }
 
     private void gropeBottom() {
-        bPley = findViewById(R.id.bPlay1);
-        bPley2 = findViewById(R.id.bPlay2);
-        bPley3 = findViewById(R.id.bPlay3);
+        bPley = findViewById(R.id.b);
+        bPley2 = findViewById(R.id.b);
+        bPley3 = findViewById(R.id.bPlay2);
 
         handler = new Handler();
         handler2 = new Handler();
         handler3 = new Handler();
 
         seekBar = findViewById(R.id.seekBar1);
-        seekBar2 = findViewById(R.id.seekBar2);
-        seekBar3 = findViewById(R.id.seekBar3);
+        seekBar2 = findViewById(R.id.seekBar1);
+        seekBar3 = findViewById(R.id.seekBar2);
     }
 
     private void setPlayer() {
@@ -118,7 +118,7 @@ public class Questions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay1:
+                    case R.id.b:
                         if (player.isPlaying()) {
                             player.pause();
                             bPley.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -183,7 +183,7 @@ public class Questions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay2:
+                    case R.id.b:
                         if (player2.isPlaying()) {
                             player2.pause();
                             bPley2.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -248,7 +248,7 @@ public class Questions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay3:
+                    case R.id.bPlay2:
                         if (player3.isPlaying()) {
                             player3.pause();
                             bPley3.setImageResource(R.drawable.ic_play_arrow_black_24dp);

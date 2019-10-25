@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -41,6 +42,7 @@ public class TestAlphabet extends AppCompatActivity {
     private String rightAnswer;
     private int rightAnswerCount = 0;
     private int quizCount = 1;
+    private TextView dialogTitle;
 
     static final private int QUIZ_COUNT = 10;
     static final long START_TIME_IN_MILIS = 60000;
@@ -154,7 +156,7 @@ public class TestAlphabet extends AppCompatActivity {
 
         ContextThemeWrapper cw = new ContextThemeWrapper(this, R.style.AlertDialogTheme);
         AlertDialog.Builder builder = new AlertDialog.Builder(cw);
-        TextView dialogTitle = new TextView (getApplicationContext ());
+        dialogTitle = new TextView (getApplicationContext ());
         dialogTitle.setText (alertTitle);
         dialogTitle.setTextSize (TypedValue.COMPLEX_UNIT_DIP, 40);
         dialogTitle.setGravity(CENTER);
@@ -201,5 +203,4 @@ public class TestAlphabet extends AppCompatActivity {
         dialog1.show();
         return corect;
     }
-
 }
