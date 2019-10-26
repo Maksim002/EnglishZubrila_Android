@@ -25,6 +25,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Artic
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.can.Can;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.dodoes.DoDoes;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.presentcontinuous.PresentContinuous;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.PluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.test.TestPluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.quastions.Questions;
@@ -110,6 +111,7 @@ public class HomeFragment extends Fragment implements Listener {
         elementary.add(new Product("Present Simple", Beginner.Letters7));
         elementary.add(new Product("Do Does", Beginner.Letters8));
         elementary.add(new Product("Can", Beginner.Letters9));
+        elementary.add(new Product("Present Continuous", Beginner.Letters10));
         return elementary;
     }
     ArrayList<Product> getIntermediate() {
@@ -192,6 +194,9 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters9:
                 b = Can.class;
                 break;
+            case Letters10:
+                b = PresentContinuous.class;
+                break;
             default:
                 b = null;
                 break;
@@ -232,6 +237,9 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters9:
                 biginer = Can.class;
+                break;
+            case Letters10:
+                biginer = PresentContinuous.class;
                 break;
             default:
                 biginer = null;
