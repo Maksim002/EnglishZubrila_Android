@@ -25,6 +25,8 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Artic
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.can.Can;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.dodoes.DoDoes;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.haveto.HaveTo;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.must.Must;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.presentcontinuous.PresentContinuous;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.PluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.prularfrom.test.TestPluralForm;
@@ -112,6 +114,8 @@ public class HomeFragment extends Fragment implements Listener {
         elementary.add(new Product("Do Does", Beginner.Letters8));
         elementary.add(new Product("Can", Beginner.Letters9));
         elementary.add(new Product("Present Continuous", Beginner.Letters10));
+        elementary.add(new Product("Must", Beginner.Letters11));
+        elementary.add(new Product("Have to", Beginner.Letters12));
         return elementary;
     }
     ArrayList<Product> getIntermediate() {
@@ -194,8 +198,11 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters9:
                 b = Can.class;
                 break;
-            case Letters10:
-                b = PresentContinuous.class;
+            case Letters11:
+                b = Must.class;
+                break;
+            case Letters12:
+                b = HaveTo.class;
                 break;
             default:
                 b = null;
@@ -240,6 +247,12 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters10:
                 biginer = PresentContinuous.class;
+                break;
+            case Letters11:
+                biginer = Must.class;
+                break;
+            case Letters12:
+                biginer = HaveTo.class;
                 break;
             default:
                 biginer = null;

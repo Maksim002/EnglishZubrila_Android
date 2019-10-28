@@ -73,18 +73,27 @@ public class TestTranscription extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {" Какой звук дает сочетание букв ch",
+                    " [ʧ]", " [ʃ]", "[h] ", "[s]"},
+            {" Какой звук дает сочетание букв sh",
+                    " [ʃ]", " [ð]", "[h] ", "[s]"},
+            {" Как пишется слово ['sentǝ] ?"
+                    , " centre", "Santa", " city", " candy"},
+            {"В каком слове есть звук [ʤ]?"
+                    , " giant", " get", " girl", " give"},
+            {" Как обозначается долгий гласный звук в транскрипции? "
+                    , " двоеточием", "кавычками", " запятой", " восклицательным знаком "},
+            {" В каком слове нет звука [f]?"
+                    , " rhythm (ритм)", " phone (телефон)", " elephant (слон)", " wolf (волк)"},
+            {" Сколько звуков в английском языке?"
+                    , "44", "36", "52", "42"},
+            {" Укажите дифтонг "
+                    , " [aɪ] ", " [a:] ", " [æ] ", " [θ]"},
+            {" В каком слове нет звука [eɪ] ?"
+                    , " bear ", " make ", "  day ", " lake"},
+            {" В каком слове нет звука [ θ ]?"
+                    , " that ", " think ", " thick ", " both "}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
