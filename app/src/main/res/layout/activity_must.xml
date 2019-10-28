@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAlphabet2"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/must"
+                android:textColor="#CA1205"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/grammar12"
+                android:textColor="#5C2034"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/s"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/bPlay"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/wfe"
+                android:textColor="#000"
+                android:textSize="35dp"
+                android:textStyle="italic"
+                tools:ignore="SpUsage,UnusedAttribute" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/must_butter_bulb_cut_dust_hunt_run_mother"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center_horizontal"
+                android:text="[ju:] "
+                android:textColor="#000"
+                android:textSize="35dp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/mule_tulip_pupil_cute_mute_suit_new_few"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/grammaref"
+                android:textColor="#5C2034"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/et4"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/we_are_moving_tomorrow_t"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/she_is_coming_soon"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/they_are_leaving_on_friday"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_am_going_to_her_birthday"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/conversationeew"
+                android:textColor="#5C2034"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_good_morning_kate"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/kate_good_morning"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_are_you_going_to_dick_s_birthday"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/kate_oh_is_it_today"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_no_it_is_tomorrow_it_is_on_the_second"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/kate_yes_now_i_remember_his_birthday_is_on_tuesday"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_that_s_right_and_today_is_monday"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/kate_what_are_you_going_to_give_him"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_i_will_give_him_a_few_cassettes"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/notes"
+                android:textColor="#5C2034"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/present_pri_zent_give_present_prez_nt"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_am_going_to_give_him_a_box_of_chocolates"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/can_i_give_him_a_puppy"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/phrasesfew"
+                android:textColor="#5C2034"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/tim_is_going_to_give_dick_a_few_cassettes_mr_bliss_is_going_to_visit_the_dorkinses_be_going_to_be_am_are_is"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_am_going_to_write_to_him"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/you_are_going_to_have_lunch"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/she_is_going_to_cry"
+                android:textColor="#814F05"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/it_is_going_to_rain"
+                android:textColor="#017906"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:text="@string/we_are_going_to_dick_s_birthday_we_are_going_to_wish_dick_many_happy_returns_of_the_day"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+
+
+
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

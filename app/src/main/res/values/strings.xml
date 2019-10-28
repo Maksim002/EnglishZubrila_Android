@@ -1144,5 +1144,38 @@ where there is a broad river (где есть
     <string name="changes">Он переодевается. - Не changes.</string>
     <string name="they_dress_for_the_theatre">Они одеваются для театра. - They dress for the theatre.</string>
 
+
+    <string name="must">Модальный глагол Must</string>
+    <string name="wfe">[ʌ]</string>
+    <string name="must_butter_bulb_cut_dust_hunt_run_mother">must, butter, bulb, cut, dust, hunt, run, mother</string>
+    <string name="mule_tulip_pupil_cute_mute_suit_new_few">mule, tulip, pupil, cute, mute, suit, new, few</string>
+    <string name="grammaref">Grammar - Грамматика</string>
+    <string name="et4"><P>  Англичане</P> используют настоящее длительное время, когда говорят о каких-либо запланированных или ожидаемых действиях. В следующих примерах идет речь о будущем.</string>
+    <string name="we_are_moving_tomorrow_t">We are moving tomorrow. - Мы переезжаем завтра.</string>
+    <string name="she_is_coming_soon">She is coming soon. - Она скоро приезжает.</string>
+    <string name="they_are_leaving_on_friday">They are leaving on Friday. - Они уезжают в пятницу.</string>
+    <string name="i_am_going_to_her_birthday">I am going to her birthday. - Я иду на ее день рождения.</string>
+    <string name="conversationeew">Conversation – Разговор</string>
+    <string name="tim_good_morning_kate">Tim:Good morning, Kate.</string>
+    <string name="kate_good_morning">Kate:Good morning.</string>
+    <string name="tim_are_you_going_to_dick_s_birthday">Tim:Are you going to Dick\'s birthday?</string>
+    <string name="kate_oh_is_it_today">Kate:Oh, is it today?</string>
+    <string name="tim_no_it_is_tomorrow_it_is_on_the_second">Tim:No, it is tomorrow. It is on the second.</string>
+    <string name="kate_yes_now_i_remember_his_birthday_is_on_tuesday">Kate:Yes, now I remember. His birthday is on Tuesday.</string>
+    <string name="tim_that_s_right_and_today_is_monday">Tim:That\'s right. And today is Monday.</string>
+    <string name="kate_what_are_you_going_to_give_him">Kate:What are you going to give him?</string>
+    <string name="tim_i_will_give_him_a_few_cassettes">Tim:I will give him a few cassettes.</string>
+    <string name="note1s">Notes - Примечания</string>
+    <string name="present_pri_zent_give_present_prez_nt"><P>    Как</P> по-английски подарить? Глагол present <b>[pri\'zent]</b> очень официальный, что-то вроде русского преподносить. Говорите просто <b>give.</b> Про подарок нужно сказать <b>present [\'prezǝnt],</b> с ударением на первый слог.</string>
+    <string name="i_am_going_to_give_him_a_box_of_chocolates">I am going to give him a box of chocolates. - Я собираюсь подарить ему коробку шоколадных конфет.</string>
+    <string name="can_i_give_him_a_puppy">Can I give him a puppy? - Можно, я подарю ему щенка?</string>
+    <string name="phrasesfew">Phrases - Фразы</string>
+    <string name="tim_is_going_to_give_dick_a_few_cassettes_mr_bliss_is_going_to_visit_the_dorkinses_be_going_to_be_am_are_is"><P>  Тим</P> собирается подарить Дику несколько кассет. <b>Tim is going to give Dick a few cassettes.</b> А мистер Блисс собирается навестить Доркинсов. <b>Mr Bliss is going to visit the Dorkinses.</b> Изучив фразы, мы делаем вывод: когда англичане собираются что-либо делать, они используют оборот be going <b>to</b>. Глагол be представлен формами <b>am, are, is</b>. Следующие предложения указывают на будущее время.</string>
+    <string name="i_am_going_to_write_to_him">I am going to write to him. - Я собираюсь написать ему.</string>
+    <string name="you_are_going_to_have_lunch">You are going to have lunch. - Вы собираетесь обедать.</string>
+    <string name="she_is_going_to_cry">She is going to cry. - Она собирается заплакать.</string>
+    <string name="it_is_going_to_rain">It is going to rain. - Собирается (пойти) дождь.</string>
+    <string name="we_are_going_to_dick_s_birthday_we_are_going_to_wish_dick_many_happy_returns_of_the_day">А мы куда собираемся? We are going to Dick\'s birthday. We are going to wish Dick many happy returns of the day.</string>
+
 </resources>
 

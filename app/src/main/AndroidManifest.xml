@@ -62,6 +62,7 @@
         <activity android:name=".corses.dodoes.DoDoes" />
         <activity android:name=".corses.can.Can" />
         <activity android:name=".corses.presentcontinuous.PresentContinuous" />
+        <activity android:name=".corses.must.Must" />
 
         <meta-data
             android:name="preloaded_fonts"
