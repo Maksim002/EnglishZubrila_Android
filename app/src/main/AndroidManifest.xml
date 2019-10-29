@@ -64,6 +64,8 @@
         <activity android:name=".corses.presentcontinuous.PresentContinuous" />
         <activity android:name=".corses.must.Must" />
         <activity android:name=".corses.haveto.HaveTo" />
+        <activity android:name=".corses.directandindirectspeech.Directandindirectspeech" />
+        <activity android:name=".corses.thefuturesimple.TheFutureSimple" />
 
         <meta-data
             android:name="preloaded_fonts"

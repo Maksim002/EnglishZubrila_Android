@@ -24,6 +24,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.alphabet.test.
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Articles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.can.Can;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.directandindirectspeech.Directandindirectspeech;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.dodoes.DoDoes;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.haveto.HaveTo;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.must.Must;
@@ -36,6 +37,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.simple.Present
 import mainactivity.musicplayer.example.com.englishzubrila.corses.simple.test.TestPresentSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.ThereIS;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.teherels.test.TestTherelS;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.thefuturesimple.TheFutureSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.tobe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.tobe.test.TestToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.transcription.Transcription;
@@ -120,7 +122,8 @@ public class HomeFragment extends Fragment implements Listener {
     }
     ArrayList<Product> getIntermediate() {
         ArrayList<Product> intermediate = new ArrayList<>();
-        intermediate.add(new Product("Is empty", Beginner.Letters0));
+        intermediate.add(new Product("Direct and indirect speech", Beginner.Letters13));
+        intermediate.add(new Product("The Future Simple", Beginner.Letters14));
         return intermediate;
     }
     ArrayList<Product> getB1Intermediate() {
@@ -166,49 +169,55 @@ public class HomeFragment extends Fragment implements Listener {
         }
 
     private void openTest(Product product){
-        Class b ;
+        Class test ;
         switch (product.getBeginner()){
             case Letters0:
-                b = TestAlphabet.class;
+                test = TestAlphabet.class;
                 break;
             case Letters1:
-                b = TestTranscription.class;
+                test = TestTranscription.class;
                 break;
             case Letters2:
-                b = TestToBe.class;
+                test = TestToBe.class;
                 break;
             case Letters3:
-                b = TestQuestions.class;
+                test = TestQuestions.class;
                 break;
             case Letters4:
-                b = TestArticles.class;
+                test = TestArticles.class;
                 break;
             case Letters5:
-                b = TestTherelS.class;
+                test = TestTherelS.class;
                 break;
             case Letters6:
-                b = TestPluralForm.class;
+                test = TestPluralForm.class;
                 break;
             case Letters7:
-                b = TestPresentSimple.class;
+                test = TestPresentSimple.class;
                 break;
             case Letters8:
-                b = DoDoes.class;
+                test = DoDoes.class;
                 break;
             case Letters9:
-                b = Can.class;
+                test = Can.class;
                 break;
             case Letters11:
-                b = Must.class;
+                test = Must.class;
                 break;
             case Letters12:
-                b = HaveTo.class;
+                test = HaveTo.class;
+                break;
+            case Letters13:
+                test = Directandindirectspeech.class;
+                break;
+            case Letters14:
+                test = TheFutureSimple.class;
                 break;
             default:
-                b = null;
+                test = null;
                 break;
         }
-            Intent intent = new Intent(this.getActivity(), b);
+            Intent intent = new Intent(this.getActivity(), test);
             startActivity(intent);
     }
 
@@ -253,6 +262,12 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters12:
                 biginer = HaveTo.class;
+                break;
+            case Letters13:
+                biginer = Directandindirectspeech.class;
+                break;
+            case Letters14:
+                biginer = TheFutureSimple.class;
                 break;
             default:
                 biginer = null;
