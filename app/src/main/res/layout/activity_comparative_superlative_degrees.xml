@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAlphabet2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/wefew1"
+                android:textColor="#694003"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/grammar565"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ege1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/i_like_hot_tea_i_like_when_my_tea_is_hot"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/he_is_a_funny_man_his_jokes_are_funny"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/egrg1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/there_is_hot_water_in_the_cup"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/there_is_hot_tea_in_the_cup"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/buy_some_hot_pies"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/they_are_fat_fat_er_than"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/albert_is_fatter_than_herbert"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/a_lion_is_stronger_than_a_wolf"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/you_are_taller_than_me"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/is_she_older_than_you"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/est"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/who_is_the_fattest_of_the_dorkinses"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/fattie_is_the_fattest_in_the_family"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/is_the_fattest_man_in_the_village"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/albert_is_the_second_fattest_of_them"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/hot_strong_tall_fat_er_est_y_ow_er_le"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/happy_happier_the_happiest"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/narrow_narrower_the_narrowest"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tender_tenderer_the_tenderest"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/simple_simpler_the_simplest"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/i"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/big_bigger_the_biggest"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/fat_fatter_the_fattest"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/dry_drier_the_driest"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/funny_funnier_the_funniest"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/silly_sillier_the_silliest"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/better_best_good"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/good_better_the_best"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/bad_worse_the_worst"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/far_farther_the_farthest"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/bad"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_m_not_well_i_m_unwell"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/is_a_poor_swimmer"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/i_have_a_bad_headache"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/smoking_is_a_bad_habit"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/reading67"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ewge1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekBar0"
+                    android:layout_width="310dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:id="@+id/cPlayer0"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+               android:layout_gravity="center_horizontal"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/if_rabbit_was_bigg"
+                android:textColor="#790D04"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/afer4"
+                android:textColor="#047E09"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/notes78"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/_1_if_tigger_was_smaller_little_small"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/tim_has_a_little_sister"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/she_is_smaller_than_tim"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/she_is_the_smallest_in_their_family"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/_2_get"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/it_gets_warmer"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/it_gets_darker"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/the_wind_is_getting_stronger"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/word789"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/matter_m_t_matter"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/does_it_matter"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/it_does_not_matter_to_me_what_she_does"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/it_does_not_matter_any_longer"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/what_s_the_matter_with_you"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/grammar00"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/unimportant_more_most"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/important_more_important_the_most_important"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/amazing_more_amazing_the_most_amazing"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/words88"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/kugug11"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/notes676"
+                android:textColor="#626B07"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/by_by_the_river_by_the_road_by_by_car_by_plane_by_sea_by_by"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/mrs_knight_sits_in_front_by_mr_bliss"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/mr_bliss_is_so_squeezed_by_her_that_he_cannot_put_on_the_brakes"
+                android:textColor="#790D04"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:padding="5dp"
+                android:text="@string/the_book_about_mr_bliss_is_written_by_tolkien"
+                android:textColor="#027707"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

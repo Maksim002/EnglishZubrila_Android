@@ -24,6 +24,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.corses.alphabet.test.
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.Articles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.can.Can;
+import mainactivity.musicplayer.example.com.englishzubrila.corses.comparativesd.ComparativeSuperlativeDegrees;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.directandindirectspeech.Directandindirectspeech;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.dodoes.DoDoes;
 import mainactivity.musicplayer.example.com.englishzubrila.corses.haveto.HaveTo;
@@ -124,6 +125,7 @@ public class HomeFragment extends Fragment implements Listener {
         ArrayList<Product> intermediate = new ArrayList<>();
         intermediate.add(new Product("Direct and indirect speech", Beginner.Letters13));
         intermediate.add(new Product("The Future Simple", Beginner.Letters14));
+        intermediate.add(new Product("Comparative and Superlative Degrees", Beginner.Letters15));
         return intermediate;
     }
     ArrayList<Product> getB1Intermediate() {
@@ -213,6 +215,9 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters14:
                 test = TheFutureSimple.class;
                 break;
+            case Letters15:
+                test = ComparativeSuperlativeDegrees.class;
+                break;
             default:
                 test = null;
                 break;
@@ -268,6 +273,9 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters14:
                 biginer = TheFutureSimple.class;
+                break;
+            case Letters15:
+                biginer = ComparativeSuperlativeDegrees.class;
                 break;
             default:
                 biginer = null;
