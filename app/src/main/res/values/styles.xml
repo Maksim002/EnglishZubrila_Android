@@ -18,7 +18,7 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AlertDialogTheme" parent="android:Holo.Light.ButtonBar.AlertDialog" tools:ignore="NewApi">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:textColor">#FCFDFD</item>
     </style>
 

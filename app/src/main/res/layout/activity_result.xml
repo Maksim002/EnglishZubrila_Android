@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B3BEC5"
-    tools:context=".corses.alphabet.test.resultActivity">
+    android:background="#6D7186"
+    tools:context=".ui.corses.alphabet.test.resultActivity">
 
 
     <TextView
@@ -19,7 +19,7 @@
         android:fontFamily="berkshire_swash'"
         android:text="RESULT"
         android:textAllCaps="false"
-        android:textColor="#640D08"
+        android:textColor="#FAFAFA"
         android:textSize="60sp" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:textColor="#0C1F8D"
+        android:textColor="#F4F4F7"
         android:text="2 / 10"
         android:textSize="100dp" />
 
@@ -38,22 +38,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#2A0333"
+        android:textColor="#F6F4F7"
         android:text="Total score: 3333"
         android:textSize="35sp"
         />
 
-    <Button
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
+    <android.support.v7.widget.CardView
+        android:padding="5dp"
         android:layout_marginTop="80dp"
-        android:background="#E7BA77"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_marginBottom="7dp">
+
+    <Button
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#B8A6B8"
         android:onClick="returnTop"
-        android:text="Return"
+        android:text="Повторить Тест"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold"
         tools:ignore="OnClick" />
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
