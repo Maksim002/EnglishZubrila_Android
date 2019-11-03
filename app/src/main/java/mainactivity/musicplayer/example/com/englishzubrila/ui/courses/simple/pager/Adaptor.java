@@ -1,32 +1,26 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.adapter;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.pager;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class Adapter extends PagerAdapter {
+public class Adaptor extends PagerAdapter {
 
     private List<Model> list;
     private LayoutInflater layoutInflater;
     private Context context;
-    private Listener listener;
 
-    public Adapter(List<Model> list, Context context, Listener listener) {
+    public Adaptor(List<Model> list, Context context) {
         this.list = list;
         this.context = context;
-        this.listener = listener;
     }
 
     @Override
@@ -43,30 +37,13 @@ public class Adapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.item_books, container,false);
+        View view = layoutInflater.inflate(R.layout.item_peg_simple, container,false);
 
         final ImageView imageView;
-        TextView title, dsc;
 
-        CardView cardView;
-
-        imageView = view.findViewById(R.id.imageView);
-        title = view.findViewById(R.id.title);
-        dsc = view.findViewById(R.id.desc);
-
-        cardView = view.findViewById(R.id.card_view);
+        imageView = view.findViewById(R.id.imageSample);
 
         imageView.setImageResource(list.get(position).getImage());
-        title.setText(list.get(position).getName());
-        dsc.setText(list.get(position).getText());
-
-
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                listener.onClikGaleri(list.get(position));
-            }
-        });
 
         container.addView(view, 0);
         return view;

@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#6D7186"
-    tools:context=".ui.corses.alphabet.test.resultActivity">
+    android:background="#F9F9FA"
+    tools:context=".ui.courses.alphabet.test.resultActivity">
 
+
+
+    <android.support.v7.widget.Toolbar
+        android:background="#251A3A"
+        android:id="@+id/toolTest"
+        android:gravity="center_horizontal"
+        app:titleTextColor="#F8F8FA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:background="#251A3A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/resultStatic"
@@ -65,5 +80,7 @@
         android:textStyle="bold"
         tools:ignore="OnClick" />
     </android.support.v7.widget.CardView>
+
+</LinearLayout>
 
 </LinearLayout>

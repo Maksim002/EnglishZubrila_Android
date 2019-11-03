@@ -8,9 +8,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,30 +21,30 @@ import android.view.animation.AnimationUtils;
 
 import java.util.ArrayList;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.alphabet.FirstLevel;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.alphabet.test.TestAlphabet;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.articles.Articles;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.articles.test.TestArticles;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.can.Can;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.comparativesd.ComparativeSuperlativeDegrees;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.directandindirectspeech.Directandindirectspeech;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.dodoes.DoDoes;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.haveto.HaveTo;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.must.Must;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.presentcontinuous.PresentContinuous;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.prularfrom.PluralForm;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.prularfrom.test.TestPluralForm;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.quastions.Questions;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.quastions.test.TestQuestions;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.simple.PresentSimple;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.simple.test.TestPresentSimple;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.teherels.ThereIS;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.teherels.test.TestTherelS;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.thefuturesimple.TheFutureSimple;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.tobe.ToBe;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.tobe.test.TestToBe;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.transcription.Transcription;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.corses.transcription.test.TestTranscription;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.alphabet;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.test.TestAlphabet;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.Articles;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.test.TestArticles;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.Can;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparativesd.ComparativeSuperlativeDegrees;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.directandindirectspeech.Directandindirectspeech;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.DoDoes;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.HaveTo;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.Must;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.presentcontinuous.PresentContinuous;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prularfrom.PluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prularfrom.test.TestPluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.quastions.Questions;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.quastions.test.TestQuestions;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.PresentSimple;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test.TestPresentSimple;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.ThereIS;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test.TestTherelS;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.thefuturesimple.TheFutureSimple;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.tobe.ToBe;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.tobe.test.TestToBe;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.transcription.Transcription;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.transcription.test.TestTranscription;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.enumlist.Beginner;
@@ -227,62 +229,62 @@ public class HomeFragment extends Fragment implements Listener {
     }
 
     private void openActivity(Product product) {
-        Class biginer;
+        Class beginner;
         switch (product.getBeginner()) {
             case Letters0:
-                biginer = FirstLevel.class;
+                beginner = alphabet.class;
                 break;
             case Letters1:
-                biginer = Transcription.class;
+                beginner = Transcription.class;
                 break;
             case Letters2:
-                biginer = ToBe.class;
+                beginner = ToBe.class;
                 break;
             case Letters3:
-                biginer = Questions.class;
+                beginner = Questions.class;
                 break;
             case Letters4:
-                biginer = Articles.class;
+                beginner = Articles.class;
                 break;
             case Letters5:
-                biginer = ThereIS.class;
+                beginner = ThereIS.class;
                 break;
             case Letters6:
-                biginer = PluralForm.class;
+                beginner = PluralForm.class;
                 break;
             case Letters7:
-                biginer = PresentSimple.class;
+                beginner = PresentSimple.class;
                 break;
             case Letters8:
-                biginer = DoDoes.class;
+                beginner = DoDoes.class;
                 break;
             case Letters9:
-                biginer = Can.class;
+                beginner = Can.class;
                 break;
             case Letters10:
-                biginer = PresentContinuous.class;
+                beginner = PresentContinuous.class;
                 break;
             case Letters11:
-                biginer = Must.class;
+                beginner = Must.class;
                 break;
             case Letters12:
-                biginer = HaveTo.class;
+                beginner = HaveTo.class;
                 break;
             case Letters13:
-                biginer = Directandindirectspeech.class;
+                beginner = Directandindirectspeech.class;
                 break;
             case Letters14:
-                biginer = TheFutureSimple.class;
+                beginner = TheFutureSimple.class;
                 break;
             case Letters15:
-                biginer = ComparativeSuperlativeDegrees.class;
+                beginner = ComparativeSuperlativeDegrees.class;
                 break;
             default:
-                biginer = null;
+                beginner = null;
                 break;
         }
-            Intent intent1 = new Intent(this.getActivity(), biginer);
-            startActivity(intent1);
+            Intent intentCourses = new Intent(this.getActivity(), beginner);
+            startActivity(intentCourses);
     }
 
     @Override

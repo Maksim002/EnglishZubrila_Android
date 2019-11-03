@@ -37,7 +37,6 @@ public class InitialFragment  extends AppCompatActivity {
 
         setupViewPager();
         setupNavigationView();
-
     }
     private void setupNavigationView() {
         bottomNavigationView.setOnNavigationItemSelectedListener(

@@ -21,7 +21,7 @@
             android:background="@layout/linear_gradient_light_to_dark_effect"
             android:gravity="center_horizontal"
             android:text="@string/product"
-            android:textColor="@color/ShriftBottom"
+            android:textColor="#FCFCFD"
             android:textSize="32sp"
             android:textStyle="bold"
             app:fontFamily="@font/alegreya"
