@@ -4,7 +4,9 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -12,6 +14,9 @@ import android.widget.SeekBar;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class HaveTo extends AppCompatActivity {
+
+    private Toolbar toolbar;
+    private ActionBar actionBar;
 
     private ImageView bPley1,bPley2;
     private SeekBar seekBar1, seekBar2;
@@ -23,6 +28,13 @@ public class HaveTo extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_have_to);
+
+        toolbar = findViewById(R.id.toolHaveTo);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Have To");
 
         getLessonA();
         getLessonE();

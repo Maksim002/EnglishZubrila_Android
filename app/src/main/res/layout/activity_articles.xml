@@ -231,12 +231,11 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:layout_width="350dp"
-                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
                 android:layout_gravity="center_horizontal"
                 android:padding="8dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/article_a_an" />
+                android:src="@drawable/articles" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -457,6 +456,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -467,6 +467,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -477,6 +478,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -487,6 +489,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"

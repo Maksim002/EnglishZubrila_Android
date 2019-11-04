@@ -4,7 +4,9 @@ import android.animation.ArgbEvaluator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -18,6 +20,9 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.pag
 
 public class PresentSimple extends AppCompatActivity {
 
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+
     private ViewPager viewPager;
     private Adaptor adaptor;
     private Integer[] colors = null;
@@ -29,6 +34,13 @@ public class PresentSimple extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_present_simple);
+
+        toolbar = findViewById(R.id.toolSimple);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Present Simple");
 
         imageSample1 = findViewById(R.id.imageSample1);
         imageSample2 = findViewById(R.id.imageSample2);
@@ -53,6 +65,7 @@ public class PresentSimple extends AppCompatActivity {
         Integer[] colors_temp = {
                 getResources().getColor(R.color.color1),
         };
+
 
         colors = colors_temp;
 

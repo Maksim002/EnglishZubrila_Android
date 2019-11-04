@@ -27,6 +27,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.Can;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparativesd.ComparativeSuperlativeDegrees;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.directandindirectspeech.Directandindirectspeech;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.DoDoes;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.emty.IsEmty;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.HaveTo;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.Must;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.presentcontinuous.PresentContinuous;
@@ -53,7 +54,6 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 
 public class HomeFragment extends Fragment implements Listener {
-
     private RecyclerView recyclerView;
     private AlertDialog.Builder ad;
     private Context context;
@@ -68,11 +68,9 @@ public class HomeFragment extends Fragment implements Listener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-
         getRecyclerView(view);
         getCompanies();
         context = HomeFragment.this.getContext();
-
         return view;
     }
     private void getCompanies(){
@@ -130,18 +128,18 @@ public class HomeFragment extends Fragment implements Listener {
     }
     ArrayList<Product> getB1Intermediate() {
         ArrayList<Product> b1intermediate = new ArrayList<>();
-        b1intermediate.add(new Product("Is empty", Beginner.Letters0));
+        b1intermediate.add(new Product("Is empty", Beginner.Letters16));
         return b1intermediate;
     }
     ArrayList<Product> getUpperIntermediate() {
         ArrayList<Product> upperintermediate = new ArrayList<>();
-        upperintermediate.add(new Product("Is empty", Beginner.Letters0));
+        upperintermediate.add(new Product("Is empty", Beginner.Letters16));
         return upperintermediate;
     }
 
     ArrayList<Product> getC1Advanced() {
         ArrayList<Product> c1advanced = new ArrayList<>();
-        c1advanced.add(new Product("Is empty", Beginner.Letters0));
+        c1advanced.add(new Product("Is empty", Beginner.Letters16));
         return c1advanced;
     }
     @Override
@@ -218,6 +216,9 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters15:
                 test = ComparativeSuperlativeDegrees.class;
                 break;
+            case Letters16:
+                test = IsEmty.class;
+                break;
             default:
                 test = null;
                 break;
@@ -276,6 +277,9 @@ public class HomeFragment extends Fragment implements Listener {
                 break;
             case Letters15:
                 beginner = ComparativeSuperlativeDegrees.class;
+                break;
+            case Letters16:
+                beginner = IsEmty.class;
                 break;
             default:
                 beginner = null;

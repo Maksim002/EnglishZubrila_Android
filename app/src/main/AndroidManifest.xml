@@ -40,7 +40,8 @@
             android:launchMode="singleTop"/>
         <activity android:name=".ui.fragments.pagerbooks.model.web.WebViewB"
             android:launchMode="singleTop"/>
-        <activity android:name=".ui.courses.simple.PresentSimple" />
+        <activity android:name=".ui.courses.simple.PresentSimple"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.alphabet.test.resultActivity"
             android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.alphabet.test.TestAlphabet"/>
@@ -64,14 +65,23 @@
         <activity android:name=".ui.courses.transcription.test.TestTranscription" />
         <activity android:name=".ui.courses.transcription.test.resultActivity"
             android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
-        <activity android:name=".ui.courses.dodoes.DoDoes" />
-        <activity android:name=".ui.courses.can.Can" />
-        <activity android:name=".ui.courses.presentcontinuous.PresentContinuous" />
-        <activity android:name=".ui.courses.must.Must" />
-        <activity android:name=".ui.courses.haveto.HaveTo" />
-        <activity android:name=".ui.courses.directandindirectspeech.Directandindirectspeech" />
-        <activity android:name=".ui.courses.thefuturesimple.TheFutureSimple" />
-        <activity android:name=".ui.courses.comparativesd.ComparativeSuperlativeDegrees" />
+        <activity android:name=".ui.courses.dodoes.DoDoes"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.can.Can"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.presentcontinuous.PresentContinuous"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.must.Must"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.haveto.HaveTo"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.directandindirectspeech.Directandindirectspeech"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.thefuturesimple.TheFutureSimple"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.comparativesd.ComparativeSuperlativeDegrees"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
+        <activity android:name=".ui.courses.emty.IsEmty" />
 
         <meta-data
             android:name="preloaded_fonts"
