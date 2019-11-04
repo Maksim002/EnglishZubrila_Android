@@ -7,10 +7,10 @@ import android.widget.ImageView;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-class FirstViewHolder extends RecyclerView.ViewHolder {
+class AlphabetViewHolder extends RecyclerView.ViewHolder {
     private ImageView imageView;
 
-    public FirstViewHolder(@NonNull View itemView) {
+    public AlphabetViewHolder(@NonNull View itemView) {
         super(itemView);
         imageView = itemView.findViewById(R.id.imageViewDizaneFragment2);
     }

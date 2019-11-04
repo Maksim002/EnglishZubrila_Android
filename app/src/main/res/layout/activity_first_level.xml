@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 
-
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -133,6 +132,234 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/esg3"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/my_name_is_beatrice"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/effwe"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/bea_i_m_sorry_spell_your_name_please"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/ef212"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/beatrice_bi_i_e_ti_a_si_i"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/and_what_is_your_name"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/wq1"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/my_name_is_sergei"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/werf"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/sir_g"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/qwfew"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/never_mind_just_call_me_grey"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/bki"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/spell_1_2"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/efvese1"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/fvev1"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/vwq1"
+                android:textColor="#351E0B"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/lingvo_live_lingvo_x5_x6_google_2"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="@string/avw4"
+                android:textColor="@color/HriftBukov"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/n_noun_na_n"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/adjective_kt_v"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/v_verb_v_b"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/adv_adverb_dv_b"
+                android:textColor="#4A0557"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/sing_singular_s_gj_l"
+                android:textColor="#0A5A0D"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:textSize="16dp"
+                android:text="@string/pl_plural_pl_r_l"
+                android:textColor="#4A0557"/>
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

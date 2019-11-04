@@ -40,7 +40,7 @@
                 android:layout_gravity="center_horizontal"
                 android:padding="8dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/images_articles" />
+                android:src="@drawable/image_article" />
 
             <TextView
                 android:layout_width="match_parent"

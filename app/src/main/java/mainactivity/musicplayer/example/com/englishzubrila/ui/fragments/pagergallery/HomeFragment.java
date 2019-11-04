@@ -8,11 +8,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +19,7 @@ import android.view.animation.AnimationUtils;
 
 import java.util.ArrayList;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.alphabet;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.Alphabet;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.test.TestAlphabet;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.Articles;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.test.TestArticles;
@@ -232,7 +230,7 @@ public class HomeFragment extends Fragment implements Listener {
         Class beginner;
         switch (product.getBeginner()) {
             case Letters0:
-                beginner = alphabet.class;
+                beginner = Alphabet.class;
                 break;
             case Letters1:
                 beginner = Transcription.class;

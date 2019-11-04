@@ -10,23 +10,23 @@ import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class FirstAdaptor extends RecyclerView.Adapter<FirstViewHolder> {
+public class AlphabetAdaptor extends RecyclerView.Adapter<AlphabetViewHolder> {
     private List<Temp> temps;
 
-    public FirstAdaptor(alphabet alphabet, List<Temp> temps) {
+    public AlphabetAdaptor(Alphabet alphabet, List<Temp> temps) {
         this.temps = temps;
     }
 
     @NonNull
     @Override
-    public FirstViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public AlphabetViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         View view = layoutInflater.inflate(R.layout.item_forsst_fragment2, viewGroup, false);
-        return new FirstViewHolder(view);
+        return new AlphabetViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FirstViewHolder firstViewHolder, int position) {
+    public void onBindViewHolder(@NonNull AlphabetViewHolder firstViewHolder, int position) {
         firstViewHolder.bind(temps.get(position));
     }
 

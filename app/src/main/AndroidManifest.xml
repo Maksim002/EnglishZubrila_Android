@@ -24,7 +24,7 @@
         </activity>
         <activity android:name=".ui.fragments.pagergallery.InitialFragment"
             android:launchMode="singleTop" />
-        <activity android:name=".ui.courses.alphabet.alphabet"
+        <activity android:name=".ui.courses.alphabet.Alphabet"
             android:launchMode="singleTop"/>
         <activity android:name=".ui.courses.transcription.Transcription"
             android:launchMode="singleTop"/>
@@ -48,17 +48,22 @@
             android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.articles.test.TestArticles" />
         <activity android:name=".ui.courses.prularfrom.test.TestPluralForm" />
-        <activity android:name=".ui.courses.prularfrom.test.resultActivity" />
+        <activity android:name=".ui.courses.prularfrom.test.resultActivity"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.quastions.test.TestQuestions" />
-        <activity android:name=".ui.courses.quastions.test.resultActivity" />
+        <activity android:name=".ui.courses.quastions.test.resultActivity"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.simple.test.TestPresentSimple" />
         <activity android:name=".ui.courses.simple.test.resultActivity" />
         <activity android:name=".ui.courses.teherels.test.TestTherelS" />
-        <activity android:name=".ui.courses.teherels.test.resultActivity" />
+        <activity android:name=".ui.courses.teherels.test.resultActivity"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.tobe.test.TestToBe" />
-        <activity android:name=".ui.courses.tobe.test.resultActivity" />
+        <activity android:name=".ui.courses.tobe.test.resultActivity"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.transcription.test.TestTranscription" />
-        <activity android:name=".ui.courses.transcription.test.resultActivity" />
+        <activity android:name=".ui.courses.transcription.test.resultActivity"
+            android:parentActivityName=".ui.fragments.pagergallery.InitialFragment"/>
         <activity android:name=".ui.courses.dodoes.DoDoes" />
         <activity android:name=".ui.courses.can.Can" />
         <activity android:name=".ui.courses.presentcontinuous.PresentContinuous" />

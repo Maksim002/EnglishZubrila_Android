@@ -28,7 +28,7 @@ public class resultActivity extends AppCompatActivity {
 
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Articles Test");
+        actionBar.setTitle("Test");
 
         TextView resultLabel = (TextView) findViewById(R.id.resultLabel);
         TextView totalScoreLabel = (TextView) findViewById(R.id.totalScoreLabel);

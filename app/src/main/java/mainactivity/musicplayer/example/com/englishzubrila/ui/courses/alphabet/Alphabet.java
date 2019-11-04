@@ -21,7 +21,7 @@ import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class alphabet extends AppCompatActivity {
+public class Alphabet extends AppCompatActivity {
     private RecyclerView recyclerView;
 
     private Toolbar toolbar;
@@ -50,7 +50,7 @@ public class alphabet extends AppCompatActivity {
         actionBar.setTitle("Alphabet");
 
         recyclerView = findViewById(R.id.recyclerViewFragment);
-        recyclerView.setAdapter(new FirstAdaptor(this, getTemp()));
+        recyclerView.setAdapter(new AlphabetAdaptor(this, getTemp()));
         ViewCompat.setNestedScrollingEnabled(recyclerView, false);
 
     }

@@ -1599,5 +1599,32 @@ where there is a broad river (где есть
     <string name="mr_bliss_is_so_squeezed_by_her_that_he_cannot_put_on_the_brakes">Mr Bliss is so squeezed by her that he cannot put on the brakes. - Мистер Блисс так стиснут ею, что не может нажать на тормоза.</string>
     <string name="the_book_about_mr_bliss_is_written_by_tolkien">The book about Mr Bliss is written by Tolkien. - Книга о мистере Блиссе написана Толкином.</string>
 
+    <string name="esg3"><P>     Подробнее</P> мы изучим звуки чуть позже, в этом и заключается основная задача данного урока: научиться читать так, как написано в квадратных скобках, а не в круглых! В квадратных скобках указана транскрипция, т.е. правильное произношение. Но, прежде чем приступать к транскрипции, вы уверены, что выучили английский алфавит? Его учить обязательно. Почему? Во-первых, некоторые правила чтения связаны с произношением букв алфавита. Во-вторых, бывает так, что нам нужно уточнить, как пишется то или иное слово или имя.</string>
+    <string name="my_name_is_beatrice">— My name is Beatrice.</string>
+    <string name="effwe">— Меня зовут (моё имя) Беатриса.</string>
+    <string name="bea_i_m_sorry_spell_your_name_please">— Bea... I\'m sorry, spell your name, please.</string>
+    <string name="ef212">— Беа... Извините, скажите ваше имя по буквам, пожалуйста. И Беатриса диктует нам:</string>
+    <string name="beatrice_bi_i_e_ti_a_si_i">Beatrice — [bi:] [i:] [eɪ] [ti:] [ɑ:] [aɪ] [si:] [i:]</string>
+    <string name="and_what_is_your_name">— And what is your name?</string>
+    <string name="wq1">— А как вас зовут?</string>
+    <string name="my_name_is_sergei">— My name is Sergei.</string>
+    <string name="werf">— Меня зовут Сергей.</string>
+    <string name="sir_g">— Sir... G.. ?</string>
+    <string name="qwfew">— Сэр... Г.. ?</string>
+    <string name="never_mind_just_call_me_grey">— Never mind. Just call me Grey.</string>
+    <string name="bki">— Не важно. Зовите меня просто Грей (Серый).</string>
+    <string name="spell_1_2"><P>    Из</P> всего диалога (т.к. мы слова в этом уроке не учим) можно запомнить только слово Spell (спэл), которое означает: 1. писать или произносить (слово) по буквам; 2. заклинание; заколдовывать (для любителей компьютерных игр)</string>
+    <string name="efvese1"><P>  Если</P> вас зовут Сергей, то можете выучить вторую часть диалога, вам пригодится! (Из опыта) Остальным просто повеселиться.</string>
+    <string name="fvev1"><P>    Уточнение</P> написания слова является особенно актуальным в английском языке, у англичан даже есть поговорка: «Пишется Ливерпуль, а читается Манчестер». В этом вы убедитесь позже, а пока давайте закрепим английский алфавит. Самое главное- это выучить алфавит английского языка наизусть. Повторяйте его с такой же скоростью (или быстрее), как в аудиозаписи</string>
+    <string name="vwq1">Словарь</string>
+    <string name="lingvo_live_lingvo_x5_x6_google_2"><P>    Итак</P>, мы разобрались с «непонятными значками», но откуда нам их брать? Брать нам их нужно из англо-русского словаря, в нем приводятся английские слова с русским переводом. Сейчас вам вполне подойдет сайт Lingvo Live, но, если есть возможность, установите на компьютер Lingvo X5/X6. Google/Яндекс переводчик - это не словарь, он может угадать правильный перевод, а может и не угадать, неопытным им не пользоваться. Бумажный словарь - тоже хорошо, если в нём нет никаких упрощений, но в нём вам придется искать слово в алфавитном порядке (см. упражнение 2), а не быстрым набором.</string>
+    <string name="avw4">Словарь часто содержит следующие сокращения:</string>
+    <string name="n_noun_na_n">n – noun [naʊn] существительное;</string>
+    <string name="adjective_kt_v">а – adjective [\'æʤɪktɪv] прилагательное;</string>
+    <string name="v_verb_v_b">v – verb [vɜːb] глагол;</string>
+    <string name="adv_adverb_dv_b">adv – adverb [\'ædvɜːb] наречие;</string>
+    <string name="sing_singular_s_gj_l">sing – singular [\'sɪŋgjələ] единственное число;</string>
+    <string name="pl_plural_pl_r_l">pl – plural [\'plʊrəl] множественное число</string>
+
 </resources>
 
