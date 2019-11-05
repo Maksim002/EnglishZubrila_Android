@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.test;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

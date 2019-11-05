@@ -21,8 +21,10 @@ public class Articles extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbarAlphabet2);
         setSupportActionBar(toolbar);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         actionBar = getSupportActionBar();
         actionBar.setTitle("Articles");
     }

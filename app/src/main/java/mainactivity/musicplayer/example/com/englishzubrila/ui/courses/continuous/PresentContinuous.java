@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.directandindirectspeech;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class Directandindirectspeech extends AppCompatActivity {
+public class PresentContinuous extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ActionBar actionBar;
@@ -16,13 +16,13 @@ public class Directandindirectspeech extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_direct_and_indirect_speech);
+        setContentView(R.layout.activity_present_continuous);
 
-        toolbar = findViewById(R.id.toolDirect);
+        toolbar = findViewById(R.id.toolPresentContinuous);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Direct and indirect");
+        actionBar.setTitle("Present Continuous");
     }
 }

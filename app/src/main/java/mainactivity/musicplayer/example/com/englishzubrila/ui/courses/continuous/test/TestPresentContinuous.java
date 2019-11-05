@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -29,7 +29,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestPresentSimple extends AppCompatActivity {
+public class TestPresentContinuous extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -72,16 +72,16 @@ public class TestPresentSimple extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Выберите правильный вариант.  I .... Spanish with my sister.", " study", "studies", " studying ", "Нет правильного ответа"},
-            {" Выберите правильный вариант. My sister .... a shower every morning. ", " takes ", " take", " taking", " Нет правильного ответа"},
-            {" Выберите правильный вариант. This house .... to my grandmother. " , "belongs", " belong", " belonges", " Нет правильного ответа "},
-            {" Выберите правильный вариант. My husband and I .... a lot of money on books. " , " spend ", " spends ", " spending", " spendes "},
-            {" Выберите правильный вариант. John .... milk twice a day. ", " drinks", " drink", " drinking ", " drinkes"},
-            {" Выберите правильный вариант. It .... in Russia in winter. ", " snows ", " snow ", " snowes", " Нет правильного ответа"},
-            {" Выберите правильный вариант. Plants .... well in a warm climate. ", " grow", " growing", " grows ", " growes"},
-            {" Выберите правильный вариант.  .... they often watch TV at night? ", " Do", "Does", "Are", " Is"},
-            {" Выберите правильный вариант. .... you like pizza? ", " Do ", " Does", "Are", " Is"},
-            {" Выберите правильный вариант. Where .... he live in Prague? ", " does ", " do", "Are", " Is"}
+            {"Выберите правильный вариант.  They … for us near the door.", " Are waiting", "Waits", " Is waiting", "Am waiting"},
+            {" Выберите правильный вариант. Harry … television now. ", " Is watching", " Watch", " Watches", " Are watching"},
+            {" Выберите правильный вариант. What … in the room now?" , "Are they doing", " They are doing", " Do they do", " They do"},
+            {" Выберите правильный вариант. Ann … French at all." , " Doesn’t speak", " Doesn’t speaking", " Not speaks", " Isn’t speaking"},
+            {" Выберите правильный вариант. Mr. Scott … German to Ann at the moment.", " Is speaking", " Speaks", " Are speaking", " Speaking"},
+            {" Выберите правильный вариант. I am busy now. I … to the radio.", " Am listening", " Listen", " Am listen", " Listening"},
+            {" Выберите правильный вариант.  They … to the seaside every summer.", " Go", " Are going", " Goes", " Is going"},
+            {" Выберите правильный вариант.  No, I … the newspaper at the moment.", " Am not reading", "Don’t read", "Don’t reading", " Amnt reading"},
+            {" Выберите правильный вариант. No, she … in this house.", " Doesn't live", " Isn’t live", "Don’t live", " Lives not"},
+            {" Выберите правильный вариант. Where … he is from?", " Do you think", " Are you thinking", "Are you think", " You don’t think"}
     };
 
     @SuppressLint("WrongViewCast")
@@ -98,7 +98,7 @@ public class TestPresentSimple extends AppCompatActivity {
         answerButton2 = findViewById(R.id.answer2);
         answerButton3 = findViewById(R.id.answer3);
         answerButton4 = findViewById(R.id.answer4);
-        mActivity = TestPresentSimple.this;
+        mActivity = TestPresentContinuous.this;
 
         startTimer();
 
@@ -164,11 +164,11 @@ public class TestPresentSimple extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == corect) {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestPresentContinuous.this);
             final View view2 = factory.inflate(R.layout.sample, null);
             builder.setView(view2);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestPresentContinuous.this);
             final View view1 = factory.inflate(R.layout.smale_fols, null);
             builder.setView(view1);
         }

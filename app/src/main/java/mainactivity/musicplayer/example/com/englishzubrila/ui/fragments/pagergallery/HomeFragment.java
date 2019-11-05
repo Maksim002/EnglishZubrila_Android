@@ -24,22 +24,25 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.Articles;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.test.TestArticles;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.Can;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparativesd.ComparativeSuperlativeDegrees;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.directandindirectspeech.Directandindirectspeech;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.test.TestCan;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparative.ComparativeSuperlativeDegrees;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.direct.Directandindirectspeech;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.DoDoes;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.test.TestDoDoes;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.emty.IsEmty;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.HaveTo;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.Must;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.presentcontinuous.PresentContinuous;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prularfrom.PluralForm;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prularfrom.test.TestPluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.PresentContinuous;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test.TestPresentContinuous;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prular.PluralForm;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prular.test.TestPluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.quastions.Questions;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.quastions.test.TestQuestions;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.PresentSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test.TestPresentSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.ThereIS;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test.TestTherelS;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.thefuturesimple.TheFutureSimple;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.future.TheFutureSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.tobe.ToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.tobe.test.TestToBe;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.transcription.Transcription;
@@ -79,7 +82,7 @@ public class HomeFragment extends Fragment implements Listener {
         companies.add(beginner);
         Company elementary = new Company("Elementary", getElementary(), R.drawable.elemen);
         companies.add(elementary);
-        Company prointermediate = new Company("Pro Intermediate", getIntermediate(), R.drawable.pre_inter);
+        Company prointermediate = new Company("Pro Intermediate", getIntermediate(), R.drawable.pre_intermediate);
         companies.add(prointermediate);
         Company intermediate = new Company("Intermediate", getB1Intermediate(), R.drawable.inter);
         companies.add(intermediate);
@@ -196,13 +199,13 @@ public class HomeFragment extends Fragment implements Listener {
                 test = TestPresentSimple.class;
                 break;
             case Letters8:
-                test = DoDoes.class;
+                test = TestDoDoes.class;
                 break;
             case Letters9:
-                test = Can.class;
+                test = TestCan.class;
                 break;
             case Letters11:
-                test = Must.class;
+                test = TestPresentContinuous.class;
                 break;
             case Letters12:
                 test = HaveTo.class;

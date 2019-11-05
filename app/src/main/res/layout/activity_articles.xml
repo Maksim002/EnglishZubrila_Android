@@ -519,6 +519,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -529,6 +530,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -539,6 +541,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -549,6 +552,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -559,6 +563,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -569,6 +574,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
@@ -579,6 +585,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"

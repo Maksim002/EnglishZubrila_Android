@@ -72,18 +72,17 @@ public class TestArticles extends AppCompatActivity{
         ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
         String quizData[][] = {
                 //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-                {" Выбрать слово, перед которым  ставится артикль «a» ", " butterfly  (бабочка)", "English dictionary (английский словарь)", "ice-cream", "elephant (слон)"},
-                {" Выбрать слово, перед которым ставится артикль «an» ", " onion (лук) ", " strawberry (клубника) ", " twins (близнецы) ", " bird (птица)"},
-                {" Выбрать вариант, перед которым ставится артикль «a» " , " red apple (красное яблоко)", " old town (старый город) ", "interesting book (интересная книга)", " orange dress (оранжевое платье) "},
-                {" Выбрать слово, перед которым ставится артикль «an» " , " uncle (дядя)"," union (союз) "," youth (юноша) ", " year (год) "},
-                {" Выбрать слово, перед которым ставится артикль «a» ", " Нет правильного ответа", " honey (мед)", " water ( вода)", " tea ( чай)"},
-                {" Выбрать правильный перевод: У нас кофе на завтрак ", " We have coffee for breakfast. ", " We have a coffee for breakfast. ", " We have coffee for a breakfast. ", "Нет правильного ответа"},
-                {" Определенный артикль употребляется перед существительным, обозначающим предмет:", " Все ответы верны.", " Единственный в данной ситуации.", " Единственный вообще, во всех ситуациях.", " Уже известный слушающему (читающему) из предыдущего опыта."},
-                {" Выбрать необходимый артикль: ___ farmer has two sons "," The"," A"," An", "Нет правильного ответа"},
-                {" Выбрать необходимые артикли: We see ___roof of ___house. ", " the , a "," a , a"," a, the", " нет артикля, the"},
-                {" Выбрать необходимые артикли: Tim wants to become ___captain of ___ship. ", " the , a "," нет артикля , a"," a, the", " a, нет артикля"}
-                };
-
+                {"Выберите правильный вариант.  ____ a lot of schools in our city.", " There are ", " There is", " Are there ", " Is there"},
+                {" Выберите правильный вариант. Our classroom ___ on the first floor. ", " is", " are", " has ", " Нет правильного ответа"},
+                {" Выберите правильный вариант.  _____ twenty-five children in the kindergarten." , " There are ", " There is", " Are there ", " Is there"},
+                {" Выберите правильный вариант. _____ three rooms in our flat?" ," Are there ", " There is", " There are ", " Is there"},
+                {" Выберите правильный вариант. _____ a little salt in the salt-cellar. ", " There is", " There are", " Are there ", " Is there"},
+                {" Выберите правильный вариант. ____ a stove in the kitchen?", " Is there", " Are there ", " There is", " There are"},
+                {" Выберите правильный вариант. ____ a lot of sugar in the sugar-bowl. ", " There is", " There are", " Are there ", " Is there"},
+                {" Выберите правильный вариант.  _____ cups and a tea-pot?", " Are there ", " There is", " There are ", " Is there"},
+                {" Выберите правильный вариант. _____ any apples on the table? ", " Is there", " Are there ", " There is", " There are"},
+                {" Выберите правильный вариант. _____ any apples on the table. ", " There aren’t ", " There isn’t", " There is", " There are"}
+        };
 
         @SuppressLint("WrongViewCast")
         @Override

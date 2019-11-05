@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -29,7 +29,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestPresentSimple extends AppCompatActivity {
+public class TestCan extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -72,16 +72,16 @@ public class TestPresentSimple extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Выберите правильный вариант.  I .... Spanish with my sister.", " study", "studies", " studying ", "Нет правильного ответа"},
-            {" Выберите правильный вариант. My sister .... a shower every morning. ", " takes ", " take", " taking", " Нет правильного ответа"},
-            {" Выберите правильный вариант. This house .... to my grandmother. " , "belongs", " belong", " belonges", " Нет правильного ответа "},
-            {" Выберите правильный вариант. My husband and I .... a lot of money on books. " , " spend ", " spends ", " spending", " spendes "},
-            {" Выберите правильный вариант. John .... milk twice a day. ", " drinks", " drink", " drinking ", " drinkes"},
-            {" Выберите правильный вариант. It .... in Russia in winter. ", " snows ", " snow ", " snowes", " Нет правильного ответа"},
-            {" Выберите правильный вариант. Plants .... well in a warm climate. ", " grow", " growing", " grows ", " growes"},
-            {" Выберите правильный вариант.  .... they often watch TV at night? ", " Do", "Does", "Are", " Is"},
-            {" Выберите правильный вариант. .... you like pizza? ", " Do ", " Does", "Are", " Is"},
-            {" Выберите правильный вариант. Where .... he live in Prague? ", " does ", " do", "Are", " Is"}
+            {" Ответим на вопрос утвердительно.  Can you help me? ", " Yes, I can. ", " Yes, I am. ", " No, I cannot.  ", " No, I do not.  "},
+            {" Ответим на вопрос утвердительно. Can she cook? ", " Yes, she can. ", " Yes, she is. ", " Yes, she does.", " Yes, she do. "},
+            {" Ответим на вопрос утвердительно. Can Tiggers swim?" , " Yes, they can. ", "Yes, it can. ", " Yes, they are. ", " Yes, they do. "},
+            {" Ответим на вопрос отрицательно. Can he come now? " , " No, he cannot. ", " No, he does not. ", " No, he is not. ", " No, he do not. "},
+            {" Ответим на вопрос отрицательно. Can they stay for a day?", " No, they cannot. ", " No, they do not. ", " No, they are not. ", " No, they does not.  "},
+            {" Глагол «can» называют «особым» глаголом. В чем его особенность?", "Все варианты верны", " «can» работает в паре с обычными глаголами, при этом они используются без частицы to.", " «can»  сообщает о физических способностях и об умении что-либо делать.", " «can»  выражает желание, возможность и моральное право что-либо предпринимать или не предпринимать."},
+            {" Выбрать правильное вопросительное предложение. ", " Can tigers fly?", " Do can tigers fly?", " Tigers can fly?", "Do tigers can fly?"},
+            {" Преобразовать в вопросительное предложение.  Не can drive. ", " Can he drive?", " Do he can drive?", " Does he can drive?", " He can drive?"},
+            {" Преобразовать в вопросительное предложение.  He can ride a bicycle. ", " Can he ride a bicycle?", " Can they ride a bicycle?", " He can ride a bicycle?", " Do he can ride a bicycle?"},
+            {" Выбрать правильное отрицательное предложение.", " Dogs cannot talk.", " Dogs can talk.", " Dogs cannot talks.", " Dogs not can talk."}
     };
 
     @SuppressLint("WrongViewCast")
@@ -98,7 +98,7 @@ public class TestPresentSimple extends AppCompatActivity {
         answerButton2 = findViewById(R.id.answer2);
         answerButton3 = findViewById(R.id.answer3);
         answerButton4 = findViewById(R.id.answer4);
-        mActivity = TestPresentSimple.this;
+        mActivity = TestCan.this;
 
         startTimer();
 
@@ -164,11 +164,11 @@ public class TestPresentSimple extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == corect) {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestCan.this);
             final View view2 = factory.inflate(R.layout.sample, null);
             builder.setView(view2);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestCan.this);
             final View view1 = factory.inflate(R.layout.smale_fols, null);
             builder.setView(view1);
         }

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prularfrom.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prular.test;
 
 public class Questions {
 

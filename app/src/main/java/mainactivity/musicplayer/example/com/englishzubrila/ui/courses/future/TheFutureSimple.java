@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparativesd;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.future;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -13,10 +13,7 @@ import android.widget.SeekBar;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class ComparativeSuperlativeDegrees extends AppCompatActivity {
-
-    private Toolbar toolbar;
-    private ActionBar actionBar;
+public class TheFutureSimple extends AppCompatActivity {
 
     private ImageView bPley1;
     private SeekBar seekBar1;
@@ -24,28 +21,31 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
     private Runnable runnable1;
     private Handler handler1;
 
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comparative_superlative_degrees);
+        setContentView(R.layout.activity_the_future_simple);
 
-        toolbar = findViewById(R.id.toolComparative);
+        toolbar = findViewById(R.id.toolThe);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         actionBar = getSupportActionBar();
-        actionBar.setTitle("Comparative and Superlative Degrees");
+        actionBar.setTitle("The Future Simple");
 
         getLessonA();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.cPlayer0);
+        bPley1 = findViewById(R.id.tPlayer0);
 
         handler1 = new Handler();
 
         seekBar1 = findViewById(R.id.seekBar0);
 
-        player1 = MediaPlayer.create(this, R.raw.lesson23_3);
+        player1 = MediaPlayer.create(this, R.raw.lesson22_7);
 
         player1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -87,7 +87,7 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.cPlayer0:
+                    case R.id.tPlayer0:
                         if (player1.isPlaying()) {
                             player1.pause();
                             bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);

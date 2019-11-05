@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.simple.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -29,7 +29,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestPresentSimple extends AppCompatActivity {
+public class TestDoDoes extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -72,16 +72,16 @@ public class TestPresentSimple extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Выберите правильный вариант.  I .... Spanish with my sister.", " study", "studies", " studying ", "Нет правильного ответа"},
-            {" Выберите правильный вариант. My sister .... a shower every morning. ", " takes ", " take", " taking", " Нет правильного ответа"},
-            {" Выберите правильный вариант. This house .... to my grandmother. " , "belongs", " belong", " belonges", " Нет правильного ответа "},
-            {" Выберите правильный вариант. My husband and I .... a lot of money on books. " , " spend ", " spends ", " spending", " spendes "},
-            {" Выберите правильный вариант. John .... milk twice a day. ", " drinks", " drink", " drinking ", " drinkes"},
-            {" Выберите правильный вариант. It .... in Russia in winter. ", " snows ", " snow ", " snowes", " Нет правильного ответа"},
-            {" Выберите правильный вариант. Plants .... well in a warm climate. ", " grow", " growing", " grows ", " growes"},
-            {" Выберите правильный вариант.  .... they often watch TV at night? ", " Do", "Does", "Are", " Is"},
-            {" Выберите правильный вариант. .... you like pizza? ", " Do ", " Does", "Are", " Is"},
-            {" Выберите правильный вариант. Where .... he live in Prague? ", " does ", " do", "Are", " Is"}
+            {" Ответим на вопрос утвердительно.  Do you like ice-cream? ", " Yes, I do. ", " No, I do not. ", " No, I am not.  ", " Yes, I am. "},
+            {" Ответим на вопрос утвердительно. Do they play football? ", " Yes, they do. ", " No, they do not. ", " No, they aren’t.", " Yes, they are. "},
+            {" Ответим на вопрос утвердительно. Does Tim learn French? " , " Yes, he does. ", " Yes, he is. ", " No, he does not. ", " No, he is not. "},
+            {" Ответим на вопрос отрицательно. Does he know Spanish? " , " No, he does not. ", " No, he is not. ", " Yes, he does. ", " Yes, he is. "},
+            {" Ответим на вопрос отрицательно. Does she like fruit?", " No, she does not. ", " No, she is not. ", " Yes, she does. ", " Yes, she is. "},
+            {" Ответим на вопрос отрицательно.  Do we eat bananas?", " No, we do not.  ", " Yes, we do. ", " No, we aren’t.", " Yes, we are. "},
+            {" Выбрать правильное отрицательное предложение. ", " They do not play football.", " They not do play football. ", " They does not play football.", " They not play football."},
+            {" Преобразовать в вопросительное предложение.  She likes jam. ", " Does she like fruit?", " Do she like fruit?", " Does she likes fruit?", " Do she likes fruit?"},
+            {" Преобразовать в вопросительное предложение.  They eat oranges. ", " Do they eat oranges?", " Does they eat oranges?", " Does they eats oranges?", " Do they eats oranges?"},
+            {" Выбрать правильное отрицательное предложение.", " Tim does not know Spanish.", " Tim does not knows Spanish.", " Tim do not know Spanish.", " Tim do not knows Spanish."}
     };
 
     @SuppressLint("WrongViewCast")
@@ -98,7 +98,7 @@ public class TestPresentSimple extends AppCompatActivity {
         answerButton2 = findViewById(R.id.answer2);
         answerButton3 = findViewById(R.id.answer3);
         answerButton4 = findViewById(R.id.answer4);
-        mActivity = TestPresentSimple.this;
+        mActivity = TestDoDoes.this;
 
         startTimer();
 
@@ -164,11 +164,11 @@ public class TestPresentSimple extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == corect) {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestDoDoes.this);
             final View view2 = factory.inflate(R.layout.sample, null);
             builder.setView(view2);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
+            LayoutInflater factory = LayoutInflater.from(TestDoDoes.this);
             final View view1 = factory.inflate(R.layout.smale_fols, null);
             builder.setView(view1);
         }
