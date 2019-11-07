@@ -14,7 +14,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompaniViewHolder, ProductViewHolder> {
+public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompanyViewHolder, ProductViewHolder> {
     private Listener listener;
 
 
@@ -24,9 +24,9 @@ public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompaniViewHol
     }
 
     @Override
-    public CompaniViewHolder onCreateGroupViewHolder(ViewGroup parent, int viewType) {
+    public CompanyViewHolder onCreateGroupViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.expandable_initi_company, parent,false);
-        return new CompaniViewHolder(view);
+        return new CompanyViewHolder(view);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompaniViewHol
     }
 
     @Override
-    public void onBindGroupViewHolder(CompaniViewHolder holder, int flatPosition, ExpandableGroup group) {
+    public void onBindGroupViewHolder(CompanyViewHolder holder, int flatPosition, ExpandableGroup group) {
         final Company company = (Company) group;
         holder.bind(company);
     }

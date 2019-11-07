@@ -78,17 +78,17 @@ public class HomeFragment extends Fragment implements Listener {
     }
     private void getCompanies(){
         ArrayList<Company> companies = new ArrayList<>();
-        Company beginner = new Company("Beginner", getBeginner(), R.drawable.begin);
+        Company beginner = new Company("Beginner", getBeginner(), R.drawable.new_begin_new,"Учимся правильному чтению");
         companies.add(beginner);
-        Company elementary = new Company("Elementary", getElementary(), R.drawable.elemen);
+        Company elementary = new Company("Elementary", getElementary(), R.drawable.new_elementary,"Получаем базовые знания");
         companies.add(elementary);
-        Company prointermediate = new Company("Pro Intermediate", getIntermediate(), R.drawable.pre_intermediate);
+        Company prointermediate = new Company("Pro Intermediate", getIntermediate(), R.drawable.new_pre_intermediate,"Составляем сложные предложения");
         companies.add(prointermediate);
-        Company intermediate = new Company("Intermediate", getB1Intermediate(), R.drawable.inter);
+        Company intermediate = new Company("Intermediate", getB1Intermediate(), R.drawable.new_intermediate,"Изучение тонкостей языка");
         companies.add(intermediate);
-        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(), R.drawable.upper_inter);
+        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(), R.drawable.new_upper_intermediate,"Чтение и понимание");
         companies.add(upperintermediate);
-        Company advanced = new Company("Advanced", getC1Advanced(), R.drawable.advan);
+        Company advanced = new Company("Advanced", getC1Advanced(), R.drawable.new_advanced,"Расширяем кругозор");
         companies.add(advanced);
 
         ProductAdapter adapter = new ProductAdapter(companies, this);
