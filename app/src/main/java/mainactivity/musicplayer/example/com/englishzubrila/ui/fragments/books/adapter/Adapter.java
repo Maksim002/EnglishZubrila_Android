@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.adapter;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 

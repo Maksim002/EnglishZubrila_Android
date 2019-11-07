@@ -3,7 +3,7 @@ package mainactivity.musicplayer.example.com.englishzubrila.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.enumlist.Beginner;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.enumlist.Beginner;
 
 public class Product implements Parcelable {
     public final String name;

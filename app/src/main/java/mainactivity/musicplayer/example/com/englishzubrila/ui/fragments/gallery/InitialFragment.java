@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,9 +12,9 @@ import android.view.MenuItem;
 
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.ListViewPager;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.adapter.ViewPegerAdaptor;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.bottomnavigation.BottomNavigationBehavior;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.ListViewPager;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.adapter.ViewPegerAdaptor;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.bottomnavigation.BottomNavigationBehavior;
 
 public class InitialFragment  extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;

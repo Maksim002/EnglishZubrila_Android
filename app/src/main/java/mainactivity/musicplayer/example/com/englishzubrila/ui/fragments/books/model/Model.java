@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery;
 
 
 import android.content.Context;
@@ -48,11 +48,11 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.tobe.test.
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.transcription.Transcription;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.transcription.test.TestTranscription;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.enumlist.Beginner;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.enumlist.Beginner;
 import mainactivity.musicplayer.example.com.englishzubrila.model.Company;
 import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.expandable.ProductAdapter;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.expandable.ProductAdapter;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 

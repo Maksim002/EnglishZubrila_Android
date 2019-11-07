@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
@@ -16,10 +16,10 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.adapter.Adapter;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.adapter.animpager.ZoomOutTransformation;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.web.WebViewB;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.adapter.Adapter;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.adapter.animpager.ZoomOutTransformation;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.web.WebViewB;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
@@ -108,7 +108,7 @@ public class ListViewPager extends Fragment implements Listener {
 
 
         Integer[] colors_temp = {
-                    getResources().getColor(R.color.color14),
+                    getResources().getColor(R.color.colorBek),
             };
             colors = colors_temp;
 

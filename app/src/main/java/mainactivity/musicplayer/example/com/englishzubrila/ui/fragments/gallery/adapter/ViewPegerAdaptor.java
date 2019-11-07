@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.adapter;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

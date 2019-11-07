@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.InitialFragment;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.InitialFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class MainActivity extends AppCompatActivity {

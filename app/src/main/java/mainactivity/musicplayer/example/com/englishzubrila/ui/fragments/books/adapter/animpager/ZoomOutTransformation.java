@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.adapter.animpager;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.adapter.animpager;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

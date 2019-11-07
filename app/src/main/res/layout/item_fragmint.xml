@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.NonSwipeableViewPager
+    <mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.NonSwipeableViewPager
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

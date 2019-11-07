@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.expandable;
 
 import android.view.LayoutInflater;
 import android.view.View;

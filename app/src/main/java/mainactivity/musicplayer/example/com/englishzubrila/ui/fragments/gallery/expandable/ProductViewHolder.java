@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.expandable;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.expandable;
 
 import android.graphics.Color;
 import android.view.View;
@@ -21,7 +21,7 @@ public class ProductViewHolder extends ChildViewHolder {
     }
     public void bind(final Product product){
         textView.setText(product.name);
-        textView.setShadowLayer(30, 0, 0, Color.RED);
+        textView.setShadowLayer(30, 0, 0, Color.BLACK);
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override

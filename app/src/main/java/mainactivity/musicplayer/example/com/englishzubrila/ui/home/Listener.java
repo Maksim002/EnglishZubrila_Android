@@ -2,7 +2,7 @@ package mainactivity.musicplayer.example.com.englishzubrila.ui.home;
 
 
 import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagerbooks.model.Model;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.Model;
 
 
 public interface Listener {

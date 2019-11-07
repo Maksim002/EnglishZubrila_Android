@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6D7186</color>
-    <color name="colorPrimaryDark">#102410</color>
+    <color name="colorPrimaryDark">#0F4177</color>
     <color name="colorAccent">#E92910</color>
-    <color name="Test">#351E0B</color>
-    <color name="stil_Htenia">#B1C0B4</color>
-    <color name="HriftBukov">#000000</color>
-    <color name="colorbucov">#32AC21</color>
-    <color name="ShriftBottom">#010032</color>
-    <color name="Menu">#351E0B</color>
-    <color name="TextMenu">#C9C9FF</color>
-    <color name="Dizanelist">#D6D3D3</color>
-
+    <color name="test">#351E0B</color>
+    <color name="books">#000000</color>
+    <color name="color_buc">#32AC21</color>
+    <color name="bottom">#010032</color>
+    <color name="menu">#351E0B</color>
+    <color name="textMenu">#C9C9FF</color>
     <color name="colorTrue">#126112</color>
     <color name="colorFalse">#7A2F28</color>
-
     <color name="colorWhite">#FAF9F9</color>
-
-    <color name="color14">#CECED8</color>
+    <color name="colorBek">#CECED8</color>
     <color name="color1">#F8F6F6</color>
-
 </resources>

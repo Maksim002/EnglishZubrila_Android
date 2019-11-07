@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.pagergallery.enumlist;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.enumlist;
 
 public enum  Beginner {
     Letters0(0),
