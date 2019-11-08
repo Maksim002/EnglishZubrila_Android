@@ -9,7 +9,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -42,16 +44,16 @@ public class TestTherelS extends AppCompatActivity {
     private String rightAnswer;
     private int rightAnswerCount = 0;
     private int quizCount = 1;
-
     static final private int QUIZ_COUNT = 10;
     static final long START_TIME_IN_MILIS = 60000;
     private long mTimeLeftinMillis = START_TIME_IN_MILIS;
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
-
-    private String corect = "Correct";
+    private String correct = "Correct";
     private String wrong = "Wrong";
-
     private Activity mActivity;
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -95,11 +97,20 @@ public class TestTherelS extends AppCompatActivity {
         questionLabel = findViewById(R.id.question_text_view);
         quizTimer = findViewById(R.id.timer);
         mProgressBar = findViewById(R.id.progress_bar);
-        answerButton1 = findViewById(R.id.answer1);
-        answerButton2 = findViewById(R.id.answer2);
-        answerButton3 = findViewById(R.id.answer3);
-        answerButton4 = findViewById(R.id.answer4);
+        answerButton1 = findViewById(R.id.answerE);
+        answerButton2 = findViewById(R.id.answerB);
+        answerButton3 = findViewById(R.id.answerS);
+        answerButton4 = findViewById(R.id.answerD);
         mActivity = TestTherelS.this;
+
+        toolbar = findViewById(R.id.toolTesting);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Test");
 
         startTimer();
 
@@ -148,7 +159,7 @@ public class TestTherelS extends AppCompatActivity {
         final String alertTitle;
 
         if (btnText.equals(rightAnswer)) {
-            alertTitle = corect;
+            alertTitle = correct;
             rightAnswerCount++;
         } else {
             alertTitle = wrong;
@@ -164,7 +175,7 @@ public class TestTherelS extends AppCompatActivity {
         builder.setCustomTitle (dialogTitle);
         builder.setTitle(alertTitle);
 
-        if (alertTitle == corect) {
+        if (alertTitle == correct) {
             LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
             final View view2 = factory.inflate(R.layout.sample, null);
             builder.setView(view2);
@@ -191,17 +202,16 @@ public class TestTherelS extends AppCompatActivity {
         AlertDialog dialog1 = builder.create();
         dialog1 = builder.create();
         dialog1.show();
-        dialog1.getWindow().setLayout(900,600);
 
         WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
 
-        if (alertTitle.equals(corect)){
+        if (alertTitle.equals(correct)){
             Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
             Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
         dialog1.show();
-        return corect;
+        return correct;
     }
 
 }

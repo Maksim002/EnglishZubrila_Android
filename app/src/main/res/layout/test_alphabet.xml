@@ -9,9 +9,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/tooltesting"
+        android:background="#251A3A"
+        android:id="@+id/toolTesting"
+        android:gravity="center_horizontal"
+        app:titleTextColor="#F8F8FA"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <ProgressBar
         android:layout_width="fill_parent"
@@ -62,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:background="#5F5F69"
         android:gravity="center"
         android:padding="5dp"
@@ -88,7 +92,7 @@
             android:layout_marginBottom="7dp">
 
             <Button
-                android:id="@+id/answer1"
+                android:id="@+id/answerE"
                 style="@style/TextAppearance.AppCompat.Small.Inverse"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -109,7 +113,7 @@
             android:layout_marginBottom="7dp">
 
             <Button
-                android:id="@+id/answer2"
+                android:id="@+id/answerB"
                 style="@style/TextAppearance.AppCompat.Small.Inverse"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -131,7 +135,7 @@
             android:layout_marginBottom="7dp">
 
             <Button
-                android:id="@+id/answer3"
+                android:id="@+id/answerS"
                 style="@style/TextAppearance.AppCompat.Small.Inverse"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -153,7 +157,7 @@
             android:layout_marginBottom="7dp">
 
             <Button
-                android:id="@+id/answer4"
+                android:id="@+id/answerD"
                 style="@style/TextAppearance.AppCompat.Small.Inverse"
                 android:layout_width="300dp"
                 android:layout_height="50dp"

@@ -39,7 +39,7 @@ public class Must extends AppCompatActivity {
         setPlayer();
     }
         private void gropeBottom() {
-            bPley = findViewById(R.id.bPlay);
+            bPley = findViewById(R.id.bPlayer);
 
             handler = new Handler();
 
@@ -96,7 +96,7 @@ public class Must extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     switch (view.getId()) {
-                        case R.id.bPlay:
+                        case R.id.bPlayer:
                             if (player.isPlaying()) {
                                 player.pause();
                                 bPley.setImageResource(R.drawable.ic_play_arrow_black_24dp);

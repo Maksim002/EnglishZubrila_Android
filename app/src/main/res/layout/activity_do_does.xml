@@ -47,7 +47,7 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar0"
+                    android:id="@+id/seekBarS"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
@@ -83,7 +83,7 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar1"
+                    android:id="@+id/seekBarS"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
@@ -711,12 +711,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar2"
+                    android:id="@+id/seekBarB"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay2"
+                    android:id="@+id/bPlayB"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -861,7 +861,7 @@
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay3"
+                    android:id="@+id/bPlayS"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -908,12 +908,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar4"
+                    android:id="@+id/seekBarS"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay4"
+                    android:id="@+id/bPlayD"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -949,12 +949,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar5"
+                    android:id="@+id/seekBarI"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay5"
+                    android:id="@+id/bPlayI"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -990,12 +990,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBar6"
+                    android:id="@+id/seekBarJ"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay6"
+                    android:id="@+id/bPlayJ"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

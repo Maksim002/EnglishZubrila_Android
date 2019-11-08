@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarAlphabet2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAlphabetE"
         tools:ignore="UselessParent">
 
         <LinearLayout
@@ -57,7 +57,7 @@
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay"
+                    android:id="@+id/bPlayer"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

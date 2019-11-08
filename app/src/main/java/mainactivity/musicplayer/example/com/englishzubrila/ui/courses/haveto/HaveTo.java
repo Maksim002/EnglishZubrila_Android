@@ -40,7 +40,7 @@ public class HaveTo extends AppCompatActivity {
         getLessonE();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.bPlay);
+        bPley1 = findViewById(R.id.bPlayer);
 
         handler1 = new Handler();
 
@@ -88,7 +88,7 @@ public class HaveTo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay:
+                    case R.id.bPlayer:
                         if (player1.isPlaying()) {
                             player1.pause();
                             bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);

@@ -18,11 +18,11 @@ public class Can extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBar actionBar;
 
-    private ImageView bPley1,bPley2;
-    private SeekBar seekBar1, seekBar2;
-    private MediaPlayer player1, player2;
-    private Runnable runnable1, runnable2;
-    private Handler handler1, handler2;
+    private ImageView bPlayerE, bPlayerB;
+    private SeekBar seekBarE, seekBarB;
+    private MediaPlayer playerE, playerB;
+    private Runnable runnableE, runnableB;
+    private Handler handlerE, handlerB;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,28 +40,28 @@ public class Can extends AppCompatActivity {
         getLessonE();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.cPlayer0);
+        bPlayerE = findViewById(R.id.cPlayerE);
 
-        handler1 = new Handler();
+        handlerE = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBar0);
+        seekBarE = findViewById(R.id.seekBarS);
 
-        player1 = MediaPlayer.create(this, R.raw.lesson13_5);
+        playerE = MediaPlayer.create(this, R.raw.lesson13_5);
 
-        player1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerE.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar1.setMax(mediaPlayer.getDuration());
+                seekBarE.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarA();
-                player1.pause();
+                playerE.pause();
             }
         });
-        seekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarE.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player1.seekTo(i);
+                    playerE.seekTo(i);
                 }
             }
             @Override
@@ -73,29 +73,29 @@ public class Can extends AppCompatActivity {
         });
     }
     private void changeSeekBarA() {
-        seekBar1.setProgress(player1.getCurrentPosition());
+        seekBarE.setProgress(playerE.getCurrentPosition());
 
-        if (player1.isPlaying()) {
-            runnable1 = new Runnable() {
+        if (playerE.isPlaying()) {
+            runnableE = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarA();
                 }
             };
-            handler1.postDelayed(runnable1, 1000);
+            handlerE.postDelayed(runnableE, 1000);
         }
-        bPley1.setOnClickListener(new View.OnClickListener() {
+        bPlayerE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.cPlayer0:
-                        if (player1.isPlaying()) {
-                            player1.pause();
-                            bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.cPlayerE:
+                        if (playerE.isPlaying()) {
+                            playerE.pause();
+                            bPlayerE.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player1.start();
+                            playerE.start();
                             changeSeekBarA();
-                            bPley1.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerE.setImageResource(R.drawable.ic_stop_black_24dp);
                         }
                         break;
                 }
@@ -104,28 +104,28 @@ public class Can extends AppCompatActivity {
     }
 
     private void getLessonE() {
-        bPley2 = findViewById(R.id.cPlayer1);
+        bPlayerB = findViewById(R.id.cPlayerS);
 
-        handler2 = new Handler();
+        handlerB = new Handler();
 
-        seekBar2 = findViewById(R.id.seekBar1);
+        seekBarB = findViewById(R.id.seekBarS);
 
-        player2 = MediaPlayer.create(this, R.raw.lesson13_6);
+        playerB = MediaPlayer.create(this, R.raw.lesson13_6);
 
-        player2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerB.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar2.setMax(mediaPlayer.getDuration());
+                seekBarB.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarE();
-                player2.pause();
+                playerB.pause();
             }
         });
-        seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player2.seekTo(i);
+                    playerB.seekTo(i);
                 }
             }
             @Override
@@ -137,29 +137,29 @@ public class Can extends AppCompatActivity {
         });
     }
     private void changeSeekBarE() {
-        seekBar2.setProgress(player2.getCurrentPosition());
+        seekBarB.setProgress(playerB.getCurrentPosition());
 
-        if (player2.isPlaying()) {
-            runnable2 = new Runnable() {
+        if (playerB.isPlaying()) {
+            runnableB = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarE();
                 }
             };
-            handler2.postDelayed(runnable2, 1000);
+            handlerB.postDelayed(runnableB, 1000);
         }
-        bPley2.setOnClickListener(new View.OnClickListener() {
+        bPlayerB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.cPlayer1:
-                        if (player2.isPlaying()) {
-                            player2.pause();
-                            bPley2.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.cPlayerS:
+                        if (playerB.isPlaying()) {
+                            playerB.pause();
+                            bPlayerB.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player2.start();
+                            playerB.start();
                             changeSeekBarE();
-                            bPley2.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerB.setImageResource(R.drawable.ic_stop_black_24dp);
                         }
                         break;
                 }
@@ -170,9 +170,9 @@ public class Can extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        handler1.removeCallbacks(null);
-        player1.stop();
-        handler2.removeCallbacks(null);
-        player2.stop();
+        handlerE.removeCallbacks(null);
+        playerE.stop();
+        handlerB.removeCallbacks(null);
+        playerB.stop();
     }
 }

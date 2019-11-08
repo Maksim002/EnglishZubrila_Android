@@ -39,11 +39,11 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
         getLessonA();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.cPlayer0);
+        bPley1 = findViewById(R.id.cPlayerE);
 
         handler1 = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBar0);
+        seekBar1 = findViewById(R.id.seekBarS);
 
         player1 = MediaPlayer.create(this, R.raw.lesson23_3);
 
@@ -87,7 +87,7 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.cPlayer0:
+                    case R.id.cPlayerE:
                         if (player1.isPlaying()) {
                             player1.pause();
                             bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);

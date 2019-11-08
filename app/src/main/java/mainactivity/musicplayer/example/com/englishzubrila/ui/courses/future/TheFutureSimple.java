@@ -43,7 +43,7 @@ public class TheFutureSimple extends AppCompatActivity {
 
         handler1 = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBar0);
+        seekBar1 = findViewById(R.id.seekBarS);
 
         player1 = MediaPlayer.create(this, R.raw.lesson22_7);
 

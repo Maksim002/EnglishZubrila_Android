@@ -154,7 +154,6 @@ public class HomeFragment extends Fragment implements Listener {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle(title)
                     .setMessage(message)
-                    .setCancelable(false)
                     .setNegativeButton(button2String, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     openActivity(product);

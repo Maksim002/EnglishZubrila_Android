@@ -27,7 +27,7 @@ public class Alphabet extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBar actionBar;
 
-    private ImageView bPley;
+    private ImageView bPlayer;
     private SeekBar seekBar;
     private MediaPlayer player;
     private Runnable runnable;
@@ -95,7 +95,7 @@ public class Alphabet extends AppCompatActivity {
         return temps;
     }
     private void gropeBottom() {
-        bPley = findViewById(R.id.bPlay);
+        bPlayer = findViewById(R.id.bPlayer);
 
         handler = new Handler();
 
@@ -148,18 +148,18 @@ public class Alphabet extends AppCompatActivity {
             handler.postDelayed(runnable, 1000);
         }
 
-        bPley.setOnClickListener(new View.OnClickListener() {
+        bPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay:
+                    case R.id.bPlayer:
                         if (player.isPlaying()) {
                             player.pause();
-                            bPley.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                            bPlayer.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             player.start();
                             changeSeekbar();
-                            bPley.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayer.setImageResource(R.drawable.ic_stop_black_24dp);
                         }
                         break;
                 }

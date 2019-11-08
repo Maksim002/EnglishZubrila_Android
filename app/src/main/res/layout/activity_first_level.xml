@@ -49,7 +49,7 @@
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay"
+                    android:id="@+id/bPlayer"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

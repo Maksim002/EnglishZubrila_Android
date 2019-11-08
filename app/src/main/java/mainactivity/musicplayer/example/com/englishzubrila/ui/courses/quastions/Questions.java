@@ -57,15 +57,15 @@ public class Questions extends AppCompatActivity {
     private void gropeBottom() {
         bPley = findViewById(R.id.b);
         bPley2 = findViewById(R.id.b);
-        bPley3 = findViewById(R.id.bPlay2);
+        bPley3 = findViewById(R.id.bPlayB);
 
         handler = new Handler();
         handler2 = new Handler();
         handler3 = new Handler();
 
-        seekBar = findViewById(R.id.seekBar1);
-        seekBar2 = findViewById(R.id.seekBar1);
-        seekBar3 = findViewById(R.id.seekBar2);
+        seekBar = findViewById(R.id.seekBarS);
+        seekBar2 = findViewById(R.id.seekBarS);
+        seekBar3 = findViewById(R.id.seekBarB);
     }
 
     private void setPlayer() {
@@ -248,7 +248,7 @@ public class Questions extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlay2:
+                    case R.id.bPlayB:
                         if (player3.isPlaying()) {
                             player3.pause();
                             bPley3.setImageResource(R.drawable.ic_play_arrow_black_24dp);

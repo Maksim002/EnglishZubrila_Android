@@ -19,7 +19,7 @@ public class Articles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_articles);
 
-        toolbar = findViewById(R.id.toolbarAlphabet2);
+        toolbar = findViewById(R.id.toolbarAlphabetE);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

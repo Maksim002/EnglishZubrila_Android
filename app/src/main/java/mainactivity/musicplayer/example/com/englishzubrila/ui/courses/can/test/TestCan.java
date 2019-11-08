@@ -9,7 +9,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -34,24 +36,23 @@ public class TestCan extends AppCompatActivity {
     ProgressBar mProgressBar;
     private TextView questionLabel;
     private TextView quizTimer;
-    private Button answerButton1;
-    private Button answerButton2;
-    private Button answerButton3;
-    private Button answerButton4;
+    private Button answerButtonE;
+    private Button answerButtonB;
+    private Button answerButtonS;
+    private Button answerButtonD;
     private CountDownTimer mCountDownTimer;
     private String rightAnswer;
     private int rightAnswerCount = 0;
     private int quizCount = 1;
-
     static final private int QUIZ_COUNT = 10;
     static final long START_TIME_IN_MILIS = 60000;
     private long mTimeLeftinMillis = START_TIME_IN_MILIS;
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
-
-    private String corect = "Correct";
+    private String correct = "Correct";
     private String wrong = "Wrong";
-
     private Activity mActivity;
+    private Toolbar toolbar;
+    private ActionBar actionBar;
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -94,11 +95,20 @@ public class TestCan extends AppCompatActivity {
         questionLabel = findViewById(R.id.question_text_view);
         quizTimer = findViewById(R.id.timer);
         mProgressBar = findViewById(R.id.progress_bar);
-        answerButton1 = findViewById(R.id.answer1);
-        answerButton2 = findViewById(R.id.answer2);
-        answerButton3 = findViewById(R.id.answer3);
-        answerButton4 = findViewById(R.id.answer4);
+        answerButtonE = findViewById(R.id.answerE);
+        answerButtonB = findViewById(R.id.answerB);
+        answerButtonS = findViewById(R.id.answerS);
+        answerButtonD = findViewById(R.id.answerD);
         mActivity = TestCan.this;
+
+        toolbar = findViewById(R.id.toolTesting);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Test");
 
         startTimer();
 
@@ -130,10 +140,10 @@ public class TestCan extends AppCompatActivity {
         quiz.remove(0);
         Collections.shuffle(quiz);
 
-        answerButton1.setText(quiz.get(0));
-        answerButton2.setText(quiz.get(1));
-        answerButton3.setText(quiz.get(2));
-        answerButton4.setText(quiz.get(3));
+        answerButtonE.setText(quiz.get(0));
+        answerButtonB.setText(quiz.get(1));
+        answerButtonS.setText(quiz.get(2));
+        answerButtonD.setText(quiz.get(3));
 
         quizArray.remove(randomNum);
     }
@@ -147,7 +157,7 @@ public class TestCan extends AppCompatActivity {
         final String alertTitle;
 
         if (btnText.equals(rightAnswer)) {
-            alertTitle = corect;
+            alertTitle = correct;
             rightAnswerCount++;
         } else {
             alertTitle = wrong;
@@ -163,7 +173,7 @@ public class TestCan extends AppCompatActivity {
         builder.setCustomTitle (dialogTitle);
         builder.setTitle(alertTitle);
 
-        if (alertTitle == corect) {
+        if (alertTitle == correct) {
             LayoutInflater factory = LayoutInflater.from(TestCan.this);
             final View view2 = factory.inflate(R.layout.sample, null);
             builder.setView(view2);
@@ -193,12 +203,12 @@ public class TestCan extends AppCompatActivity {
 
         WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
 
-        if (alertTitle.equals(corect)){
+        if (alertTitle.equals(correct)){
             Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
             Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
         dialog1.show();
-        return corect;
+        return correct;
     }
 }

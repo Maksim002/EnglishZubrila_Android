@@ -35,23 +35,23 @@ public class TestAlphabet extends AppCompatActivity {
     ProgressBar mProgressBar;
     private TextView questionLabel;
     private TextView quizTimer;
-    private Button answerButton1;
-    private Button answerButton2;
-    private Button answerButton3;
-    private Button answerButton4;
+    private Button answerButtonE;
+    private Button answerButtonB;
+    private Button answerButtonS;
+    private Button answerButtonD;
     private CountDownTimer mCountDownTimer;
     private String rightAnswer;
     private int rightAnswerCount = 0;
     private int quizCount = 1;
     private TextView dialogTitle;
-
     static final private int QUIZ_COUNT = 10;
     static final long START_TIME_IN_MILIS = 60000;
     private long mTimeLeftinMillis = START_TIME_IN_MILIS;
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
-
     private String corect = "Correct";
     private String wrong = "Wrong";
+    private Toolbar toolbar;
+    private ActionBar actionBar;
 
     private Activity mActivity;
 
@@ -96,11 +96,17 @@ public class TestAlphabet extends AppCompatActivity {
         questionLabel = findViewById(R.id.question_text_view);
         quizTimer = findViewById(R.id.timer);
         mProgressBar = findViewById(R.id.progress_bar);
-        answerButton1 = findViewById(R.id.answer1);
-        answerButton2 = findViewById(R.id.answer2);
-        answerButton3 = findViewById(R.id.answer3);
-        answerButton4 = findViewById(R.id.answer4);
+        answerButtonE = findViewById(R.id.answerE);
+        answerButtonB = findViewById(R.id.answerB);
+        answerButtonS = findViewById(R.id.answerS);
+        answerButtonD = findViewById(R.id.answerD);
         mActivity = TestAlphabet.this;
+        toolbar = findViewById(R.id.toolTesting);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Test");
 
         startTimer();
 
@@ -112,12 +118,10 @@ public class TestAlphabet extends AppCompatActivity {
             tmpArray.add(quizData[i][2]); //Choice1
             tmpArray.add(quizData[i][3]); //Choice2
             tmpArray.add(quizData[i][4]); //Choice3
-
             quizArray.add(tmpArray);
         }
         showNextQuiz();
     }
-
     public void showNextQuiz() {
 
         countLabel.setText("Вопрос" + quizCount);
@@ -132,10 +136,10 @@ public class TestAlphabet extends AppCompatActivity {
         quiz.remove(0);
         Collections.shuffle(quiz);
 
-        answerButton1.setText(quiz.get(0));
-        answerButton2.setText(quiz.get(1));
-        answerButton3.setText(quiz.get(2));
-        answerButton4.setText(quiz.get(3));
+        answerButtonE.setText(quiz.get(0));
+        answerButtonB.setText(quiz.get(1));
+        answerButtonS.setText(quiz.get(2));
+        answerButtonD.setText(quiz.get(3));
 
         quizArray.remove(randomNum);
     }

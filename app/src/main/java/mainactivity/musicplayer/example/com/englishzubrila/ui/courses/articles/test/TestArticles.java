@@ -9,10 +9,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -34,23 +37,22 @@ public class TestArticles extends AppCompatActivity{
         ProgressBar mProgressBar;
         private TextView questionLabel;
         private TextView quizTimer;
-        private Button answerButton1;
-        private Button answerButton2;
-        private Button answerButton3;
-        private Button answerButton4;
+        private Button answerButtonE;
+        private Button answerButtonB;
+        private Button answerButtonS;
+        private Button answerButtonD;
         private CountDownTimer mCountDownTimer;
         private String rightAnswer;
         private int rightAnswerCount = 0;
         private int quizCount = 1;
-
         static final private int QUIZ_COUNT = 10;
         static final long START_TIME_IN_MILIS = 60000;
         private long mTimeLeftinMillis = START_TIME_IN_MILIS;
         int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
-
         private String corect = "Correct";
         private String wrong = "Wrong";
-
+        private Toolbar toolbar;
+        private ActionBar actionBar;
         private Activity mActivity;
 
         private void startTimer() {
@@ -83,7 +85,6 @@ public class TestArticles extends AppCompatActivity{
                 {" Выберите правильный вариант. _____ any apples on the table? ", " Is there", " Are there ", " There is", " There are"},
                 {" Выберите правильный вариант. _____ any apples on the table. ", " There aren’t ", " There isn’t", " There is", " There are"}
         };
-
         @SuppressLint("WrongViewCast")
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -94,11 +95,20 @@ public class TestArticles extends AppCompatActivity{
             questionLabel = findViewById(R.id.question_text_view);
             quizTimer = findViewById(R.id.timer);
             mProgressBar = findViewById(R.id.progress_bar);
-            answerButton1 = findViewById(R.id.answer1);
-            answerButton2 = findViewById(R.id.answer2);
-            answerButton3 = findViewById(R.id.answer3);
-            answerButton4 = findViewById(R.id.answer4);
+            answerButtonE = findViewById(R.id.answerE);
+            answerButtonB = findViewById(R.id.answerB);
+            answerButtonS = findViewById(R.id.answerS);
+            answerButtonD = findViewById(R.id.answerD);
             mActivity = TestArticles.this;
+
+            toolbar = findViewById(R.id.toolTesting);
+
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+            actionBar = getSupportActionBar();
+            actionBar.setTitle("Test");
 
             startTimer();
 
@@ -130,10 +140,10 @@ public class TestArticles extends AppCompatActivity{
             quiz.remove(0);
             Collections.shuffle(quiz);
 
-            answerButton1.setText(quiz.get(0));
-            answerButton2.setText(quiz.get(1));
-            answerButton3.setText(quiz.get(2));
-            answerButton4.setText(quiz.get(3));
+            answerButtonE.setText(quiz.get(0));
+            answerButtonB.setText(quiz.get(1));
+            answerButtonS.setText(quiz.get(2));
+            answerButtonD.setText(quiz.get(3));
 
             quizArray.remove(randomNum);
         }
@@ -165,12 +175,12 @@ public class TestArticles extends AppCompatActivity{
 
             if (alertTitle == corect) {
                 LayoutInflater factory = LayoutInflater.from(TestArticles.this);
-                final View view2 = factory.inflate(R.layout.sample, null);
-                builder.setView(view2);
+                final View viewB = factory.inflate(R.layout.sample, null);
+                builder.setView(viewB);
             } else {
                 LayoutInflater factory = LayoutInflater.from(TestArticles.this);
-                final View view1 = factory.inflate(R.layout.smale_fols, null);
-                builder.setView(view1);
+                final View viewE = factory.inflate(R.layout.smale_fols, null);
+                builder.setView(viewE);
             }
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
@@ -190,9 +200,7 @@ public class TestArticles extends AppCompatActivity{
             AlertDialog dialog1 = builder.create();
             dialog1 = builder.create();
             dialog1.show();
-
             WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
-
             if (alertTitle.equals(corect)){
                 Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
             } else {
@@ -201,5 +209,4 @@ public class TestArticles extends AppCompatActivity{
             dialog1.show();
             return corect;
         }
-
 }
