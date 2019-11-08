@@ -130,10 +130,11 @@ public class ListViewPager extends Fragment implements Listener {
             });
         }
     @Override
-    public void onClikGaleri(int adapterPosition, Product product) {
+    public void onClickGallery(int adapterPosition, Product product) {
+
     }
     @Override
-    public void onClikGaleri(Model model) {
+    public void onClickGallery(Model model) {
         Intent intent = new Intent(getContext(), WebViewB.class);
         intent.putExtra("Web", model);
         startActivity(intent);

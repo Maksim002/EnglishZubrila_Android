@@ -7,7 +7,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.mo
 
 public interface Listener {
 
-    void onClikGaleri(int adapterPosition, Product product);
+    void onClickGallery(int adapterPosition, Product product);
 
-    void onClikGaleri(Model model);
+    void onClickGallery(Model model);
 }

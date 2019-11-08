@@ -1,18 +1,20 @@
 package mainactivity.musicplayer.example.com.englishzubrila.ui.home;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.InitialFragment;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView textE,textN, textG, textL, textI,textS, textH;
+    private TextView textE,textN, textG, textL, textI,textS, textH, textHome;
 
     private static int SPLAH_TAME_OUT = 860;
 
@@ -28,6 +30,18 @@ public class MainActivity extends AppCompatActivity {
         textI = findViewById(R.id.textI);
         textS = findViewById(R.id.textS);
         textH = findViewById(R.id.textH);
+
+        textHome = findViewById(R.id.textHome);
+        textHome.setShadowLayer(30, 0, 0, Color.WHITE);
+
+        textE.setShadowLayer(30, 0, 0, Color.BLUE);
+        textN.setShadowLayer(30, 0, 0, Color.BLUE);
+        textG.setShadowLayer(30, 0, 0, Color.BLUE);
+        textL.setShadowLayer(30, 0, 0, Color.BLUE);
+        textI.setShadowLayer(30, 0, 0, Color.BLUE);
+        textS.setShadowLayer(30, 0, 0, Color.BLUE);
+        textH.setShadowLayer(30, 0, 0, Color.BLUE);
+
 
         setImageScroll();
         setTextZp();

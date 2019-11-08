@@ -64,7 +64,7 @@ public class Adapter extends PagerAdapter {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.onClikGaleri(list.get(position));
+                listener.onClickGallery(list.get(position));
             }
         });
 

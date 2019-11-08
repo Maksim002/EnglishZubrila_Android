@@ -82,12 +82,12 @@ public class HomeFragment extends Fragment implements Listener {
         companies.add(beginner);
         Company elementary = new Company("Elementary", getElementary(), R.drawable.new_elementary,"Получаем базовые знания");
         companies.add(elementary);
-        Company prointermediate = new Company("Pro Intermediate", getIntermediate(), R.drawable.new_pre_intermediate,"Составляем сложные предложения");
-        companies.add(prointermediate);
-        Company intermediate = new Company("Intermediate", getB1Intermediate(), R.drawable.new_intermediate,"Изучение тонкостей языка");
+        Company pro = new Company("Pro Intermediate", getPreIntermediate(), R.drawable.new_pre_intermediate,"Составляем сложные предложения");
+        companies.add(pro);
+        Company intermediate = new Company("Intermediate", getNewIntermediate(), R.drawable.new_intermediate,"Изучение тонкостей языка");
         companies.add(intermediate);
-        Company upperintermediate = new Company("Upper Intermediate", getUpperIntermediate(), R.drawable.new_upper_intermediate,"Чтение и понимание");
-        companies.add(upperintermediate);
+        Company upperIntermediate = new Company("Upper Intermediate", getUpperIntermediate(), R.drawable.new_upper_intermediate,"Чтение и понимание");
+        companies.add(upperIntermediate);
         Company advanced = new Company("Advanced", getC1Advanced(), R.drawable.new_advanced,"Расширяем кругозор");
         companies.add(advanced);
 
@@ -102,15 +102,15 @@ public class HomeFragment extends Fragment implements Listener {
         recyclerView.startAnimation(animation);
     }
     ArrayList<Product> getBeginner() {
-        ArrayList<Product> beginer = new ArrayList<>();
-        beginer.add(new Product("Alphabet", Beginner.Letters0));
-        beginer.add(new Product("Transcription", Beginner.Letters1));
-        beginer.add(new Product("To Be", Beginner.Letters2));
-        beginer.add(new Product("Questions", Beginner.Letters3));
-        beginer.add(new Product("Articles", Beginner.Letters4));
-        beginer.add(new Product("There Is", Beginner.Letters5));
-        beginer.add(new Product("Plural Form", Beginner.Letters6));
-        return beginer;
+        ArrayList<Product> beginner = new ArrayList<>();
+        beginner.add(new Product("Alphabet", Beginner.Letters0));
+        beginner.add(new Product("Transcription", Beginner.Letters1));
+        beginner.add(new Product("To Be", Beginner.Letters2));
+        beginner.add(new Product("Questions", Beginner.Letters3));
+        beginner.add(new Product("Articles", Beginner.Letters4));
+        beginner.add(new Product("There Is", Beginner.Letters5));
+        beginner.add(new Product("Plural Form", Beginner.Letters6));
+        return beginner;
     }
     ArrayList<Product> getElementary() {
         ArrayList<Product> elementary = new ArrayList<>();
@@ -122,22 +122,23 @@ public class HomeFragment extends Fragment implements Listener {
         elementary.add(new Product("Have to", Beginner.Letters12));
         return elementary;
     }
-    ArrayList<Product> getIntermediate() {
-        ArrayList<Product> intermediate = new ArrayList<>();
-        intermediate.add(new Product("Direct and indirect speech", Beginner.Letters13));
-        intermediate.add(new Product("The Future Simple", Beginner.Letters14));
-        intermediate.add(new Product("Comparative and Superlative Degrees", Beginner.Letters15));
-        return intermediate;
+    ArrayList<Product> getPreIntermediate() {
+        ArrayList<Product> pro = new ArrayList<>();
+        pro.add(new Product("Direct and indirect speech", Beginner.Letters13));
+        pro.add(new Product("The Future Simple", Beginner.Letters14));
+        pro.add(new Product("Comparative and Superlative Degrees", Beginner.Letters15));
+        return pro;
     }
-    ArrayList<Product> getB1Intermediate() {
-        ArrayList<Product> b1intermediate = new ArrayList<>();
-        b1intermediate.add(new Product("Is empty", Beginner.Letters16));
-        return b1intermediate;
+    ArrayList<Product> getNewIntermediate() {
+        ArrayList<Product> intermediate = new ArrayList<>();
+        intermediate.add(new Product("Is empty", Beginner.Letters16));
+        return intermediate;
+
     }
     ArrayList<Product> getUpperIntermediate() {
-        ArrayList<Product> upperintermediate = new ArrayList<>();
-        upperintermediate.add(new Product("Is empty", Beginner.Letters16));
-        return upperintermediate;
+        ArrayList<Product> upperIntermediate = new ArrayList<>();
+        upperIntermediate.add(new Product("Is empty", Beginner.Letters16));
+        return upperIntermediate;
     }
 
     ArrayList<Product> getC1Advanced() {
@@ -146,9 +147,8 @@ public class HomeFragment extends Fragment implements Listener {
         return c1advanced;
     }
     @Override
-    public void onClikGaleri(int adapterPosition, Product product) {
+    public void onClickGallery(int adapterPosition, Product product) {
         onClick(product);
-       //
     }
     public void onClick(final Product product) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -293,7 +293,7 @@ public class HomeFragment extends Fragment implements Listener {
     }
 
     @Override
-    public void onClikGaleri(Model model) {
+    public void onClickGallery(Model model) {
 
     }
 }
