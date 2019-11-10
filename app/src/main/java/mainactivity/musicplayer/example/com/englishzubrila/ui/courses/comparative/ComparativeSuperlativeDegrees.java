@@ -18,11 +18,11 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBar actionBar;
 
-    private ImageView bPley1;
-    private SeekBar seekBar1;
-    private MediaPlayer player1;
-    private Runnable runnable1;
-    private Handler handler1;
+    private ImageView bPleyE;
+    private SeekBar seekBarB;
+    private MediaPlayer playerS;
+    private Runnable runnableD;
+    private Handler handlerF;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,28 +39,28 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
         getLessonA();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.cPlayerE);
+        bPleyE = findViewById(R.id.cPlayerE);
 
-        handler1 = new Handler();
+        handlerF = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBarS);
+        seekBarB = findViewById(R.id.seekBarE);
 
-        player1 = MediaPlayer.create(this, R.raw.lesson23_3);
+        playerS = MediaPlayer.create(this, R.raw.lesson23_3);
 
-        player1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerS.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar1.setMax(mediaPlayer.getDuration());
+                seekBarB.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarA();
-                player1.pause();
+                playerS.pause();
             }
         });
-        seekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player1.seekTo(i);
+                    playerS.seekTo(i);
                 }
             }
             @Override
@@ -72,29 +72,29 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
         });
     }
     private void changeSeekBarA() {
-        seekBar1.setProgress(player1.getCurrentPosition());
+        seekBarB.setProgress(playerS.getCurrentPosition());
 
-        if (player1.isPlaying()) {
-            runnable1 = new Runnable() {
+        if (playerS.isPlaying()) {
+            runnableD = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarA();
                 }
             };
-            handler1.postDelayed(runnable1, 1000);
+            handlerF.postDelayed(runnableD, 1000);
         }
-        bPley1.setOnClickListener(new View.OnClickListener() {
+        bPleyE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.cPlayerE:
-                        if (player1.isPlaying()) {
-                            player1.pause();
-                            bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                        if (playerS.isPlaying()) {
+                            playerS.pause();
+                            bPleyE.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player1.start();
+                            playerS.start();
                             changeSeekBarA();
-                            bPley1.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyE.setImageResource(R.drawable.ic_stop_black_24dp);
                         }
                         break;
                 }
@@ -104,7 +104,7 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        handler1.removeCallbacks(null);
-        player1.stop();
+        handlerF.removeCallbacks(null);
+        playerS.stop();
     }
 }

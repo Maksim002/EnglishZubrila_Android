@@ -175,12 +175,12 @@ public class TestPresentSimple extends AppCompatActivity {
 
         if (alertTitle == correct) {
             LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
-            final View view2 = factory.inflate(R.layout.sample, null);
-            builder.setView(view2);
+            final View viewE = factory.inflate(R.layout.sample, null);
+            builder.setView(viewE);
         } else {
             LayoutInflater factory = LayoutInflater.from(TestPresentSimple.this);
-            final View view1 = factory.inflate(R.layout.smale_fols, null);
-            builder.setView(view1);
+            final View viewB = factory.inflate(R.layout.smale_fols, null);
+            builder.setView(viewB);
         }
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -197,18 +197,18 @@ public class TestPresentSimple extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialog1 = builder.create();
-        dialog1 = builder.create();
-        dialog1.show();
+        AlertDialog dialoging = builder.create();
+        dialoging = builder.create();
+        dialoging.show();
 
-        WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialog1.show();
+        dialoging.show();
         return correct;
     }
 }

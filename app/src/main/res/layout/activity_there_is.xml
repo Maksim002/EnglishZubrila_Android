@@ -196,7 +196,7 @@
             android:layout_height="300dp"
             android:padding="8dp"
             android:scaleType="fitXY"
-            android:src="@drawable/cremieux_street_1" />
+            android:src="@drawable/cremieux_street_j" />
 
         <TextView
             android:layout_width="match_parent"

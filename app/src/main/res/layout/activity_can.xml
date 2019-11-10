@@ -343,7 +343,7 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarS"
+                    android:id="@+id/seekBarE"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
@@ -1167,7 +1167,7 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarS"
+                    android:id="@+id/seekBarE"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 

@@ -489,7 +489,7 @@
                 android:layout_height="400dp"
                 android:padding="8dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/trans_123" />
+                android:src="@drawable/trans_bl" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -602,14 +602,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarS"
+                    android:id="@+id/seekBareR"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/b"
+                    android:id="@+id/bR"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -641,14 +641,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarS"
+                    android:id="@+id/seekBarT"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/b"
+                    android:id="@+id/bT"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -680,14 +680,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarB"
+                    android:id="@+id/seekBarY"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlayB"
+                    android:id="@+id/bPlayY"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -719,14 +719,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarS"
+                    android:id="@+id/seekBarU"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlayS"
+                    android:id="@+id/bPlayU"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -765,7 +765,7 @@
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlayD"
+                    android:id="@+id/bPlayI"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -797,14 +797,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarI"
+                    android:id="@+id/seekBarO"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlayI"
+                    android:id="@+id/bPlayO"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -827,14 +827,14 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarJ"
+                    android:id="@+id/seekBarP"
                     style="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
                     android:layout_width="310dp"
                     android:layout_height="50dp"
                     app:tickMarkTint="@android:color/holo_red_dark" />
 
                 <ImageView
-                    android:id="@+id/bPlayJ"
+                    android:id="@+id/bPlayP"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

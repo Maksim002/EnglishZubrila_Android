@@ -12,7 +12,7 @@
         android:id="@+id/imageSample"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/pos"
+        app:srcCompat="@drawable/pos_e"
         android:layout_gravity="center"
        />
 </LinearLayout>

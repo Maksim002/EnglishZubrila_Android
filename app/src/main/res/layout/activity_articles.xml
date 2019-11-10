@@ -1166,7 +1166,7 @@
                 android:layout_height="420dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitXY"
-                android:src="@drawable/wzn_001" />
+                android:src="@drawable/wzn_jkl" />
 
 
         </LinearLayout>

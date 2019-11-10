@@ -44,7 +44,7 @@ public class Can extends AppCompatActivity {
 
         handlerE = new Handler();
 
-        seekBarE = findViewById(R.id.seekBarS);
+        seekBarE = findViewById(R.id.seekBarE);
 
         playerE = MediaPlayer.create(this, R.raw.lesson13_5);
 
@@ -108,7 +108,7 @@ public class Can extends AppCompatActivity {
 
         handlerB = new Handler();
 
-        seekBarB = findViewById(R.id.seekBarS);
+        seekBarB = findViewById(R.id.seekBarE);
 
         playerB = MediaPlayer.create(this, R.raw.lesson13_6);
 

@@ -28,7 +28,7 @@ public class PresentSimple extends AppCompatActivity {
     private Integer[] colors = null;
     private ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     private List<Model> list;
-    private ImageView imageSample1, imageSample2;
+    private ImageView imageSampleE, imageSampleB;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,18 +42,18 @@ public class PresentSimple extends AppCompatActivity {
         actionBar = getSupportActionBar();
         actionBar.setTitle("Present Simple");
 
-        imageSample1 = findViewById(R.id.imageSample1);
-        imageSample2 = findViewById(R.id.imageSample2);
+        imageSampleE = findViewById(R.id.imageSampleE);
+        imageSampleB = findViewById(R.id.imageSampleB);
 
-        Animation animationSample1 = AnimationUtils.loadAnimation(this, R.anim.anim_rate_simple);
-        imageSample2.startAnimation(animationSample1);
-        Animation animationSample2 = AnimationUtils.loadAnimation(this, R.anim.anim_rate_simple);
-        imageSample1.startAnimation(animationSample2);
+        Animation animationSampleD = AnimationUtils.loadAnimation(this, R.anim.anim_rate_simple);
+        imageSampleB.startAnimation(animationSampleD);
+        Animation animationSamplej = AnimationUtils.loadAnimation(this, R.anim.anim_rate_simple);
+        imageSampleE.startAnimation(animationSamplej);
 
         list = new ArrayList<>();
-        list.add(new Model(R.drawable.pos));
-        list.add(new Model(R.drawable.pos_2));
-        list.add(new Model(R.drawable.pos_3));
+        list.add(new Model(R.drawable.pos_e));
+        list.add(new Model(R.drawable.pos_b));
+        list.add(new Model(R.drawable.pos_s));
 
         adaptor = new Adaptor(list, this);
 

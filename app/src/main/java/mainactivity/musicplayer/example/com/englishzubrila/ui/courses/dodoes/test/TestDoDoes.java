@@ -177,12 +177,12 @@ public class TestDoDoes extends AppCompatActivity {
 
         if (alertTitle == correct) {
             LayoutInflater factory = LayoutInflater.from(TestDoDoes.this);
-            final View view2 = factory.inflate(R.layout.sample, null);
-            builder.setView(view2);
+            final View viewE = factory.inflate(R.layout.sample, null);
+            builder.setView(viewE);
         } else {
             LayoutInflater factory = LayoutInflater.from(TestDoDoes.this);
-            final View view1 = factory.inflate(R.layout.smale_fols, null);
-            builder.setView(view1);
+            final View viewB = factory.inflate(R.layout.smale_fols, null);
+            builder.setView(viewB);
         }
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -199,18 +199,18 @@ public class TestDoDoes extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialog1 = builder.create();
-        dialog1 = builder.create();
-        dialog1.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialog1.show();
+        dialogE.show();
         return correct;
     }
 }

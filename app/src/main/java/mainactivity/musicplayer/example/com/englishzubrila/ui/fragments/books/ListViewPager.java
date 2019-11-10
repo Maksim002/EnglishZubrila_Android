@@ -33,7 +33,7 @@ public class ListViewPager extends Fragment implements Listener {
     private ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     private List<Model> list;
 
-    private ImageView imageRate,imageRate1,imageLeft1,imageLeft;
+    private ImageView imageRate, imageRateB, imageLeftE,imageLeft;
 
     @Nullable
     @Override
@@ -44,12 +44,12 @@ public class ListViewPager extends Fragment implements Listener {
 
         imageLeft = view.findViewById(R.id.imageLeft);
         imageRate = view.findViewById(R.id.imageRate);
-        imageLeft1 = view.findViewById(R.id.imageListLeft);
-        imageRate1 = view.findViewById(R.id.imageListRate);
+        imageLeftE = view.findViewById(R.id.imageListLeft);
+        imageRateB = view.findViewById(R.id.imageListRate);
 
-        imageRate1.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_rate));
+        imageRateB.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_rate));
         imageRate.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_rate));
-        imageLeft1.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_left));
+        imageLeftE.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_left));
         imageLeft.startAnimation(AnimationUtils.loadAnimation(getContext(),R.anim.anim_left));
 
         imageRate.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +59,7 @@ public class ListViewPager extends Fragment implements Listener {
                 } else viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
             }
         });
-        imageRate1.setOnClickListener(new View.OnClickListener() {
+        imageRateB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (viewPager.getCurrentItem() == adapter.getCount() - 1){
@@ -73,7 +73,7 @@ public class ListViewPager extends Fragment implements Listener {
                 } else viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
             }
         });
-        imageLeft1.setOnClickListener(new View.OnClickListener() {
+        imageLeftE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (viewPager.getCurrentItem() == adapter.getCount() + 1){

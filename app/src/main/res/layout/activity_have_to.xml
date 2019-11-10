@@ -1197,12 +1197,12 @@
                 android:layout_height="55dp"
                 android:orientation="horizontal">
                 <SeekBar
-                    android:id="@+id/s1"
+                    android:id="@+id/sI"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlay1"
+                    android:id="@+id/bPlayF"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

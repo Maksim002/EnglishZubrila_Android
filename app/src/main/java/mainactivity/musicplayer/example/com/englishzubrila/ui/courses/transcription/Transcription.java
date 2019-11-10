@@ -161,11 +161,11 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonA() {
-            bPlayerE = findViewById(R.id.b);
+            bPlayerE = findViewById(R.id.bR);
 
             handlerE = new Handler();
 
-            seekBarE = findViewById(R.id.seekBarS);
+            seekBarE = findViewById(R.id.seekBareR);
 
             playerE = MediaPlayer.create(this, R.raw.lessona);
 
@@ -209,7 +209,7 @@ public class Transcription extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     switch (view.getId()) {
-                        case R.id.b:
+                        case R.id.bR:
                             if (playerE.isPlaying()) {
                                 playerE.pause();
                                 bPlayerE.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -225,11 +225,11 @@ public class Transcription extends AppCompatActivity {
         }
 
     private void getLessonE() {
-        bPlayerB = findViewById(R.id.b);
+        bPlayerB = findViewById(R.id.bT);
 
         handlerB = new Handler();
 
-        seekBarB = findViewById(R.id.seekBarS);
+        seekBarB = findViewById(R.id.seekBarT);
 
         playerB = MediaPlayer.create(this, R.raw.lessone);
 
@@ -273,7 +273,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.b:
+                    case R.id.bT:
                         if (playerB.isPlaying()) {
                             playerB.pause();
                             bPlayerB.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -289,11 +289,11 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonI() {
-        bPlayerS = findViewById(R.id.bPlayB);
+        bPlayerS = findViewById(R.id.bPlayY);
 
         handlerS = new Handler();
 
-        seekBarS = findViewById(R.id.seekBarB);
+        seekBarS = findViewById(R.id.seekBarY);
 
         playerS = MediaPlayer.create(this, R.raw.lessoni);
 
@@ -337,7 +337,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayB:
+                    case R.id.bPlayY:
                         if (playerS.isPlaying()) {
                             playerS.pause();
                             bPlayerS.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -353,11 +353,11 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonO() {
-        bPlayerD = findViewById(R.id.bPlayS);
+        bPlayerD = findViewById(R.id.bPlayU);
 
         handlerD = new Handler();
 
-        seekBarD = findViewById(R.id.seekBarS);
+        seekBarD = findViewById(R.id.seekBarU);
 
         playerD = MediaPlayer.create(this, R.raw.lessono);
 
@@ -401,7 +401,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayS:
+                    case R.id.bPlayU:
                         if (playerD.isPlaying()) {
                             playerD.pause();
                             bPlayerD.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -417,7 +417,7 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonU() {
-        bPlayerI = findViewById(R.id.bPlayD);
+        bPlayerI = findViewById(R.id.bPlayI);
 
         handlerI = new Handler();
 
@@ -465,7 +465,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayD:
+                    case R.id.bPlayI:
                         if (playerI.isPlaying()) {
                             playerI.pause();
                             bPlayerI.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -481,11 +481,11 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonY() {
-        bPlayerF = findViewById(R.id.bPlayI);
+        bPlayerF = findViewById(R.id.bPlayO);
 
         handlerF = new Handler();
 
-        seekBarF = findViewById(R.id.seekBarI);
+        seekBarF = findViewById(R.id.seekBarO);
 
         playerF = MediaPlayer.create(this, R.raw.lessony);
 
@@ -529,7 +529,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayI:
+                    case R.id.bPlayO:
                         if (playerF.isPlaying()) {
                             playerF.pause();
                             bPlayerF.setImageResource(R.drawable.ic_play_arrow_black_24dp);
@@ -545,11 +545,11 @@ public class Transcription extends AppCompatActivity {
     }
 
     private void getLessonHWA() {
-        bPlayerG = findViewById(R.id.bPlayJ);
+        bPlayerG = findViewById(R.id.bPlayP);
 
         handlerJ = new Handler();
 
-        seekBarG = findViewById(R.id.seekBarJ);
+        seekBarG = findViewById(R.id.seekBarP);
 
         playerG = MediaPlayer.create(this, R.raw.lessonschwa);
 
@@ -593,7 +593,7 @@ public class Transcription extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayJ:
+                    case R.id.bPlayP:
                         if (playerG.isPlaying()) {
                             playerG.pause();
                             bPlayerG.setImageResource(R.drawable.ic_play_arrow_black_24dp);

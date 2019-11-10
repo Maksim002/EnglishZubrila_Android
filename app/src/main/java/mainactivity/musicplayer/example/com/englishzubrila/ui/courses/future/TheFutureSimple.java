@@ -15,11 +15,11 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 
 public class TheFutureSimple extends AppCompatActivity {
 
-    private ImageView bPley1;
-    private SeekBar seekBar1;
-    private MediaPlayer player1;
-    private Runnable runnable1;
-    private Handler handler1;
+    private ImageView bPleyE;
+    private SeekBar seekBarE;
+    private MediaPlayer playerE;
+    private Runnable runnableE;
+    private Handler handlerE;
 
     private Toolbar toolbar;
     private ActionBar actionBar;
@@ -39,28 +39,28 @@ public class TheFutureSimple extends AppCompatActivity {
         getLessonA();
     }
     private void getLessonA() {
-        bPley1 = findViewById(R.id.tPlayer0);
+        bPleyE = findViewById(R.id.tPlayerE);
 
-        handler1 = new Handler();
+        handlerE = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBarS);
+        seekBarE = findViewById(R.id.seekBarE);
 
-        player1 = MediaPlayer.create(this, R.raw.lesson22_7);
+        playerE = MediaPlayer.create(this, R.raw.lesson22_7);
 
-        player1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerE.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar1.setMax(mediaPlayer.getDuration());
+                seekBarE.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarA();
-                player1.pause();
+                playerE.pause();
             }
         });
-        seekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarE.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player1.seekTo(i);
+                    playerE.seekTo(i);
                 }
             }
             @Override
@@ -72,29 +72,29 @@ public class TheFutureSimple extends AppCompatActivity {
         });
     }
     private void changeSeekBarA() {
-        seekBar1.setProgress(player1.getCurrentPosition());
+        seekBarE.setProgress(playerE.getCurrentPosition());
 
-        if (player1.isPlaying()) {
-            runnable1 = new Runnable() {
+        if (playerE.isPlaying()) {
+            runnableE = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarA();
                 }
             };
-            handler1.postDelayed(runnable1, 1000);
+            handlerE.postDelayed(runnableE, 1000);
         }
-        bPley1.setOnClickListener(new View.OnClickListener() {
+        bPleyE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.tPlayer0:
-                        if (player1.isPlaying()) {
-                            player1.pause();
-                            bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.tPlayerE:
+                        if (playerE.isPlaying()) {
+                            playerE.pause();
+                            bPleyE.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player1.start();
+                            playerE.start();
                             changeSeekBarA();
-                            bPley1.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyE.setImageResource(R.drawable.ic_stop_black_24dp);
                         }
                         break;
                 }
@@ -104,7 +104,7 @@ public class TheFutureSimple extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        handler1.removeCallbacks(null);
-        player1.stop();
+        handlerE.removeCallbacks(null);
+        playerE.stop();
     }
 }
