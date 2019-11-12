@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="180dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#332B44"
     android:gravity="bottom"
@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/icon_ingleh"
+        android:src="@drawable/icon_fon"
         android:scaleType="fitXY"/>
 
     <LinearLayout
@@ -20,11 +20,10 @@
         android:orientation="vertical">
 
     <ImageView
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="50sp"
-        android:background="#000"
+        android:layout_marginLeft="7sp"
+        android:layout_marginTop="30dp"
         android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:src="@drawable/icon_name"/>
 
     <TextView
@@ -32,18 +31,18 @@
         android:layout_marginLeft="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textColor="#FBFBFC"
+        android:textColor="#000011"
         android:textSize="15dp"
         android:text="English Zubrila"/>
 
     <TextView
+        android:textStyle="italic"
         android:layout_marginLeft="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#F7F7FA"
+        android:textColor="#000011"
         android:textSize="15dp"
-        android:text="Для своодного познания"/>
+        android:text="Для свободного познания!"/>
 
     </LinearLayout>
 
