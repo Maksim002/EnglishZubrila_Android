@@ -5,12 +5,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
-
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.ListViewPager;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.adapter.ViewPegerAdaptor;
@@ -20,6 +21,7 @@ public class InitialFragment  extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     private ViewPager viewPager;
     private Toolbar toolbar;
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,6 +30,13 @@ public class InitialFragment  extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Gallery");
+        setSupportActionBar(toolbar);
+
+        drawerLayout = findViewById(R.id.coordinatorLayout);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout, toolbar, R.string.open, R.string.closed);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         viewPager = findViewById(R.id.frame_container);
@@ -38,6 +47,17 @@ public class InitialFragment  extends AppCompatActivity {
         setupViewPager();
         setupNavigationView();
     }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }else {
+            super.onBackPressed();
+        }
+        super.onBackPressed();
+    }
+
     private void setupNavigationView() {
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
