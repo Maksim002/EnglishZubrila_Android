@@ -3,10 +3,12 @@ package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparati
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -38,12 +40,22 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
 
         getLessonA();
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     private void getLessonA() {
         bPleyE = findViewById(R.id.cPlayerE);
 
         handlerF = new Handler();
 
-        seekBarB = findViewById(R.id.seekBarE);
+        seekBarB = findViewById(R.id.seekBarFi);
 
         playerS = MediaPlayer.create(this, R.raw.lesson23_3);
 
@@ -94,7 +106,7 @@ public class ComparativeSuperlativeDegrees extends AppCompatActivity {
                         } else {
                             playerS.start();
                             changeSeekBarA();
-                            bPleyE.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyE.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }

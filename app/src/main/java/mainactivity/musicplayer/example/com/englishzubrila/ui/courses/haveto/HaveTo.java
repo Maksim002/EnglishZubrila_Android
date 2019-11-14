@@ -3,10 +3,12 @@ package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -39,6 +41,16 @@ public class HaveTo extends AppCompatActivity {
         getLessonA();
         getLessonE();
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     private void getLessonA() {
         bPleyE = findViewById(R.id.bPlayer);
 
@@ -95,7 +107,7 @@ public class HaveTo extends AppCompatActivity {
                         } else {
                             playerE.start();
                             changeSeekBarA();
-                            bPleyE.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyE.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -104,7 +116,7 @@ public class HaveTo extends AppCompatActivity {
     }
 
     private void getLessonE() {
-        bPleyB = findViewById(R.id.bPlayF);
+        bPleyB = findViewById(R.id.bPlayFi);
 
         handlerB = new Handler();
 
@@ -152,14 +164,14 @@ public class HaveTo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
+                    case R.id.bPlayFi:
                         if (playerB.isPlaying()) {
                             playerB.pause();
                             bPleyB.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerB.start();
                             changeSeekBarE();
-                            bPleyB.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyB.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }

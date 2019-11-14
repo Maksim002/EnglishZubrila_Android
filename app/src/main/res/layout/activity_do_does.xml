@@ -47,12 +47,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarE"
+                    android:id="@+id/seekBarFi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayE"
+                    android:id="@+id/bPlayFi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -83,12 +83,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarE"
+                    android:id="@+id/seekBarGi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayF"
+                    android:id="@+id/bPlayGi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -711,12 +711,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarE"
+                    android:id="@+id/seekBarHi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayF"
+                    android:id="@+id/bPlayHi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -856,12 +856,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarD"
+                    android:id="@+id/seekBarJi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayF"
+                    android:id="@+id/bPlayJi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -908,12 +908,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarE"
+                    android:id="@+id/seekBarKi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayF"
+                    android:id="@+id/bPlayKi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -949,12 +949,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarI"
+                    android:id="@+id/seekBarLi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayI"
+                    android:id="@+id/bPlayLi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"
@@ -990,12 +990,12 @@
                 android:orientation="horizontal">
 
                 <SeekBar
-                    android:id="@+id/seekBarJ"
+                    android:id="@+id/seekBarZi"
                     android:layout_width="310dp"
                     android:layout_height="50dp" />
 
                 <ImageView
-                    android:id="@+id/bPlayJ"
+                    android:id="@+id/bPlayZi"
                     android:layout_width="45dp"
                     android:layout_height="50dp"
                     app:srcCompat="@drawable/ic_play_arrow_black_24dp"

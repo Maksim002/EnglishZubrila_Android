@@ -55,7 +55,6 @@ import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.expandable.ProductAdapter;
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 
-
 public class HomeFragment extends Fragment implements Listener {
     private RecyclerView recyclerView;
     private AlertDialog.Builder ad;

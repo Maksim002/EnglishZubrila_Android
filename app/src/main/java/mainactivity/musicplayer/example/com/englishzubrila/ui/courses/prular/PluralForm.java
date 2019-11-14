@@ -19,11 +19,11 @@ public class PluralForm extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBar actionBar;
 
-    private ImageView bPley1,bPley2,bPley3,bPley4,bPley5,bPley6;
-    private SeekBar seekBar1, seekBar2,seekBar3,seekBar4,seekBar5,seekBar6;
-    private MediaPlayer player1, player2,player3,player4,player5,player6;
-    private Runnable runnable1, runnable2,runnable3,runnable4,runnable5,runnable6;
-    private Handler handler1, handler2,handler3,handler4,handler5,handler6;
+    private ImageView bPleyBq, bPleyBw, bPleyBe, bPleyBr, bPleyBt, bPleyBy, bPleyBu;
+    private SeekBar seekBarBq, seekBarBw, seekBarBe, seekBarBr, seekBarBt, seekBarBy, seekBarBu;
+    private MediaPlayer playerBq, playerBw, playerBe, playerBr, playerBt, playerBy, playerBu;
+    private Runnable runnableBq, runnableBw, runnableBe, runnableBr, runnableBt, runnableBy, runnableBu;
+    private Handler handlerBq, handlerBw, handlerBe, handlerBr, handlerBt, handlerBy, handlerBu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,41 +44,42 @@ public class PluralForm extends AppCompatActivity {
         getLessonO();
         getLessonU();
         getLessonY();
+        getLessonJ();
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home){
-            finish();
+            onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
     }
 
     private void getLessonA() {
-        bPley1 = findViewById(R.id.bPlayF);
+        bPleyBq = findViewById(R.id.bPlayEp);
 
-        handler1 = new Handler();
+        handlerBq = new Handler();
 
-        seekBar1 = findViewById(R.id.seekBarE);
+        seekBarBq = findViewById(R.id.seekBarEp);
 
-        player1 = MediaPlayer.create(this, R.raw.man);
+        playerBq = MediaPlayer.create(this, R.raw.man);
 
-        player1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBq.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar1.setMax(mediaPlayer.getDuration());
+                seekBarBq.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarA();
-                player1.pause();
+                playerBq.pause();
             }
         });
-        seekBar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBq.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player1.seekTo(i);
+                    playerBq.seekTo(i);
                 }
             }
             @Override
@@ -90,28 +91,29 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarA() {
-        seekBar1.setProgress(player1.getCurrentPosition());
+        seekBarBq.setProgress(playerBq.getCurrentPosition());
 
-        if (player1.isPlaying()) {
-            runnable1 = new Runnable() {
+        if (playerBq.isPlaying()) {
+            runnableBq = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarA();
                 }
             };
-            handler1.postDelayed(runnable1, 1000);
+            handlerBq.postDelayed(runnableBq, 1000);
         }
-        bPley1.setOnClickListener(new View.OnClickListener() {
+        bPleyBq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
-                        if (player1.isPlaying()) {
-                            player1.pause();
-                            bPley1.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayEp:
+                        if (playerBq.isPlaying()) {
+                            playerBq.pause();
+                            bPleyBq.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player1.start();
+                            playerBq.start();
                             changeSeekBarA();
+                            bPleyBq.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -119,28 +121,28 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonE() {
-        bPley2 = findViewById(R.id.bPlayF);
+        bPleyBw = findViewById(R.id.bPlayEp);
 
-        handler2 = new Handler();
+        handlerBw = new Handler();
 
-        seekBar2 = findViewById(R.id.seekBarE);
+        seekBarBw = findViewById(R.id.seekBarEp);
 
-        player2 = MediaPlayer.create(this, R.raw.men);
+        playerBw = MediaPlayer.create(this, R.raw.men);
 
-        player2.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBw.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar2.setMax(mediaPlayer.getDuration());
+                seekBarBw.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarE();
-                player2.pause();
+                playerBw.pause();
             }
         });
-        seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBw.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player2.seekTo(i);
+                    playerBw.seekTo(i);
                 }
             }
             @Override
@@ -152,28 +154,29 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarE() {
-        seekBar2.setProgress(player2.getCurrentPosition());
+        seekBarBw.setProgress(playerBw.getCurrentPosition());
 
-        if (player2.isPlaying()) {
-            runnable2 = new Runnable() {
+        if (playerBw.isPlaying()) {
+            runnableBw = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarE();
                 }
             };
-            handler2.postDelayed(runnable2, 1000);
+            handlerBw.postDelayed(runnableBw, 1000);
         }
-        bPley2.setOnClickListener(new View.OnClickListener() {
+        bPleyBw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
-                        if (player2.isPlaying()){
-                            player2.pause();
-                            bPley2.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayEp:
+                        if (playerBw.isPlaying()){
+                            playerBw.pause();
+                            bPleyBw.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player2.start();
+                            playerBw.start();
                             changeSeekBarE();
+                            bPleyBw.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -182,28 +185,28 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonI() {
-        bPley3 = findViewById(R.id.bPlayF);
+        bPleyBe = findViewById(R.id.bPlayFp);
 
-        handler3 = new Handler();
+        handlerBe = new Handler();
 
-        seekBar3 = findViewById(R.id.seekBarD);
+        seekBarBe = findViewById(R.id.seekBarFp);
 
-        player3 = MediaPlayer.create(this, R.raw.woman);
+        playerBe = MediaPlayer.create(this, R.raw.woman);
 
-        player3.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBe.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar3.setMax(mediaPlayer.getDuration());
+                seekBarBe.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarI();
-                player3.pause();
+                playerBe.pause();
             }
         });
-        seekBar3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBe.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player2.seekTo(i);
+                    playerBw.seekTo(i);
                 }
             }
             @Override
@@ -215,28 +218,29 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarI() {
-        seekBar3.setProgress(player3.getCurrentPosition());
+        seekBarBe.setProgress(playerBe.getCurrentPosition());
 
-        if (player3.isPlaying()) {
-            runnable3 = new Runnable() {
+        if (playerBe.isPlaying()) {
+            runnableBe = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarI();
                 }
             };
-            handler3.postDelayed(runnable3, 1000);
+            handlerBe.postDelayed(runnableBe, 1000);
         }
-        bPley3.setOnClickListener(new View.OnClickListener() {
+        bPleyBe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
-                        if (player3.isPlaying()) {
-                            player3.pause();
-                            bPley3.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayFp:
+                        if (playerBe.isPlaying()) {
+                            playerBe.pause();
+                            bPleyBe.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player3.start();
+                            playerBe.start();
                             changeSeekBarI();
+                            bPleyBe.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -245,28 +249,28 @@ public class PluralForm extends AppCompatActivity {
     }
 
     private void getLessonO() {
-        bPley4 = findViewById(R.id.bPlayF);
+        bPleyBr = findViewById(R.id.bPlayDp);
 
-        handler4 = new Handler();
+        handlerBr = new Handler();
 
-        seekBar4 = findViewById(R.id.seekBarE);
+        seekBarBr = findViewById(R.id.seekBarDp);
 
-        player4 = MediaPlayer.create(this, R.raw.women);
+        playerBr = MediaPlayer.create(this, R.raw.woman);
 
-        player4.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBr.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar4.setMax(mediaPlayer.getDuration());
+                seekBarBr.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarO();
-                player4.pause();
+                playerBr.pause();
             }
         });
-        seekBar4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBr.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player4.seekTo(i);
+                    playerBr.seekTo(i);
                 }
             }
             @Override
@@ -278,29 +282,29 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarO() {
-        seekBar4.setProgress(player4.getCurrentPosition());
+        seekBarBr.setProgress(playerBr.getCurrentPosition());
 
-        if (player4.isPlaying()) {
-            runnable4 = new Runnable() {
+        if (playerBr.isPlaying()) {
+            runnableBr = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarO();
                 }
             };
-            handler4.postDelayed(runnable4, 1000);
+            handlerBr.postDelayed(runnableBr, 1000);
         }
-        bPley4.setOnClickListener(new View.OnClickListener() {
+        bPleyBr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
-                        if (player4.isPlaying()) {
-                            player4.pause();
-                            bPley4.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayDp:
+                        if (playerBr.isPlaying()) {
+                            playerBr.pause();
+                            bPleyBr.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player4.start();
+                            playerBr.start();
                             changeSeekBarO();
-                            bPley4.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyBr.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -308,28 +312,28 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonU() {
-        bPley5 = findViewById(R.id.bPlayI);
+        bPleyBt = findViewById(R.id.bPlayNp);
 
-        handler5 = new Handler();
+        handlerBt = new Handler();
 
-        seekBar5 = findViewById(R.id.seekBarI);
+        seekBarBt = findViewById(R.id.seekBarNp);
 
-        player5 = MediaPlayer.create(this, R.raw.lesson8_num1);
+        playerBt = MediaPlayer.create(this, R.raw.women);
 
-        player5.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBt.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar5.setMax(mediaPlayer.getDuration());
+                seekBarBt.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarU();
-                player5.pause();
+                playerBt.pause();
             }
         });
-        seekBar5.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBt.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player5.seekTo(i);
+                    playerBt.seekTo(i);
                 }
             }
             @Override
@@ -341,28 +345,29 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarU() {
-        seekBar5.setProgress(player5.getCurrentPosition());
+        seekBarBt.setProgress(playerBt.getCurrentPosition());
 
-        if (player5.isPlaying()) {
-            runnable5 = new Runnable() {
+        if (playerBt.isPlaying()) {
+            runnableBt = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarU();
                 }
             };
-            handler5.postDelayed(runnable5, 1000);
+            handlerBt.postDelayed(runnableBt, 1000);
         }
-        bPley5.setOnClickListener(new View.OnClickListener() {
+        bPleyBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayI:
-                        if (player5.isPlaying()) {
-                            player5.pause();
-                            bPley5.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayNp:
+                        if (playerBt.isPlaying()) {
+                            playerBt.pause();
+                            bPleyBt.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player5.start();
+                            playerBt.start();
                             changeSeekBarU();
+                            bPleyBt.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -370,28 +375,28 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void getLessonY() {
-        bPley6 = findViewById(R.id.bPlayJ);
+        bPleyBy = findViewById(R.id.bPlayIp);
 
-        handler6 = new Handler();
+        handlerBy = new Handler();
 
-        seekBar6 = findViewById(R.id.seekBarJ);
+        seekBarBy = findViewById(R.id.seekBarIp);
 
-        player6 = MediaPlayer.create(this, R.raw.lesson8_num2);
+        playerBy = MediaPlayer.create(this, R.raw.lesson8_num1);
 
-        player6.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        playerBy.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
-                seekBar6.setMax(mediaPlayer.getDuration());
+                seekBarBy.setMax(mediaPlayer.getDuration());
                 mediaPlayer.start();
                 changeSeekBarY();
-                player6.pause();
+                playerBy.pause();
             }
         });
-        seekBar6.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarBy.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 if (b) {
-                    player6.seekTo(i);
+                    playerBy.seekTo(i);
                 }
             }
             @Override
@@ -403,49 +408,115 @@ public class PluralForm extends AppCompatActivity {
         });
     }
     private void changeSeekBarY() {
-        seekBar6.setProgress(player6.getCurrentPosition());
+        seekBarBy.setProgress(playerBy.getCurrentPosition());
 
-        if (player6.isPlaying()) {
-            runnable6 = new Runnable() {
+        if (playerBy.isPlaying()) {
+            runnableBy = new Runnable() {
                 @Override
                 public void run() {
                     changeSeekBarY();
                 }
             };
-            handler6.postDelayed(runnable6, 1000);
+            handlerBy.postDelayed(runnableBy, 1000);
         }
-        bPley6.setOnClickListener(new View.OnClickListener() {
+        bPleyBy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayJ:
-                        if (player6.isPlaying()) {
-                            player6.pause();
-                            bPley6.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                    case R.id.bPlayIp:
+                        if (playerBy.isPlaying()) {
+                            playerBy.pause();
+                            bPleyBy.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
-                            player6.start();
+                            playerBy.start();
                             changeSeekBarY();
-                            bPley6.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyBy.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
             }
         });
     }
+    private void getLessonJ() {
+        bPleyBu = findViewById(R.id.bPlayJp);
+
+        handlerBu = new Handler();
+
+        seekBarBu = findViewById(R.id.seekBarJp);
+
+        playerBu = MediaPlayer.create(this, R.raw.lesson8_num2);
+
+        playerBu.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                seekBarBu.setMax(mediaPlayer.getDuration());
+                mediaPlayer.start();
+                changeSeekBarJ();
+                playerBu.pause();
+            }
+        });
+        seekBarBu.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (b) {
+                    playerBu.seekTo(i);
+                }
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+        });
+    }
+    private void changeSeekBarJ() {
+        seekBarBu.setProgress(playerBu.getCurrentPosition());
+
+        if (playerBu.isPlaying()) {
+            runnableBu = new Runnable() {
+                @Override
+                public void run() {
+                    changeSeekBarJ();
+                }
+            };
+            handlerBu.postDelayed(runnableBu, 1000);
+        }
+        bPleyBu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.bPlayJp:
+                        if (playerBu.isPlaying()) {
+                            playerBu.pause();
+                            bPleyBu.setImageResource(R.drawable.ic_play_arrow_black_24dp);
+                        } else {
+                            playerBu.start();
+                            changeSeekBarY();
+                            bPleyBu.setImageResource(R.drawable.ic_pause_black_24dp);
+                        }
+                        break;
+                }
+            }
+        });
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        handler1.removeCallbacks(null);
-        player1.stop();
-        handler2.removeCallbacks(null);
-        player2.stop();
-        handler3.removeCallbacks(null);
-        player3.stop();
-        handler4.removeCallbacks(null);
-        player4.stop();
-        handler5.removeCallbacks(null);
-        player5.stop();
-        handler6.removeCallbacks(null);
-        player6.stop();
+        handlerBq.removeCallbacks(null);
+        playerBq.stop();
+        handlerBw.removeCallbacks(null);
+        playerBw.stop();
+        handlerBe.removeCallbacks(null);
+        playerBe.stop();
+        handlerBr.removeCallbacks(null);
+        playerBr.stop();
+        handlerBt.removeCallbacks(null);
+        playerBt.stop();
+        handlerBy.removeCallbacks(null);
+        playerBy.stop();
+        handlerBu.removeCallbacks(null);
+        playerBu.stop();
     }
 }

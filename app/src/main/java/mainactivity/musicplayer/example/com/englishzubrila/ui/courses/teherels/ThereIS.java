@@ -46,7 +46,7 @@ public class ThereIS extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home){
-            finish();
+            onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
@@ -117,7 +117,7 @@ public class ThereIS extends AppCompatActivity {
                             } else {
                                 player.start();
                                 changeSeekbar();
-                                bPley.setImageResource(R.drawable.ic_stop_black_24dp);
+                                bPley.setImageResource(R.drawable.ic_pause_black_24dp);
                             }
                             break;
                     }

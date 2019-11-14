@@ -3,10 +3,12 @@ package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -44,13 +46,22 @@ public class DoDoes extends AppCompatActivity {
         getLessonY();
         getLessonHWA();
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     private void getLessonA() {
-        bPleyE = findViewById(R.id.bPlayE);
+        bPleyE = findViewById(R.id.bPlayFi);
 
         handlerE = new Handler();
 
-        seekBarE = findViewById(R.id.seekBarE);
+        seekBarE = findViewById(R.id.seekBarFi);
 
         playerE = MediaPlayer.create(this, R.raw.lesson_1);
 
@@ -94,14 +105,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayE:
+                    case R.id.bPlayFi:
                         if (playerE.isPlaying()) {
                             playerE.pause();
                             bPleyE.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerE.start();
                             changeSeekBarA();
-                            bPleyE.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyE.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -110,11 +121,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonE() {
-        bPleyB = findViewById(R.id.bPlayF);
+        bPleyB = findViewById(R.id.bPlayGi);
 
         handlerB = new Handler();
 
-        seekBarB = findViewById(R.id.seekBarE);
+        seekBarB = findViewById(R.id.seekBarGi);
 
         playerB = MediaPlayer.create(this, R.raw.lesson_2);
 
@@ -158,14 +169,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
+                    case R.id.bPlayGi:
                         if (playerB.isPlaying()) {
                             playerB.pause();
                             bPleyB.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerB.start();
                             changeSeekBarE();
-                            bPleyB.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyB.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -174,11 +185,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonI() {
-        bPleyS = findViewById(R.id.bPlayF);
+        bPleyS = findViewById(R.id.bPlayHi);
 
         handlerS = new Handler();
 
-        seekBarS = findViewById(R.id.seekBarE);
+        seekBarS = findViewById(R.id.seekBarHi);
 
         playerS = MediaPlayer.create(this, R.raw.lesson_3);
 
@@ -222,14 +233,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
+                    case R.id.bPlayHi:
                         if (playerS.isPlaying()) {
                             playerS.pause();
                             bPleyS.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerS.start();
                             changeSeekBarI();
-                            bPleyS.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyS.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -238,11 +249,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonO() {
-        bPleyD = findViewById(R.id.bPlayF);
+        bPleyD = findViewById(R.id.bPlayJi);
 
         handlerD = new Handler();
 
-        seekBarD = findViewById(R.id.seekBarD);
+        seekBarD = findViewById(R.id.seekBarJi);
 
         playerD = MediaPlayer.create(this, R.raw.lesson_4);
 
@@ -286,14 +297,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
+                    case R.id.bPlayJi:
                         if (playerD.isPlaying()) {
                             playerD.pause();
                             bPleyD.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerD.start();
                             changeSeekBarO();
-                            bPleyD.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyD.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -302,11 +313,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonU() {
-        bPleyF = findViewById(R.id.bPlayF);
+        bPleyF = findViewById(R.id.bPlayKi);
 
         handlerF = new Handler();
 
-        seekBarF = findViewById(R.id.seekBarE);
+        seekBarF = findViewById(R.id.seekBarKi);
 
         playerF = MediaPlayer.create(this, R.raw.lesson_5);
 
@@ -350,14 +361,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayF:
+                    case R.id.bPlayKi:
                         if (playerF.isPlaying()) {
                             playerF.pause();
                             bPleyF.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerF.start();
                             changeSeekBarU();
-                            bPleyF.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyF.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -366,11 +377,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonY() {
-        bPleyG = findViewById(R.id.bPlayI);
+        bPleyG = findViewById(R.id.bPlayLi);
 
         handlerG = new Handler();
 
-        seekBarG = findViewById(R.id.seekBarI);
+        seekBarG = findViewById(R.id.seekBarLi);
 
         playerG = MediaPlayer.create(this, R.raw.lesson_6);
 
@@ -414,14 +425,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayI:
+                    case R.id.bPlayLi:
                         if (playerG.isPlaying()) {
                             playerG.pause();
                             bPleyG.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerG.start();
                             changeSeekBarY();
-                            bPleyG.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyG.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -430,11 +441,11 @@ public class DoDoes extends AppCompatActivity {
     }
 
     private void getLessonHWA() {
-        bPleyH = findViewById(R.id.bPlayJ);
+        bPleyH = findViewById(R.id.bPlayZi);
 
         handlerH = new Handler();
 
-        seekBarH = findViewById(R.id.seekBarJ);
+        seekBarH = findViewById(R.id.seekBarZi);
 
         playerH = MediaPlayer.create(this, R.raw.lesson_7);
 
@@ -478,14 +489,14 @@ public class DoDoes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.bPlayJ:
+                    case R.id.bPlayZi:
                         if (playerH.isPlaying()) {
                             playerH.pause();
                             bPleyH.setImageResource(R.drawable.ic_play_arrow_black_24dp);
                         } else {
                             playerH.start();
                             changeSeekBarHWA();
-                            bPleyH.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPleyH.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }

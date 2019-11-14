@@ -3,10 +3,12 @@ package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -39,12 +41,21 @@ public class Can extends AppCompatActivity {
         getLessonA();
         getLessonE();
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home){
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void getLessonA() {
         bPlayerE = findViewById(R.id.cPlayerE);
 
         handlerE = new Handler();
 
-        seekBarE = findViewById(R.id.seekBarE);
+        seekBarE = findViewById(R.id.seekBarFi);
 
         playerE = MediaPlayer.create(this, R.raw.lesson13_5);
 
@@ -95,7 +106,7 @@ public class Can extends AppCompatActivity {
                         } else {
                             playerE.start();
                             changeSeekBarA();
-                            bPlayerE.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerE.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -108,7 +119,7 @@ public class Can extends AppCompatActivity {
 
         handlerB = new Handler();
 
-        seekBarB = findViewById(R.id.seekBarE);
+        seekBarB = findViewById(R.id.seekBarFi);
 
         playerB = MediaPlayer.create(this, R.raw.lesson13_6);
 

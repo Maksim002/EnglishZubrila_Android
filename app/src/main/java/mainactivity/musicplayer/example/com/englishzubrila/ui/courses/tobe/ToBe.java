@@ -31,7 +31,7 @@ public class ToBe extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home){
-            finish();
+            onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
