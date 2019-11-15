@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestTherelS extends AppCompatActivity {
+public class TestMust extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -50,10 +50,11 @@ public class TestTherelS extends AppCompatActivity {
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";
     private String wrong = "Wrong";
-    private Activity mActivity;
+
     private Toolbar toolbar;
     private ActionBar actionBar;
 
+    private Activity mActivity;
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -74,18 +75,17 @@ public class TestTherelS extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {" Ответим на вопрос утвердительно.  Do you like ice-cream? ", " Yes, I do. ", " No, I do not. ", " No, I am not.  ", " Yes, I am. "},
+            {" Ответим на вопрос утвердительно. Do they play football? ", " Yes, they do. ", " No, they do not. ", " No, they aren’t.", " Yes, they are. "},
+            {" Ответим на вопрос утвердительно. Does Tim learn French? " , " Yes, he does. ", " Yes, he is. ", " No, he does not. ", " No, he is not. "},
+            {" Ответим на вопрос отрицательно. Does he know Spanish? " , " No, he does not. ", " No, he is not. ", " Yes, he does. ", " Yes, he is. "},
+            {" Ответим на вопрос отрицательно. Does she like fruit?", " No, she does not. ", " No, she is not. ", " Yes, she does. ", " Yes, she is. "},
+            {" Ответим на вопрос отрицательно.  Do we eat bananas?", " No, we do not.  ", " Yes, we do. ", " No, we aren’t.", " Yes, we are. "},
+            {" Выбрать правильное отрицательное предложение. ", " They do not play football.", " They not do play football. ", " They does not play football.", " They not play football."},
+            {" Преобразовать в вопросительное предложение.  She likes jam. ", " Does she like fruit?", " Do she like fruit?", " Does she likes fruit?", " Do she likes fruit?"},
+            {" Преобразовать в вопросительное предложение.  They eat oranges. ", " Do they eat oranges?", " Does they eat oranges?", " Does they eats oranges?", " Do they eats oranges?"},
+            {" Выбрать правильное отрицательное предложение.", " Tim does not know Spanish.", " Tim does not knows Spanish.", " Tim do not know Spanish.", " Tim do not knows Spanish."}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -101,7 +101,7 @@ public class TestTherelS extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestTherelS.this;
+        mActivity = TestMust.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -176,11 +176,11 @@ public class TestTherelS extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestMust.this);
             final View viewE = factory.inflate(R.layout.sample, null);
             builder.setView(viewE);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestMust.this);
             final View viewB = factory.inflate(R.layout.smale_fols, null);
             builder.setView(viewB);
         }
@@ -199,19 +199,18 @@ public class TestTherelS extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialogE.show();
         return correct;
     }
-
 }

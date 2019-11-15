@@ -12,6 +12,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -26,14 +29,20 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.articles.t
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.Can;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.can.test.TestCan;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparative.ComparativeSuperlativeDegrees;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparative.test.TestComparative;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.direct.Directandindirectspeech;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.direct.test.TestDirect;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.DoDoes;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.dodoes.test.TestDoDoes;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.emty.IsEmty;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.future.test.TestFutureSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.HaveTo;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.test.TestHaveTo;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.CheatSheets;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.Must;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.PresentContinuous;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test.TestPresentContinuous;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test.TestContinuous;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.test.TestMust;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prular.PluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.prular.test.TestPluralForm;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.quastions.Questions;
@@ -70,11 +79,30 @@ public class HomeFragment extends Fragment implements Listener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        setHasOptionsMenu(true);
         getRecyclerView(view);
         getCompanies();
         context = HomeFragment.this.getContext();
         return view;
     }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.menu_items,menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id  = item.getItemId();
+        if (id == R.id.spread){
+            Intent intent = new Intent(this.getContext(),CheatSheets.class);
+            startActivity(intent);
+        }else {
+            Intent intent = new Intent(this.getContext(),CheatSheets.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void getCompanies(){
         ArrayList<Company> companies = new ArrayList<>();
         Company beginner = new Company("Beginner", getBeginner(), R.drawable.new_begin_new,"Учимся правильному чтению");
@@ -202,20 +230,23 @@ public class HomeFragment extends Fragment implements Listener {
             case Letters9:
                 test = TestCan.class;
                 break;
+            case Letters10:
+                test = TestContinuous.class;
+                break;
             case Letters11:
-                test = TestPresentContinuous.class;
+                test = TestMust.class;
                 break;
             case Letters12:
-                test = HaveTo.class;
+                test = TestHaveTo.class;
                 break;
             case Letters13:
-                test = Directandindirectspeech.class;
+                test = TestDirect.class;
                 break;
             case Letters14:
-                test = TheFutureSimple.class;
+                test = TestFutureSimple.class;
                 break;
             case Letters15:
-                test = ComparativeSuperlativeDegrees.class;
+                test = TestComparative.class;
                 break;
             case Letters16:
                 test = IsEmty.class;

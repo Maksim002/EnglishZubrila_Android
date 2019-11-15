@@ -45,7 +45,7 @@ public class TestQuestions extends AppCompatActivity {
     private int rightAnswerCount = 0;
     private int quizCount = 1;
     static final private int QUIZ_COUNT = 10;
-    static final long START_TIME_IN_MILIS = 1000000;
+    static final long START_TIME_IN_MILIS = 300000;
     private long mTimeLeftinMillis = START_TIME_IN_MILIS;
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";

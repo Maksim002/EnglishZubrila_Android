@@ -12,7 +12,6 @@
         android:background="#251A3A"
         android:id="@+id/toolTest"
         android:gravity="center_horizontal"
-        app:titleTextColor="#F8F8FA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>

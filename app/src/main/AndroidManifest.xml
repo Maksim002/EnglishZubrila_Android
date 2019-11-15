@@ -111,10 +111,31 @@
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
         <activity android:name=".ui.courses.can.test.resultActivity"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
-        <activity android:name=".ui.courses.continuous.test.TestPresentContinuous"
+        <activity android:name=".ui.courses.continuous.test.TestContinuous"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
         <activity android:name=".ui.courses.continuous.test.resultActivity"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.must.test.resultActivity"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.must.test.TestMust"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.haveto.test.TestHaveTo"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.haveto.test.resultActivity"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.direct.test.TestDirect"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.direct.test.resultActivity"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.future.test.TestFutureSimple"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.future.test.resultActivity"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.comparative.test.TestComparative"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.comparative.test.resultActivity"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
+        <activity android:name=".ui.courses.heatsheets.CheatSheets" />
 
         <meta-data
             android:name="preloaded_fonts"

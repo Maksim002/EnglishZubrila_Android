@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.direct.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestTherelS extends AppCompatActivity {
+public class TestDirect extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -50,10 +50,11 @@ public class TestTherelS extends AppCompatActivity {
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";
     private String wrong = "Wrong";
-    private Activity mActivity;
+
     private Toolbar toolbar;
     private ActionBar actionBar;
 
+    private Activity mActivity;
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -74,18 +75,17 @@ public class TestTherelS extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {"Выбрать правильный вариант предложения в косвенной речи. предложения в косвенной речи. «Help me to get up,» Mr Day says to Mr Bliss.", " Mr Day tells Mr Bliss to help him to get up.", "Mr Day tell Mr Bliss to helps him to get up.", "Mr Day is telling Mr Bliss to help him to get up.", "Mr Day tells to Mr Bliss help him to get up."},
+            {" Выберите правильный вариант предложения в косвенной речи. He says, «Now I cannot walk.».", "He says that now he cannot walk.", "He is says that now he cannot walk.", "He is saying that now he cannot walk.", " He says that now he don’t can walk."},
+            {" Выберите правильный вариант предложения в косвенной речи. He says, «I cannot make it go faster.»" , "He says that he cannot make it go faster.", " He is saying that he cannot make it go faster.", "He is says that he cannot make it go faster.", " He say that he cannot makes it go faster."},
+            {" Выберите правильный вариант предложения в косвенной речи. He says, «If I do not stop, I will run over them!»" , "He says that if he does not stop he will run over them.", "He say that if he do not stops he will run over them.", "He is says that if he do not stop he will run over them.", " He say that if he does not stop he will runs over them."},
+            {" Выберите правильный вариант предложения в косвенной речи. «I like bananas,» says Teddy.", "Teddy says that he likes bananas.", "Teddy say that he like bananas.", "Teddy is says that he doesn’t like bananas.", " Teddy says that he don’t like bananas."},
+            {" Выберите правильный вариант предложения в косвенной речи. «And we want a car,» they all say.", "They all say that they want a car.", " They are all say that they want a car.", " They all says that they wants a car.", " They all say that they are want a car."},
+            {" Выберите правильный вариант предложения в косвенной речи.  «You cannot have my car,» says Mr Bliss.", " Mr Bliss says that they cannot have his car.", " Mr Bliss say that they cannot have to his car.", " Mr Bliss is say that they cannot have his car.", "Mr Bliss says that they don’t can have his car."},
+            {" Выберите правильный вариант предложения в косвенной речи. «We will eat you all up!» say the bears. ", "The bears say that they will eat them all up.", "The bears says that they will eat them all up.", "The bears are say that they will eat them all up.", " The bears say that they are will eat them all up."},
+            {" Выберите правильный вариант предложения в косвенной речи. «Stop!» the bears cry to Mr Bliss.", " The bears cry to Mr Bliss to stop.", " The bears are crying to Mr Bliss to stop.", "The bears cry Mr Bliss stop.", " Mr Bliss cry to the bears to stop."},
+            {" Выберите правильный вариант предложения в косвенной речи. Mr Bliss says, «I have to stop.»", " Mr Bliss says that he has to stop. ", " Mr Bliss is says that he has to stop.", " Mr Bliss says that he have to stop. ", " Mr Bliss is say that he have to stop. "}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -101,7 +101,7 @@ public class TestTherelS extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestTherelS.this;
+        mActivity = TestDirect.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -176,11 +176,11 @@ public class TestTherelS extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestDirect.this);
             final View viewE = factory.inflate(R.layout.sample, null);
             builder.setView(viewE);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestDirect.this);
             final View viewB = factory.inflate(R.layout.smale_fols, null);
             builder.setView(viewB);
         }
@@ -199,19 +199,18 @@ public class TestTherelS extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialogE.show();
         return correct;
     }
-
 }

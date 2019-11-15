@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.comparative.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestTherelS extends AppCompatActivity {
+public class TestComparative extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -50,10 +50,11 @@ public class TestTherelS extends AppCompatActivity {
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";
     private String wrong = "Wrong";
-    private Activity mActivity;
+
     private Toolbar toolbar;
     private ActionBar actionBar;
 
+    private Activity mActivity;
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -74,18 +75,17 @@ public class TestTherelS extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {"Подставьте правильный вариант.  A bear is (strong) than a fox.", " A bear is stronger than a fox.", " A bear is strongest than a fox.", "A bear is strong than a fox.", " A bear stronger than a fox."},
+            {" Подставьте правильный вариант. A lake is (small) than a sea.", " A lake is smaller than a sea.", " A lake smaller than a sea.", " A lake is smallest than a sea.", " A lake smallest than a sea."},
+            {" Подставьте правильный вариант. Which is (big), Moscow or London?" , "Which is bigger, Moscow or London?", " Which bigger, Moscow or London?", "Which are bigger, Moscow or London?", " Нет правильного ответа"},
+            {" Подставьте правильный вариант. Everest is (high) mountain in the world." , " Everest is the highest mountain in the world.", " Everest highest mountain in the world.", " Everest is higher mountain in the world.", " Everest higher mountain in the world."},
+            {" Подставьте правильный вариант. It was (happy) day in his life.", " It was the happiest day in his life.", " It was happiest day in his life.", "It was the happier day in his life.", " It was happier day in his life."},
+            {" Подставьте правильный вариант. Who is (young), Tim or his sister?", " Who is younger, Tim or his sister?", " Who younger, Tim or his sister?", " Who are younger, Tim or his sister?", " Who is the younger, Tim or his sister?"},
+            {" Подставьте правильный вариант.  Who is (old) in your family?", " Who is the oldest in your family?", " Who is oldest in your family?", " Who is the older in your family?", " Who older in your family?"},
+            {" Подставьте правильный вариант.  A «Jaguar» is (expensive) than a «Ford».", " A «Jaguar» is more expensive than a «Ford».", " A «Jaguar» is most expensive than a «Ford».", " A «Jaguar» is expensiver than a «Ford».", " A «Jaguar» is expensivest than a «Ford»."},
+            {" Подставьте правильный вариант. Tim says that books are (boring) than TV.", " Tim says that books are more boring than TV.", " Tim is says that books more boring than TV.", " Tim says that books is more boring than TV.", " Tim says that books is the more boring than TV."},
+            {" Подставьте правильный вариант. Russia is much (large) than Britain.", " Russia is much larger than Britain.", " Russia is the most larger than Britain.", " Russia is the largest than Britain.", " Russia much larger than Britain."}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -101,7 +101,7 @@ public class TestTherelS extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestTherelS.this;
+        mActivity = TestComparative.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -176,11 +176,11 @@ public class TestTherelS extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestComparative.this);
             final View viewE = factory.inflate(R.layout.sample, null);
             builder.setView(viewE);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestComparative.this);
             final View viewB = factory.inflate(R.layout.smale_fols, null);
             builder.setView(viewB);
         }
@@ -199,19 +199,18 @@ public class TestTherelS extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialogE.show();
         return correct;
     }
-
 }

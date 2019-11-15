@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.future.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestTherelS extends AppCompatActivity {
+public class TestFutureSimple extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -50,10 +50,11 @@ public class TestTherelS extends AppCompatActivity {
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";
     private String wrong = "Wrong";
-    private Activity mActivity;
+
     private Toolbar toolbar;
     private ActionBar actionBar;
 
+    private Activity mActivity;
 
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
@@ -74,18 +75,17 @@ public class TestTherelS extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {"Выберите правильный вариант.  They ... you some money.", "  will lend", "will be lend", "will be lending", " will lending "},
+            {" Выберите правильный вариант перевода: Я никому не скажу. ", " I will not tell anyone.", " I wan't tell anyone. ", " I will be not tell anyone. ", " I will tell anyone."},
+            {" Как правильно построить вопрос Future Simple:  Что ты выберешь?" , " What will you choose? ", " Will what you choose? ", " What you will choose? ", " What you choose? "},
+            {" Подставьте правильный вариант. ... your aunt ... at home tomorrow?" , " Will ... be ", " Be ... will ", " Being ... will", " Will... being "},
+            {" Выберите правильный вариант перевода. Who will help me find my keys?", " Кто поможет мне найти ключи? ", " Кто помог мне найти ключи?", " Кто смог бы помочь мне найти ключи? ", " Нет правильного варианта ответа"},
+            {" Выберите правильный вариант перевода. Won’t you play football with me?", " Ты не будешь играть со мной в футбол? ", " Ты будешь играть со мной в футбол? ", " Ты играл со мной в футбол? ", " Ты бы поиграл со мной в футбол?"},
+            {" Выберите правильный вариант перевода.  Я вернусь в следующее воскресенье.", " I will come back next Sunday. ", " I would come back next Sunday. ", " I won't come back next Sunday. ", " Нет правильного ответа"},
+            {" Выберите правильный вариант перевода.  Население увеличится в следующем месяце.", " The population will grow next month ", " The population will be grow next month ", " The population won't be grow next month", " Нет правильного ответа"},
+            {" Как правильно построить вопрос Future Simple: What Pooh (do)?", " What will Pooh do?", " What Pooh won’t do?", " Will what Pooh do?", " Pooh what will do?"},
+            {" Как правильно построить вопрос Future Simple:  When he (stop) crying?", " When will he stop crying?", " Will what he stop crying?", " When he won’t stop crying?", "When stop will he crying?"}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -101,7 +101,7 @@ public class TestTherelS extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestTherelS.this;
+        mActivity = TestFutureSimple.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -176,11 +176,11 @@ public class TestTherelS extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestFutureSimple.this);
             final View viewE = factory.inflate(R.layout.sample, null);
             builder.setView(viewE);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
+            LayoutInflater factory = LayoutInflater.from(TestFutureSimple.this);
             final View viewB = factory.inflate(R.layout.smale_fols, null);
             builder.setView(viewB);
         }
@@ -199,19 +199,18 @@ public class TestTherelS extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialogE.show();
         return correct;
     }
-
 }

@@ -216,7 +216,7 @@ public class Transcription extends AppCompatActivity {
                             } else {
                                 playerE.start();
                                 changeSeekBarA();
-                                bPlayerE.setImageResource(R.drawable.ic_stop_black_24dp);
+                                bPlayerE.setImageResource(R.drawable.ic_pause_black_24dp);
                             }
                             break;
                     }
@@ -280,7 +280,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerB.start();
                             changeSeekBarE();
-                            bPlayerB.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerB.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -344,7 +344,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerS.start();
                             changeSeekBarI();
-                            bPlayerS.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerS.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -408,7 +408,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerD.start();
                             changeSeekBarO();
-                            bPlayerD.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerD.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -472,7 +472,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerI.start();
                             changeSeekBarU();
-                            bPlayerI.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerI.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -536,7 +536,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerF.start();
                             changeSeekBarY();
-                            bPlayerF.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerF.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }
@@ -600,7 +600,7 @@ public class Transcription extends AppCompatActivity {
                         } else {
                             playerG.start();
                             changeSeekBarHWA();
-                            bPlayerG.setImageResource(R.drawable.ic_stop_black_24dp);
+                            bPlayerG.setImageResource(R.drawable.ic_pause_black_24dp);
                         }
                         break;
                 }

@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestPresentContinuous extends AppCompatActivity {
+public class TestHaveTo extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -45,11 +45,12 @@ public class TestPresentContinuous extends AppCompatActivity {
     private int rightAnswerCount = 0;
     private int quizCount = 1;
     static final private int QUIZ_COUNT = 10;
-    static final long START_TIME_IN_MILIS = 1000000;
+    static final long START_TIME_IN_MILIS = 300000;
     private long mTimeLeftinMillis = START_TIME_IN_MILIS;
     int PROGRESS_BAR_INCREMENT = 100 / QUIZ_COUNT;
     private String correct = "Correct";
     private String wrong = "Wrong";
+
     private Toolbar toolbar;
     private ActionBar actionBar;
 
@@ -74,16 +75,16 @@ public class TestPresentContinuous extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Выберите правильный вариант.  They … for us near the door.", " Are waiting", "Waits", " Is waiting", "Am waiting"},
-            {" Выберите правильный вариант. Harry … television now. ", " Is watching", " Watch", " Watches", " Are watching"},
-            {" Выберите правильный вариант. What … in the room now?" , "Are they doing", " They are doing", " Do they do", " They do"},
-            {" Выберите правильный вариант. Ann … French at all." , " Doesn’t speak", " Doesn’t speaking", " Not speaks", " Isn’t speaking"},
-            {" Выберите правильный вариант. Mr. Scott … German to Ann at the moment.", " Is speaking", " Speaks", " Are speaking", " Speaking"},
-            {" Выберите правильный вариант. I am busy now. I … to the radio.", " Am listening", " Listen", " Am listen", " Listening"},
-            {" Выберите правильный вариант.  They … to the seaside every summer.", " Go", " Are going", " Goes", " Is going"},
-            {" Выберите правильный вариант.  No, I … the newspaper at the moment.", " Am not reading", "Don’t read", "Don’t reading", " Amnt reading"},
-            {" Выберите правильный вариант. No, she … in this house.", " Doesn't live", " Isn’t live", "Don’t live", " Lives not"},
-            {" Выберите правильный вариант. Where … he is from?", " Do you think", " Are you thinking", "Are you think", " You don’t think"}
+            {" Выберите правильный вариант перевода: Поезда должны двигаться быстрее.", "The trains have to go faster.", "The trains to have go faster.", " The trains have  go faster.", " The trains has to go faster."},
+            {" Выберите правильный вариант перевода: Мы вынуждены поторопиться.", " We have to hurry up.", " We has to hurry up.", " We have hurry up.", " We has hurry up."},
+            {" Выберите правильный вариант перевода: Вам нужно взять такси, чтобы не опоздать." , " You have to take a taxi so as not to be late.", " You have take a taxi so as not to be late.", "You are have to take a taxi so as not to be late.", " You have to take a taxi so as do not to be late."},
+            {" Выберите правильный вариант перевода: Он должен что-нибудь сделать." , " He has to do something.", " He have to do something.", " He has to does something.", " He is has to do something."},
+            {" Выберите правильный вариант перевода: Мы вынуждены добираться туда пешком.", " We have to get there on foot.", " We are have to get there on foot.", " We has to get there on foot.", " We have get there on foot."},
+            {" Выберите правильный вариант перевода: Ему необходимо подождать.", " He has to wait.", " He have to wait.", " He is has to wait.", " He has wait."},
+            {" Выберите правильный вариант перевода: Нам нужно взять зонт.", " We have to take an umbrella.", " We are have to take an umbrella.", " We has to take an umbrella.", " We have take an umbrella."},
+            {" Выберите правильный вариант перевода: Они должны посадить новые розы.", " They have to plant new roses.", " They has to plant new roses.", " They are have to plant new roses.", " They have plant new roses."},
+            {" Выберите правильный вариант перевода: У него собака, ему нужно кормить ее.", " He has a dog, he has to feed it.", " He have a dog, he has to feed it.", " He is has a dog, he has to feed it.", " He has to dog, he has a feed it."},
+            {" Выберите правильный вариант перевода: Вам нужно уходить?", " Do you have to go?", " Does you have to go?", " Have you have to go?", " Do you has to go?"}
     };
 
     @SuppressLint("WrongViewCast")
@@ -100,7 +101,7 @@ public class TestPresentContinuous extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestPresentContinuous.this;
+        mActivity = TestHaveTo.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -175,11 +176,11 @@ public class TestPresentContinuous extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestPresentContinuous.this);
+            LayoutInflater factory = LayoutInflater.from(TestHaveTo.this);
             final View viewE = factory.inflate(R.layout.sample, null);
             builder.setView(viewE);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestPresentContinuous.this);
+            LayoutInflater factory = LayoutInflater.from(TestHaveTo.this);
             final View viewB = factory.inflate(R.layout.smale_fols, null);
             builder.setView(viewB);
         }
@@ -198,18 +199,18 @@ public class TestPresentContinuous extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialogE = builder.create();
+        dialogE = builder.create();
+        dialogE.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialogE.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialogE.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialogE.show();
         return correct;
     }
 }

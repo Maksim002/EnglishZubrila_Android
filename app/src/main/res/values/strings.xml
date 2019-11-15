@@ -6,6 +6,8 @@
     <string name="open">Открыт</string>
     <string name="closed">Закрыт</string>
 
+    <string name="action_itemsE">Шпоргалки</string>
+
     <string name="title_activity_philip_chesterfield">PhilipChesterfield</string>
     <string name="_26_5_a_e_i_o_u_20_b_c_d_f_g_h_j_k_l_m_n_p_q_r_s_t_v_w_x_z_y"><![CDATA[Итак, в английском алфавите 26 букв, 5 из которых гласные – A, E, I, O, U затем 20 букв являются согласными – B C D F G H J K L M N P Q R S T V W X Z и только Y обозначает и согласный, и гласный звук! При изучении английского алфавита мы советуем Вам запоминать не только буквы, но и их звучание, это очень важно так как одна и та же буква в сочетании с согласной или гласной меняет свое звучание.]]></string>
     <string name="letters">Letters</string>

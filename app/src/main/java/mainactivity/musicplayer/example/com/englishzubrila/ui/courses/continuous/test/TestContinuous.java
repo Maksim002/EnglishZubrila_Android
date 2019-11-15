@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.teherels.test;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -31,7 +31,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.alphabet.t
 
 import static android.view.Gravity.CENTER;
 
-public class TestTherelS extends AppCompatActivity {
+public class TestContinuous extends AppCompatActivity {
     private TextView countLabel;
     ProgressBar mProgressBar;
     private TextView questionLabel;
@@ -54,7 +54,6 @@ public class TestTherelS extends AppCompatActivity {
     private Toolbar toolbar;
     private ActionBar actionBar;
 
-
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftinMillis, 100) {
             @Override
@@ -74,18 +73,17 @@ public class TestTherelS extends AppCompatActivity {
     ArrayList<ArrayList<String>> quizArray = new ArrayList<>();
     String quizData[][] = {
             //{"Question", "right answer", "choicea", "choiceb", "choicec", "choiced"}
-            {"Форма полуэллипса сохраняется у всех видов ванн благодаря выигрышному внешнему виду и удобству.", "White", "Green", "Blue", "yellow"},
-            {"Coal color?", "Black", "White", "Blue", "Orange"},
-            {"Donald Trump's color?", "Orange", "Black", "Green", "Blue"},
-            {"Course number?", "cs3300", "cs4300", "cs1400", "cs4770"},
-            {"Assignment number?", "assign3", "assign2", "assign69", "assign5"},
-            {"Canada's capital city?", "Ottawa", "Toronto", "St.Johns", "Montreal"},
-            {"The sound dog makes?", "woof?", "meow", "be be", "moo"},
-            {"Number of planets in solar system?", "9", "8", "7", "11"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"},
-            {"Biggest planet in solar system?", "Jupiter", "Neptune", "Saturn", "Uranus"}
+            {"Выберите правильный вариант.  They … for us near the door.", " Are waiting", "Waits", " Is waiting", "Am waiting"},
+            {" Выберите правильный вариант. Harry … television now. ", " Is watching", " Watch", " Watches", " Are watching"},
+            {" Выберите правильный вариант. What … in the room now?" , "Are they doing", " They are doing", " Do they do", " They do"},
+            {" Выберите правильный вариант. Ann … French at all." , " Doesn’t speak", " Doesn’t speaking", " Not speaks", " Isn’t speaking"},
+            {" Выберите правильный вариант. Mr. Scott … German to Ann at the moment.", " Is speaking", " Speaks", " Are speaking", " Speaking"},
+            {" Выберите правильный вариант. I am busy now. I … to the radio.", " Am listening", " Listen", " Am listen", " Listening"},
+            {" Выберите правильный вариант.  They … to the seaside every summer.", " Go", " Are going", " Goes", " Is going"},
+            {" Выберите правильный вариант.  No, I … the newspaper at the moment.", " Am not reading", "Don’t read", "Don’t reading", " Amnt reading"},
+            {" Выберите правильный вариант. No, she … in this house.", " Doesn't live", " Isn’t live", "Don’t live", " Lives not"},
+            {" Выберите правильный вариант. Where … he is from?", " Do you think", " Are you thinking", "Are you think", " You don’t think"}
     };
-
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -101,7 +99,7 @@ public class TestTherelS extends AppCompatActivity {
         answerButtonB = findViewById(R.id.answerB);
         answerButtonS = findViewById(R.id.answerS);
         answerButtonD = findViewById(R.id.answerD);
-        mActivity = TestTherelS.this;
+        mActivity = TestContinuous.this;
 
         toolbar = findViewById(R.id.toolTesting);
 
@@ -176,13 +174,13 @@ public class TestTherelS extends AppCompatActivity {
         builder.setTitle(alertTitle);
 
         if (alertTitle == correct) {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
-            final View viewE = factory.inflate(R.layout.sample, null);
-            builder.setView(viewE);
+            LayoutInflater factory = LayoutInflater.from(TestContinuous.this);
+            final View view2 = factory.inflate(R.layout.sample, null);
+            builder.setView(view2);
         } else {
-            LayoutInflater factory = LayoutInflater.from(TestTherelS.this);
-            final View viewB = factory.inflate(R.layout.smale_fols, null);
-            builder.setView(viewB);
+            LayoutInflater factory = LayoutInflater.from(TestContinuous.this);
+            final View view1 = factory.inflate(R.layout.smale_fols, null);
+            builder.setView(view1);
         }
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
@@ -199,19 +197,18 @@ public class TestTherelS extends AppCompatActivity {
                 }
             }
         });
-        AlertDialog dialoging = builder.create();
-        dialoging = builder.create();
-        dialoging.show();
+        AlertDialog dialog1 = builder.create();
+        dialog1 = builder.create();
+        dialog1.show();
 
-        WindowManager.LayoutParams wmlp = dialoging.getWindow().getAttributes();
+        WindowManager.LayoutParams wmlp = dialog1.getWindow().getAttributes();
 
         if (alertTitle.equals(correct)){
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
+            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorTrue)));
         } else {
-            Objects.requireNonNull(dialoging.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
+            Objects.requireNonNull(dialog1.getWindow()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorFalse)));
         }
-        dialoging.show();
+        dialog1.show();
         return correct;
     }
-
 }
