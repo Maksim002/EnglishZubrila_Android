@@ -129,6 +129,12 @@ public class ListViewPager extends Fragment implements Listener {
                 }
             });
         }
+
+    @Override
+    public void onDismiss() {
+
+    }
+
     @Override
     public void onClickGallery(int adapterPosition, Product product) {
 
@@ -138,5 +144,10 @@ public class ListViewPager extends Fragment implements Listener {
         Intent intent = new Intent(getContext(), WebViewB.class);
         intent.putExtra("Web", model);
         startActivity(intent);
+    }
+
+    @Override
+    public void onClickGallery(int adapterPosition) {
+
     }
 }

@@ -173,6 +173,12 @@ public class HomeFragment extends Fragment implements Listener {
         c1advanced.add(new Product("Is empty", Beginner.Letters16));
         return c1advanced;
     }
+
+    @Override
+    public void onDismiss() {
+
+    }
+
     @Override
     public void onClickGallery(int adapterPosition, Product product) {
         onClick(product);
@@ -258,7 +264,6 @@ public class HomeFragment extends Fragment implements Listener {
             Intent intent = new Intent(this.getActivity(), test);
             startActivity(intent);
     }
-
     private void openActivity(Product product) {
         Class beginner;
         switch (product.getBeginner()) {
@@ -323,6 +328,9 @@ public class HomeFragment extends Fragment implements Listener {
 
     @Override
     public void onClickGallery(Model model) {
+    }
+    @Override
+    public void onClickGallery(int adapterPosition) {
 
     }
 }

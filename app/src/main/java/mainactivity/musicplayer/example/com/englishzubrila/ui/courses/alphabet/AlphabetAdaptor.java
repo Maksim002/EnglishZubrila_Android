@@ -21,7 +21,7 @@ public class AlphabetAdaptor extends RecyclerView.Adapter<AlphabetViewHolder> {
     @Override
     public AlphabetViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
-        View view = layoutInflater.inflate(R.layout.item_forsst_fragment2, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.item_forsst_fragment_galery, viewGroup, false);
         return new AlphabetViewHolder(view);
     }
 

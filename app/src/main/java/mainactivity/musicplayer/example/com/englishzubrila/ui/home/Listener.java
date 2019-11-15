@@ -10,4 +10,7 @@ public interface Listener {
     void onClickGallery(int adapterPosition, Product product);
 
     void onClickGallery(Model model);
+
+    void onClickGallery(int adapterPosition);
+    void onDismiss();
 }
