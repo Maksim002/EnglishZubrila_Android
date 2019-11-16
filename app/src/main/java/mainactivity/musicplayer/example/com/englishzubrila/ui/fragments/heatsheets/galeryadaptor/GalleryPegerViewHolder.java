@@ -1,6 +1,5 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.galeryadaptor;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.galeryadaptor;
 
-import android.graphics.Matrix;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.ImageView;

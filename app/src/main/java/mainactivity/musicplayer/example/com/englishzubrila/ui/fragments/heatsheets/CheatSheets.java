@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,8 +16,8 @@ import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
 import mainactivity.musicplayer.example.com.englishzubrila.model.Product;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.galeryadaptor.GalleryAdaptar;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.galeryadaptor.GalleryPegerAdaptar;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.galeryadaptor.GalleryAdaptar;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.galeryadaptor.GalleryPegerAdaptar;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.model.Model;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 

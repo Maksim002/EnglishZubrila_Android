@@ -1,4 +1,4 @@
-package mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.galeryadaptor;
+package mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.galeryadaptor;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

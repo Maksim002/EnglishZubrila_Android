@@ -38,7 +38,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.emty.IsEmt
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.future.test.TestFutureSimple;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.HaveTo;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.haveto.test.TestHaveTo;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.heatsheets.CheatSheets;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.CheatSheets;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.must.Must;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.PresentContinuous;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.courses.continuous.test.TestContinuous;

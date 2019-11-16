@@ -135,7 +135,7 @@
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
         <activity android:name=".ui.courses.comparative.test.resultActivity"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
-        <activity android:name=".ui.courses.heatsheets.CheatSheets" />
+        <activity android:name=".ui.fragments.heatsheets.CheatSheets" />
 
         <meta-data
             android:name="preloaded_fonts"
