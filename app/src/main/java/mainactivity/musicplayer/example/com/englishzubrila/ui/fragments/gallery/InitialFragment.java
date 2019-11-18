@@ -18,7 +18,7 @@ import mainactivity.musicplayer.example.com.englishzubrila.R;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.books.ListViewPager;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.adapter.ViewPegerAdaptor;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.bottomnavigation.BottomNavigationBehavior;
-import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.menu.MenuInformation;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.gallery.сonflicting.Conflicting;
 
 public class InitialFragment  extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private BottomNavigationView bottomNavigationView;
@@ -116,10 +116,10 @@ public class InitialFragment  extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.information:
-                Intent intent = new Intent(InitialFragment.this, MenuInformation.class);
+                Intent intent = new Intent(InitialFragment.this, Conflicting.class);
                 startActivity(intent);
                 break;
         }
-        return true;
+        return false;
     }
 }

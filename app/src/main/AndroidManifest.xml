@@ -136,7 +136,7 @@
         <activity android:name=".ui.courses.comparative.test.resultActivity"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
         <activity android:name=".ui.fragments.heatsheets.CheatSheets" />
-        <activity android:name=".ui.fragments.gallery.menu.MenuInformation"
+        <activity android:name=".ui.fragments.gallery.сonflicting.Conflicting"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"
             android:launchMode="singleTop"/>
 
