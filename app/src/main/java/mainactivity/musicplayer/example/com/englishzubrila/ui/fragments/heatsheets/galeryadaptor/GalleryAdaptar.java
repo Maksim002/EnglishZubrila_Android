@@ -10,10 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.model.Gallery;
 import mainactivity.musicplayer.example.com.englishzubrila.ui.home.Listener;
 
 public class GalleryAdaptar extends RecyclerView.Adapter<GalleryViewHolder> {
-    private List<String> list = new ArrayList<>();
+    private List<Gallery> list = new ArrayList<>();
     private Listener listener;
 
     public GalleryAdaptar(Listener listener){
@@ -43,7 +44,7 @@ public class GalleryAdaptar extends RecyclerView.Adapter<GalleryViewHolder> {
     public int getItemCount() {
         return list.size();
     }
-    public  void setGalleryList(List<String> newDate){
+    public  void setGalleryList(List<Gallery> newDate){
         this.list = newDate;
         notifyDataSetChanged();
     }

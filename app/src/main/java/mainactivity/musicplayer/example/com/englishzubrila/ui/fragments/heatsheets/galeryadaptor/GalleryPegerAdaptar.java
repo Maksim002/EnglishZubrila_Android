@@ -10,9 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.model.Gallery;
 
 public class GalleryPegerAdaptar extends PagerAdapter {
-    private List<String> list = new ArrayList<>();
+    private List<Gallery> list = new ArrayList<>();
 
     @Override
     public int getCount() {
@@ -39,7 +40,7 @@ public class GalleryPegerAdaptar extends PagerAdapter {
     public void destroyItem( ViewGroup container, int position, Object view) {
         container.removeView((View) view);
     }
-    public void updeteList(List<String> list){
+    public void updeteList(List<Gallery> list){
         this.list = list;
         notifyDataSetChanged();
 

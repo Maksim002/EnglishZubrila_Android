@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 
 import mainactivity.musicplayer.example.com.englishzubrila.R;
+import mainactivity.musicplayer.example.com.englishzubrila.ui.fragments.heatsheets.model.Gallery;
 
 public class GalleryPegerViewHolder {
     private ImageView imageView;
@@ -15,7 +16,7 @@ public class GalleryPegerViewHolder {
         imageView = itemView.findViewById(R.id.imageView);
     }
 
-    public void bind(String path) {
-        Glide.with(imageView).load(path).into(imageView);
+    public void bind(Gallery path) {
+        Glide.with(imageView).load(path.getImages()).into(imageView);
     }
 }

@@ -136,10 +136,13 @@
         <activity android:name=".ui.courses.comparative.test.resultActivity"
             android:parentActivityName=".ui.fragments.gallery.InitialFragment"/>
         <activity android:name=".ui.fragments.heatsheets.CheatSheets" />
+        <activity android:name=".ui.fragments.gallery.menu.MenuInformation"
+            android:parentActivityName=".ui.fragments.gallery.InitialFragment"
+            android:launchMode="singleTop"/>
 
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts"/>
     </application>
 
 </manifest>

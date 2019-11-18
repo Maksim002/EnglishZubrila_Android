@@ -9,10 +9,10 @@
             android:title="Share"/>
     </group>
 
-    <item android:title="О приложение">
+    <item android:title="Информация">
         <menu>
             <item android:id="@+id/information"
-                android:title="Информация"/>
+                android:title="О приложении"/>
         </menu>
     </item>
 </menu>

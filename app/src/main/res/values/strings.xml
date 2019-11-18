@@ -6,7 +6,13 @@
     <string name="open">Открыт</string>
     <string name="closed">Закрыт</string>
 
-    <string name="action_itemsE"><b>Spurs</b></string>
+    <string name="action_itemsE"><b>Cribs</b></string>
+
+
+    <string name="information"><b><P>    Это</P> приложение создано для тех, кто хочет самостоятельно развивать знания английского языка. Главная наша задача максимально упростить расширенный курс. И поэтому, предлагаем Вам подобранный краткий курс “English Zubrila” и желаем успешно освоить новую для Вас информацию.</b></string>
+    <string name="avtorE"><b>With best wishes,</b></string>
+    <string name="avtorB"><b>Your “English Zubrila”.</b></string>
+    <string name="awq">Для пользователей приложения</string>
 
     <string name="title_activity_philip_chesterfield">PhilipChesterfield</string>
     <string name="_26_5_a_e_i_o_u_20_b_c_d_f_g_h_j_k_l_m_n_p_q_r_s_t_v_w_x_z_y"><![CDATA[Итак, в английском алфавите 26 букв, 5 из которых гласные – A, E, I, O, U затем 20 букв являются согласными – B C D F G H J K L M N P Q R S T V W X Z и только Y обозначает и согласный, и гласный звук! При изучении английского алфавита мы советуем Вам запоминать не только буквы, но и их звучание, это очень важно так как одна и та же буква в сочетании с согласной или гласной меняет свое звучание.]]></string>
@@ -1630,6 +1636,7 @@ where there is a broad river (где есть
     <string name="adv_adverb_dv_b">adv – adverb [\'ædvɜːb] наречие;</string>
     <string name="sing_singular_s_gj_l">sing – singular [\'sɪŋgjələ] единственное число;</string>
     <string name="pl_plural_pl_r_l">pl – plural [\'plʊrəl] множественное число</string>
+
 
 </resources>
 

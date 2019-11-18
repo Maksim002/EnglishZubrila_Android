@@ -14,4 +14,15 @@
     <color name="colorWhite">#FAF9F9</color>
     <color name="colorBek">#CECED8</color>
     <color name="color1">#F8F6F6</color>
+
+    <color name="imageQ">#814B4B</color>
+    <color name="imageW">#4B2353</color>
+    <color name="imageE">#432F6D</color>
+    <color name="imageR">#1F4D72</color>
+    <color name="imageT">#664B23</color>
+    <color name="imageY">#2E6268</color>
+    <color name="imageU">#2C6D66</color>
+    <color name="imageI">#4E682F</color>
+    <color name="imageO">#753E3E</color>
+    <color name="imageP">#8A9428</color>
 </resources>

@@ -7,16 +7,15 @@
     tools:context=".ui.fragments.heatsheets.CheatSheets"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:background="#332B44"
-        android:id="@+id/toolGalery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        <android.support.v7.widget.Toolbar
+            android:background="#332B44"
+            android:id="@+id/toolGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_gravity="center"
-        android:background="#332B44"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +26,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:listitem="@layout/item_gallery"/>
 
     <android.support.v4.view.ViewPager
         android:background="#4000"
